@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EVENT_TYPE {
-    ADD_COIN_MAN,
-    ADD_COIN_WOMAN,
-    ADD_HEART_MAN,
-    ADD_HEART_WOMAN,
+    // 터치 이벤트
+    ON_TOUCH_START,
+    ON_TOUCH_END,
+    // 인게임
+    UPDATE_UI,
+    GAME_OVER,
 }
 
 public class EventManager: Singleton<EventManager> 
