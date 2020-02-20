@@ -17,10 +17,21 @@ public class IngameUI : MonoBehaviour
         this.checkPointText.text = $"{0}";
         this.goldText.text = $"{0}";
         this.jemText.text = $"{0}";
+        EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
     }
     public void SetPause()
     {
         // timeScale이 0 이하이면 1로
         Time.timeScale = (Time.timeScale <= 0f) ? 1f : 0f;
+    }
+
+    private void UpdatedUI(EVENT_TYPE eventType, Component sender, object param = null)
+    {
+
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.off(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
     }
 }
