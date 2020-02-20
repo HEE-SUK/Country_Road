@@ -30,10 +30,21 @@ public class ObjectScroller : MonoBehaviour
     // Test 전용: 벽 번호;
     [SerializeField] int wallIndex = 0;
     [SerializeField] string wallId = string.Empty;
+    // 블럭 생성 관련 변수 
+    private Transform lastBlock = null;
+    private List<GameObject> activeList = new List<GameObject>();
     void Start()
     {
         Init();
         GameManager.GameSpeed = scrollSpeed;
+    }
+    void Update(){
+        // Test
+        GameManager.GameSpeed = scrollSpeed;
+        for (int i = 0; i < activeList.Count; i++)
+        {
+            activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
+        }
     }
     void Init()
     {
@@ -41,26 +52,30 @@ public class ObjectScroller : MonoBehaviour
         {
             var pos = new Vector3(transform.position.x, transform.position.y, endPos.position.z + i * objectSpacing);
             var roadCon = Instantiate(scrollObject, pos, scrollObject.transform.rotation).GetComponent<BlockController>();
+            activeList.Add(roadCon.gameObject);
+            roadCon.name = i.ToString();
             if (roadCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
             roadCon.Init(endPos.position,ScrollingObject,
                 new BlockObjectSettingInfo(this.currentThemeIndex,false,false,0,TableManager.WallInfoTable.GetInfo("W001")));
-           
+            if(i == objectCount - 1){
+                lastBlock = roadCon.transform;
+            }
         }
     }
-
     // 스크롤 오브젝트가 끝 위치에 진입했을때 불릴 함수
     private void ScrollingObject(BlockController obj)
     {
         // 현재 지나간 블럭 수
         passBlockNum++;        
-        Debug.Log(passBlockNum + " M");
         // 스크롤링
         obj.gameObject.SetActive(false);
-        obj.transform.position = startPos.position;
         scrollObjQueue.Enqueue(obj);
+        activeList.Remove(obj.gameObject);
         var newObj = scrollObjQueue.Dequeue();
-        newObj.transform.position = startPos.position;
+        activeList.Add(newObj.gameObject);
+        if(lastBlock != null)
+        newObj.transform.position = new Vector3(lastBlock.position.x,lastBlock.position.y,lastBlock.position.z + objectSpacing);
         // 벽 생성 주기
         bool wallActive = false;
         if(passBlockNum % wallSpawnTurm == 0){
@@ -68,7 +83,6 @@ public class ObjectScroller : MonoBehaviour
         }
         else
             wallActive = false;
-
         // 횡단보도 생성 주기
         bool isCrossWalk = false;
         if(passBlockNum % crossWalkNum == 0){
@@ -77,5 +91,6 @@ public class ObjectScroller : MonoBehaviour
         // 블럭 객체들 세팅하기 
         newObj.SetBlockObject(new BlockObjectSettingInfo(currentThemeIndex,isCrossWalk,wallActive,wallIndex,TableManager.WallInfoTable.GetInfo(wallId)));
         newObj.gameObject.SetActive(true);
+        lastBlock = newObj.transform;
     }
 }
