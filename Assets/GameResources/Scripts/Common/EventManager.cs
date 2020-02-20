@@ -7,6 +7,7 @@ public enum EVENT_TYPE {
     ON_TOUCH_START,
     ON_TOUCH_END,
     // 인게임
+    UPDATE_UI,
     GAME_OVER,
 }
 
