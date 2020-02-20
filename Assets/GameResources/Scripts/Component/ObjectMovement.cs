@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
 {
-    [SerializeField] private GameObject Wall;
+    [SerializeField] private GameObject Wall = null;
     // 끝 위치 
     private Vector3 endPos = new Vector3(0f, 0f, 0f);
     private EndPosAction endPosAction = null;
