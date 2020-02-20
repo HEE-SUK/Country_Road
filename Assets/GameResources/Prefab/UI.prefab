@@ -995,9 +995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53d82dc31191443eae223d8508d5832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPointText: {fileID: 0}
-  goldText: {fileID: 0}
-  jemText: {fileID: 0}
+  checkPointText: {fileID: 7850202795509468707}
+  goldText: {fileID: 7230265368565257335}
+  jemText: {fileID: 1660293183447110424}
 --- !u!114 &8100717506133831344
 MonoBehaviour:
   m_ObjectHideFlags: 0
