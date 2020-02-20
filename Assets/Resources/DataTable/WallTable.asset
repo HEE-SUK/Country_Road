@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e26f6653b7484f5ba9a68233a2d6f9d, type: 3}
+  m_Name: WallTable
+  m_EditorClassIdentifier: 
+  SheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
+  WorksheetName: WallTable
+  dataArray:
+  - id: W001
+    index: 0
+    model: 
+    color: 
+    vfx: 
+    def: 3
+    exp: 3
+    gold: 3
+    dia: 1
+    diaper: 1
+  - id: W002
+    index: 1
+    model: 
+    color: 
+    vfx: 
+    def: 7
+    exp: 7
+    gold: 7
+    dia: 2
+    diaper: 1
+  - id: W003
+    index: 2
+    model: 
+    color: 
+    vfx: 
+    def: 13
+    exp: 13
+    gold: 13
+    dia: 2
+    diaper: 1
+  - id: W004
+    index: 3
+    model: 
+    color: 
+    vfx: 
+    def: 21
+    exp: 21
+    gold: 21
+    dia: 2
+    diaper: 1
+  - id: W005
+    index: 4
+    model: 
+    color: 
+    vfx: 
+    def: 31
+    exp: 31
+    gold: 31
+    dia: 1
+    diaper: 1
+  - id: W006
+    index: 5
+    model: 
+    color: 
+    vfx: 
+    def: 43
+    exp: 43
+    gold: 43
+    dia: 2
+    diaper: 1
+  - id: W007
+    index: 6
+    model: 
+    color: 
+    vfx: 
+    def: 57
+    exp: 57
+    gold: 57
+    dia: 3
+    diaper: 1
+  - id: W008
+    index: 7
+    model: 
+    color: 
+    vfx: 
+    def: 73
+    exp: 73
+    gold: 73
+    dia: 1
+    diaper: 1
+  - id: W009
+    index: 8
+    model: 
+    color: 
+    vfx: 
+    def: 91
+    exp: 91
+    gold: 91
+    dia: 2
+    diaper: 1
+  - id: W010
+    index: 9
+    model: 
+    color: 
+    vfx: 
+    def: 111
+    exp: 111
+    gold: 111
+    dia: 1
+    diaper: 1
+  - id: W011
+    index: 10
+    model: 
+    color: 
+    vfx: 
+    def: 133
+    exp: 133
+    gold: 133
+    dia: 1
+    diaper: 1
+  - id: W012
+    index: 11
+    model: 
+    color: 
+    vfx: 
+    def: 157
+    exp: 157
+    gold: 157
+    dia: 2
+    diaper: 1
+  - id: W013
+    index: 12
+    model: 
+    color: 
+    vfx: 
+    def: 183
+    exp: 183
+    gold: 183
+    dia: 3
+    diaper: 1
+  - id: W014
+    index: 13
+    model: 
+    color: 
+    vfx: 
+    def: 211
+    exp: 211
+    gold: 211
+    dia: 1
+    diaper: 1
+  - id: W015
+    index: 14
+    model: 
+    color: 
+    vfx: 
+    def: 241
+    exp: 241
+    gold: 241
+    dia: 1
+    diaper: 1
+  - id: W016
+    index: 15
+    model: 
+    color: 
+    vfx: 
+    def: 273
+    exp: 273
+    gold: 273
+    dia: 2
+    diaper: 1
+  - id: W017
+    index: 16
+    model: 
+    color: 
+    vfx: 
+    def: 307
+    exp: 307
+    gold: 307
+    dia: 2
+    diaper: 1
+  - id: W018
+    index: 17
+    model: 
+    color: 
+    vfx: 
+    def: 343
+    exp: 343
+    gold: 343
+    dia: 2
+    diaper: 1
+  - id: W019
+    index: 18
+    model: 
+    color: 
+    vfx: 
+    def: 381
+    exp: 381
+    gold: 381
+    dia: 3
+    diaper: 1
+  - id: W020
+    index: 19
+    model: 
+    color: 
+    vfx: 
+    def: 421
+    exp: 421
+    gold: 421
+    dia: 2
+    diaper: 1
+  - id: W021
+    index: 20
+    model: 
+    color: 
+    vfx: 
+    def: 463
+    exp: 463
+    gold: 463
+    dia: 3
+    diaper: 1
+  - id: W022
+    index: 21
+    model: 
+    color: 
+    vfx: 
+    def: 507
+    exp: 507
+    gold: 507
+    dia: 1
+    diaper: 1
+  - id: W023
+    index: 22
+    model: 
+    color: 
+    vfx: 
+    def: 553
+    exp: 553
+    gold: 553
+    dia: 1
+    diaper: 1
+  - id: W024
+    index: 23
+    model: 
+    color: 
+    vfx: 
+    def: 601
+    exp: 601
+    gold: 601
+    dia: 2
+    diaper: 1
+  - id: W025
+    index: 24
+    model: 
+    color: 
+    vfx: 
+    def: 651
+    exp: 651
+    gold: 651
+    dia: 2
+    diaper: 1
+  - id: W026
+    index: 25
+    model: 
+    color: 
+    vfx: 
+    def: 703
+    exp: 703
+    gold: 703
+    dia: 2
+    diaper: 1
+  - id: W027
+    index: 26
+    model: 
+    color: 
+    vfx: 
+    def: 757
+    exp: 757
+    gold: 757
+    dia: 1
+    diaper: 1
+  - id: W028
+    index: 27
+    model: 
+    color: 
+    vfx: 
+    def: 813
+    exp: 813
+    gold: 813
+    dia: 3
+    diaper: 1
+  - id: W029
+    index: 28
+    model: 
+    color: 
+    vfx: 
+    def: 871
+    exp: 871
+    gold: 871
+    dia: 1
+    diaper: 1
+  - id: W030
+    index: 29
+    model: 
+    color: 
+    vfx: 
+    def: 931
+    exp: 931
+    gold: 931
+    dia: 3
+    diaper: 1

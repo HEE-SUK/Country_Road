@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff58b2fffdbbf4ee0a303d89ec90ba96, type: 3}
+  m_Name: CheckPointTable
+  m_EditorClassIdentifier: 
+  SheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
+  WorksheetName: CheckPointTable
+  dataArray:
+  - id: CP001
+    index: 0
+    name: 
+    image: 
+    distance: 150
+    gold: 3
+    dia: 3
+    exp: 3
+  - id: CP002
+    index: 1
+    name: 
+    image: 
+    distance: 300
+    gold: 7
+    dia: 7
+    exp: 7
+  - id: CP003
+    index: 2
+    name: 
+    image: 
+    distance: 450
+    gold: 13
+    dia: 13
+    exp: 13
+  - id: CP004
+    index: 3
+    name: 
+    image: 
+    distance: 600
+    gold: 21
+    dia: 21
+    exp: 21
+  - id: CP005
+    index: 4
+    name: 
+    image: 
+    distance: 750
+    gold: 31
+    dia: 31
+    exp: 31
+  - id: CP006
+    index: 5
+    name: 
+    image: 
+    distance: 900
+    gold: 43
+    dia: 43
+    exp: 43
+  - id: CP007
+    index: 6
+    name: 
+    image: 
+    distance: 1050
+    gold: 57
+    dia: 57
+    exp: 57
+  - id: CP008
+    index: 7
+    name: 
+    image: 
+    distance: 1200
+    gold: 73
+    dia: 73
+    exp: 73
+  - id: CP009
+    index: 8
+    name: 
+    image: 
+    distance: 1350
+    gold: 91
+    dia: 91
+    exp: 91
+  - id: CP010
+    index: 9
+    name: 
+    image: 
+    distance: 1500
+    gold: 111
+    dia: 111
+    exp: 111
+  - id: CP011
+    index: 10
+    name: 
+    image: 
+    distance: 1650
+    gold: 133
+    dia: 133
+    exp: 133
+  - id: CP012
+    index: 11
+    name: 
+    image: 
+    distance: 1800
+    gold: 157
+    dia: 157
+    exp: 157
+  - id: CP013
+    index: 12
+    name: 
+    image: 
+    distance: 1950
+    gold: 183
+    dia: 183
+    exp: 183
+  - id: CP014
+    index: 13
+    name: 
+    image: 
+    distance: 2100
+    gold: 211
+    dia: 211
+    exp: 211
+  - id: CP015
+    index: 14
+    name: 
+    image: 
+    distance: 2250
+    gold: 241
+    dia: 241
+    exp: 241
+  - id: CP016
+    index: 15
+    name: 
+    image: 
+    distance: 2400
+    gold: 273
+    dia: 273
+    exp: 273
+  - id: CP017
+    index: 16
+    name: 
+    image: 
+    distance: 2550
+    gold: 307
+    dia: 307
+    exp: 307
+  - id: CP018
+    index: 17
+    name: 
+    image: 
+    distance: 2700
+    gold: 343
+    dia: 343
+    exp: 343
+  - id: CP019
+    index: 18
+    name: 
+    image: 
+    distance: 2850
+    gold: 381
+    dia: 381
+    exp: 381
+  - id: CP020
+    index: 19
+    name: 
+    image: 
+    distance: 3000
+    gold: 421
+    dia: 421
+    exp: 421
+  - id: CP021
+    index: 20
+    name: 
+    image: 
+    distance: 3150
+    gold: 463
+    dia: 463
+    exp: 463
+  - id: CP022
+    index: 21
+    name: 
+    image: 
+    distance: 3300
+    gold: 507
+    dia: 507
+    exp: 507
+  - id: CP023
+    index: 22
+    name: 
+    image: 
+    distance: 3450
+    gold: 553
+    dia: 553
+    exp: 553
+  - id: CP024
+    index: 23
+    name: 
+    image: 
+    distance: 3600
+    gold: 601
+    dia: 601
+    exp: 601
+  - id: CP025
+    index: 24
+    name: 
+    image: 
+    distance: 3750
+    gold: 651
+    dia: 651
+    exp: 651
+  - id: CP026
+    index: 25
+    name: 
+    image: 
+    distance: 3900
+    gold: 703
+    dia: 703
+    exp: 703
+  - id: CP027
+    index: 26
+    name: 
+    image: 
+    distance: 4050
+    gold: 757
+    dia: 757
+    exp: 757
+  - id: CP028
+    index: 27
+    name: 
+    image: 
+    distance: 4200
+    gold: 813
+    dia: 813
+    exp: 813
+  - id: CP029
+    index: 28
+    name: 
+    image: 
+    distance: 4350
+    gold: 871
+    dia: 871
+    exp: 871
+  - id: CP030
+    index: 29
+    name: 
+    image: 
+    distance: 4500
+    gold: 931
+    dia: 931
+    exp: 931

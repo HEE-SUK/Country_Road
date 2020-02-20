@@ -1,0 +1,497 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b934d4cfca05b4639b037909d8412364, type: 3}
+  m_Name: CarTable
+  m_EditorClassIdentifier: 
+  SheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
+  WorksheetName: CarTable
+  dataArray:
+  - id: C001
+    index: 0
+    name: Juciy
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 3
+    mspd: 111
+    rhm: 3
+    atk: 3
+    reload: 2
+    price: 0
+    unittype: 0
+    lotto: 0.1
+  - id: C002
+    index: 1
+    name: Aria
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 7
+    mspd: 138
+    rhm: 7
+    atk: 7
+    reload: 2
+    price: 7
+    unittype: 0
+    lotto: 0.539898
+  - id: C003
+    index: 2
+    name: Lilian
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 13
+    mspd: 181
+    rhm: 13
+    atk: 13
+    reload: 2
+    price: 13
+    unittype: 0
+    lotto: 0.176367
+  - id: C004
+    index: 3
+    name: Anita
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 21
+    mspd: 240
+    rhm: 21
+    atk: 21
+    reload: 2
+    price: 21
+    unittype: 0
+    lotto: 0.086384
+  - id: C005
+    index: 4
+    name: Brionna
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 31
+    mspd: 315
+    rhm: 31
+    atk: 31
+    reload: 2
+    price: 31
+    unittype: 0
+    lotto: 0.05075
+  - id: C006
+    index: 5
+    name: Bailee
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 43
+    mspd: 406
+    rhm: 43
+    atk: 43
+    reload: 2
+    price: 43
+    unittype: 0
+    lotto: 0.033114
+  - id: C007
+    index: 6
+    name: Elissa
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 57
+    mspd: 513
+    rhm: 57
+    atk: 57
+    reload: 2
+    price: 57
+    unittype: 0
+    lotto: 0.023139
+  - id: C008
+    index: 7
+    name: Marisa
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 73
+    mspd: 636
+    rhm: 73
+    atk: 73
+    reload: 2
+    price: 73
+    unittype: 0
+    lotto: 0.016968
+  - id: C009
+    index: 8
+    name: Katerina
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 91
+    mspd: 775
+    rhm: 91
+    atk: 91
+    reload: 2
+    price: 91
+    unittype: 0
+    lotto: 0.012898
+  - id: C010
+    index: 9
+    name: Cristal
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 111
+    mspd: 930
+    rhm: 111
+    atk: 111
+    reload: 2
+    price: 111
+    unittype: 0
+    lotto: 0.010078
+  - id: C011
+    index: 10
+    name: Alyssa
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 133
+    mspd: 1101
+    rhm: 133
+    atk: 133
+    reload: 2
+    price: 133
+    unittype: 0
+    lotto: 0.008049
+  - id: C012
+    index: 11
+    name: Loren
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 157
+    mspd: 1288
+    rhm: 157
+    atk: 157
+    reload: 2
+    price: 157
+    unittype: 0
+    lotto: 0.006544
+  - id: C013
+    index: 12
+    name: Keyla
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 183
+    mspd: 1491
+    rhm: 183
+    atk: 183
+    reload: 2
+    price: 183
+    unittype: 0
+    lotto: 0.005399
+  - id: C014
+    index: 13
+    name: Eliza
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 211
+    mspd: 1710
+    rhm: 211
+    atk: 211
+    reload: 2
+    price: 211
+    unittype: 0
+    lotto: 0.004509
+  - id: C015
+    index: 14
+    name: Johana
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 241
+    mspd: 1945
+    rhm: 241
+    atk: 241
+    reload: 2
+    price: 241
+    unittype: 0
+    lotto: 0.003805
+  - id: C016
+    index: 15
+    name: Christy
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 273
+    mspd: 2196
+    rhm: 273
+    atk: 273
+    reload: 2
+    price: 273
+    unittype: 0
+    lotto: 0.003239
+  - id: C017
+    index: 16
+    name: Dana
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 307
+    mspd: 2463
+    rhm: 307
+    atk: 307
+    reload: 2
+    price: 307
+    unittype: 0
+    lotto: 0.002779
+  - id: C018
+    index: 17
+    name: Alia
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 343
+    mspd: 2746
+    rhm: 343
+    atk: 343
+    reload: 2
+    price: 343
+    unittype: 0
+    lotto: 0.0024
+  - id: C019
+    index: 18
+    name: Lola
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 381
+    mspd: 3045
+    rhm: 381
+    atk: 381
+    reload: 2
+    price: 381
+    unittype: 0
+    lotto: 0.002084
+  - id: C020
+    index: 19
+    name: Carissa
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 421
+    mspd: 3360
+    rhm: 421
+    atk: 421
+    reload: 2
+    price: 421
+    unittype: 0
+    lotto: 0.001819
+  - id: C021
+    index: 20
+    name: Hailee
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 463
+    mspd: 3691
+    rhm: 463
+    atk: 463
+    reload: 2
+    price: 463
+    unittype: 0
+    lotto: 0.001594
+  - id: C022
+    index: 21
+    name: Kenzie
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 507
+    mspd: 4038
+    rhm: 507
+    atk: 507
+    reload: 2
+    price: 3
+    unittype: 1
+    lotto: 0.001402
+  - id: C023
+    index: 22
+    name: Justine
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 553
+    mspd: 4401
+    rhm: 553
+    atk: 553
+    reload: 2
+    price: 7
+    unittype: 1
+    lotto: 0.001238
+  - id: C024
+    index: 23
+    name: Elaine
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 601
+    mspd: 4780
+    rhm: 601
+    atk: 601
+    reload: 2
+    price: 13
+    unittype: 1
+    lotto: 0.001095
+  - id: C025
+    index: 24
+    name: Casey
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 651
+    mspd: 5175
+    rhm: 651
+    atk: 651
+    reload: 2
+    price: 21
+    unittype: 1
+    lotto: 0.000972
+  - id: C026
+    index: 25
+    name: Kassandra
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 703
+    mspd: 5586
+    rhm: 703
+    atk: 703
+    reload: 2
+    price: 31
+    unittype: 1
+    lotto: 0.000864
+  - id: C027
+    index: 26
+    name: Bit
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 757
+    mspd: 6013
+    rhm: 757
+    atk: 757
+    reload: 2
+    price: 43
+    unittype: 1
+    lotto: 0.000769
+  - id: C028
+    index: 27
+    name: Pop
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 813
+    mspd: 6456
+    rhm: 813
+    atk: 813
+    reload: 2
+    price: 57
+    unittype: 1
+    lotto: 0.000686
+  - id: C029
+    index: 28
+    name: Hannah
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 871
+    mspd: 6915
+    rhm: 871
+    atk: 871
+    reload: 2
+    price: 73
+    unittype: 1
+    lotto: 0.000612
+  - id: C030
+    index: 29
+    name: Frankie
+    description: 
+    image: 
+    model: 
+    color: 
+    vfx: 
+    def: 931
+    mspd: 7390
+    rhm: 931
+    atk: 931
+    reload: 2
+    price: 91
+    unittype: 1
+    lotto: 0.000546
