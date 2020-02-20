@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Theme : MonoBehaviour
 {
-    [SerializeField] private GameObject[] wall;
-    [SerializeField] private GameObject[] house;
-    [SerializeField] private GameObject[] powerpole;
-    [SerializeField] private GameObject[] road; // 0: 신호 표시 있는거, 1: 신호표시 없는거
-    [SerializeField] private GameObject[] floor;
-    [SerializeField] private GameObject[] ground;
-    [SerializeField] private GameObject[] options;
-    [SerializeField] private Transform[] optionPos;
+    [SerializeField] private GameObject[] wall = null;
+    [SerializeField] private GameObject[] house = null;
+    [SerializeField] private GameObject[] powerpole = null;
+    [SerializeField] private GameObject[] road = null; // 0: 신호 표시 있는거, 1: 신호표시 없는거
+    [SerializeField] private GameObject[] floor = null;
+    [SerializeField] private GameObject[] ground = null;
+    [SerializeField] private GameObject[] options = null;
+    [SerializeField] private Transform[] optionPos = null;
 
     public void Init(BlockObjectSettingInfo settingData){
         

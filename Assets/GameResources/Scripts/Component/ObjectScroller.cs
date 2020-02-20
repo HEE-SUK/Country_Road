@@ -28,8 +28,8 @@ public class ObjectScroller : MonoBehaviour
     // Test 전용: 현재 테마;
     [SerializeField] int currentThemeIndex = 0;
     // Test 전용: 벽 번호;
-    [SerializeField] int wallIndex;
-    [SerializeField] string wallId;
+    [SerializeField] int wallIndex = 0;
+    [SerializeField] string wallId = string.Empty;
     void Start()
     {
         Init();
