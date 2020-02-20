@@ -49,20 +49,36 @@ public class CarTableData
   public int Mspd { get {return mspd; } set { this.mspd = value;} }
   
   [SerializeField]
-  int rhm;
-  public int Rhm { get {return rhm; } set { this.rhm = value;} }
+  float rhm;
+  public float Rhm { get {return rhm; } set { this.rhm = value;} }
   
   [SerializeField]
   int atk;
   public int Atk { get {return atk; } set { this.atk = value;} }
   
   [SerializeField]
+  float atkspd;
+  public float Atkspd { get {return atkspd; } set { this.atkspd = value;} }
+  
+  [SerializeField]
+  int bullet;
+  public int Bullet { get {return bullet; } set { this.bullet = value;} }
+  
+  [SerializeField]
   int reload;
   public int Reload { get {return reload; } set { this.reload = value;} }
   
   [SerializeField]
+  float dps;
+  public float DPS { get {return dps; } set { this.dps = value;} }
+  
+  [SerializeField]
   int price;
   public int Price { get {return price; } set { this.price = value;} }
+  
+  [SerializeField]
+  int convertprice;
+  public int Convertprice { get {return convertprice; } set { this.convertprice = value;} }
   
   [SerializeField]
   UNITTYPE unittype;
