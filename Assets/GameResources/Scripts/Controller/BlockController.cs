@@ -22,8 +22,7 @@ public class BlockController : MonoBehaviour
         if(this.blockObjectSet == null)
             blockObjectSet = GetComponent<BlockObjectSet>();
     }
-
-    void FixedUpdate()
+    void Update()
     {
         if(transform.position.z < endPos.z){
             if(endPosAction != null){
@@ -31,7 +30,6 @@ public class BlockController : MonoBehaviour
                 return;
             }
         }
-        transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
     }
 
 }
