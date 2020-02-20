@@ -58,7 +58,7 @@ MonoBehaviour:
     name: MSpd
     isEnable: 0
     isArray: 0
-  - type: 3
+  - type: 5
     name: Rhm
     isEnable: 0
     isArray: 0
@@ -66,12 +66,28 @@ MonoBehaviour:
     name: Atk
     isEnable: 0
     isArray: 0
+  - type: 5
+    name: AtkSpd
+    isEnable: 0
+    isArray: 0
+  - type: 3
+    name: Bullet
+    isEnable: 0
+    isArray: 0
   - type: 3
     name: Reload
     isEnable: 0
     isArray: 0
+  - type: 5
+    name: DPS
+    isEnable: 0
+    isArray: 0
   - type: 3
     name: Price
+    isEnable: 0
+    isArray: 0
+  - type: 3
+    name: ConvertPrice
     isEnable: 0
     isArray: 0
   - type: 7
