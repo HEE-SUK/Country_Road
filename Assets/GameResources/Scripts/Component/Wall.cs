@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
+    // [SerializeField] private GameObject[] walls;
     private WallInfo wallInfo;
     public void Init(WallInfo wallInfo){
         this.wallInfo = wallInfo;

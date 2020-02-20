@@ -1,6 +1,10 @@
 # Country_Road
+
 좀비트럭: Contry Road - 모바일 하이퍼 캐주얼게임
+
 플랫폼: Android, IOS
+
+
 ## 팝시클 8비트 합작 프로젝트 - Slack 연동 ver : Notification 확인가능
 
 사용엔진버전: Unity2019.3.0f5
