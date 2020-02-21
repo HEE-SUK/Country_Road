@@ -19,6 +19,7 @@ public class RhythmPanel : MonoBehaviour
     }
     public void Init(string _rhythmId)
     {
+        // TODO: RID 어디서 받아오는지?
         this.rhythmInfo = TableManager.RhythmInfoTable.GetInfo(_rhythmId);
         this.gameObject.SetActive(true);
         this.rhythmTarget.Init(this.rhythmInfo.barSize1, this.rhythmInfo.barSize2);
@@ -46,6 +47,8 @@ public class RhythmPanel : MonoBehaviour
         }
         Time.timeScale = 1f;
         EventManager.emit(EVENT_TYPE.TOUCH_RHYTHM, this, extraSpeed);
+        
+        // TODO: 추가되는 속도 어디다가 보내는지 world 에 보내서 받을수있게 제어
         this.gameObject.SetActive(false);
     }
 

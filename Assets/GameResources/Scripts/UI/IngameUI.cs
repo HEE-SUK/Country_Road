@@ -50,8 +50,6 @@ public class IngameUI : MonoBehaviour
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 디버그용: 리듬터치시
-        float extraSpeed = (float)param;
-        // Debug.Log($"속도변화: {extraSpeed}");
         this.StartCoroutine(this.DebugRhythm());
     }
     
