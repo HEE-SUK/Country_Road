@@ -29,9 +29,7 @@ public class RhythmPanel : MonoBehaviour
     }
     private void OnTouched(EVENT_TYPE eventType, Component sender, object param = null)
     {
-        // 
         float stopPosition = this.rhythmArrow.StopPosition();
-        Debug.Log(this.rhythmTarget.StopPosition(stopPosition));
 
         float extraSpeed = 0f;
         switch (this.rhythmTarget.StopPosition(stopPosition))

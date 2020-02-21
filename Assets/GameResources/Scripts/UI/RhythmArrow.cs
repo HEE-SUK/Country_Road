@@ -17,7 +17,9 @@ public class RhythmArrow : MonoBehaviour
     }
     public float StopPosition()
     {
-        this.DOKill();
-        return this.transform.localRotation.z;
+        this.transform.DOKill();
+        float result = this.transform.localEulerAngles.z;
+        
+        return (result > this.originRotation)? result - 2 * this.originRotation: result;
     }
 }

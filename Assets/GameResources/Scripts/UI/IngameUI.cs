@@ -51,7 +51,7 @@ public class IngameUI : MonoBehaviour
     {
         // 디버그용: 리듬터치시
         float extraSpeed = (float)param;
-        Debug.Log($"속도변화: {extraSpeed}");
+        // Debug.Log($"속도변화: {extraSpeed}");
         this.StartCoroutine(this.DebugRhythm());
     }
     
