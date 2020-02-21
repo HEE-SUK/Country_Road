@@ -26,10 +26,15 @@ public class TableManager : Singleton<TableManager>
     {
         get { return Instance.zombieInfoTable;}
     }
+    public static SectionInfoTable SectionInfoTable 
+    {
+        get { return Instance.sectionInfoTable;}
+    }
 
     private CarInfoTable carInfoTable = new CarInfoTable();
     private WallInfoTable wallInfoTable = new WallInfoTable();
     private RhythmInfoTable rhythmInfoTable = new RhythmInfoTable();
     private CheckPointInfoTable checkPointInfoTable = new CheckPointInfoTable();
     private ZombieInfoTable zombieInfoTable = new ZombieInfoTable();
+    private SectionInfoTable sectionInfoTable = new SectionInfoTable();
 }

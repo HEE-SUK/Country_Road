@@ -16,22 +16,22 @@ MonoBehaviour:
   scriptFilePath: QuickSheet/Runtime
   editorScriptFilePath: QuickSheet/GDataPlugin/Editor
   sheetName: CountryRoad
-  workSheetName: TextTable
+  workSheetName: SectionTable
   columnHeaderList:
   - type: 1
-    name: ID
+    name: SID
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: en
+  - type: 3
+    name: Index
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: ko
+  - type: 3
+    name: SectionBlocks
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: zhTW
+  - type: 3
+    name: RhyChance
     isEnable: 0
     isArray: 0
   - type: 1
@@ -43,7 +43,27 @@ MonoBehaviour:
     isEnable: 0
     isArray: 0
   - type: 1
-    name: es
+    name: WallID
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: RhythmID
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: CheckPointID
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: ThemeID
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: ZombieID
+    isEnable: 0
+    isArray: 0
+  - type: 5
+    name: ZombieInterval
     isEnable: 0
     isArray: 0
   AccessCode: 

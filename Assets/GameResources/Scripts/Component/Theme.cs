@@ -10,8 +10,8 @@ public class Theme : MonoBehaviour
 
     [SerializeField] private GameObject[] powerpole = null;
     [SerializeField] private GameObject[] road = null; // 0: 신호 표시 있는거, 1: 신호표시 없는거
-    [SerializeField] private GameObject[] leftTrafficlight;
-    [SerializeField] private GameObject[] rightTrafficlight;
+    [SerializeField] private GameObject[] leftTrafficlight = {};
+    [SerializeField] private GameObject[] rightTrafficlight = {};
     [SerializeField] private GameObject[] leftFloor = null;
     [SerializeField] private GameObject[] rightFloor = null;
     [SerializeField] private GameObject[] leftGround = null;
