@@ -6,14 +6,22 @@ using DG.Tweening;
 
 public class RhythmPanel : MonoBehaviour
 {
+    [SerializeField]
+    private RhythmTarget rhythmTarget = null;
+    [SerializeField]
+    private RhythmArrow rhythmArrow = null;
 
     private void Awake()
     {
         this.gameObject.SetActive(false);
     }
-    public void Init()
+    public void Init(string _rhythmId)
     {
+        RhythmInfo rhythmInfo = TableManager.RhythmInfoTable.GetInfo(_rhythmId);
         this.gameObject.SetActive(true);
+        this.rhythmTarget.Init(Random.Range(-180f, 180f), 0.8f, 0.6f);
+        this.rhythmArrow.Init();
+
         this.StartCoroutine(this.TimeSlow());
     }
     private IEnumerator TimeSlow()

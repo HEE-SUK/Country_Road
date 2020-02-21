@@ -4,12 +4,12 @@ using UnityEngine;
 using DG.Tweening;
 public class RhythmArrow : MonoBehaviour
 {
-    private Vector3 originRotation = new Vector3(0f, 0f, -90f);
-    private void Start()
+    private float originRotation = -90f;
+
+    public void Init()
     {
-        // vec
-        // this.transform.localRotation.z = -90;
-        // this.transform.DOro
+        this.transform.localRotation = Quaternion.Euler(0f,0f,this.originRotation);
+
     }
 
 }
