@@ -15,27 +15,23 @@ MonoBehaviour:
   templatePath: QuickSheet/GDataPlugin/Templates
   scriptFilePath: QuickSheet/Runtime
   editorScriptFilePath: QuickSheet/GDataPlugin/Editor
-  sheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
-  workSheetName: CarTable
+  sheetName: CountryRoad
+  workSheetName: SectionTable
   columnHeaderList:
   - type: 1
-    name: ID
+    name: SID
     isEnable: 0
     isArray: 0
   - type: 3
     name: Index
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: Name
+  - type: 3
+    name: SectionBlocks
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: Description
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: Image
+  - type: 3
+    name: RhyChance
     isEnable: 0
     isArray: 0
   - type: 1
@@ -47,55 +43,27 @@ MonoBehaviour:
     isEnable: 0
     isArray: 0
   - type: 1
-    name: VFX
+    name: WallID
     isEnable: 0
     isArray: 0
-  - type: 3
-    name: Def
+  - type: 1
+    name: RhythmID
     isEnable: 0
     isArray: 0
-  - type: 3
-    name: MSpd
+  - type: 1
+    name: CheckPointID
     isEnable: 0
     isArray: 0
-  - type: 5
-    name: Rhm
+  - type: 1
+    name: ThemeID
     isEnable: 0
     isArray: 0
-  - type: 3
-    name: Atk
-    isEnable: 0
-    isArray: 0
-  - type: 5
-    name: AtkSpd
-    isEnable: 0
-    isArray: 0
-  - type: 3
-    name: Bullet
-    isEnable: 0
-    isArray: 0
-  - type: 3
-    name: Reload
+  - type: 1
+    name: ZombieID
     isEnable: 0
     isArray: 0
   - type: 5
-    name: DPS
-    isEnable: 0
-    isArray: 0
-  - type: 3
-    name: Price
-    isEnable: 0
-    isArray: 0
-  - type: 3
-    name: ConvertPrice
-    isEnable: 0
-    isArray: 0
-  - type: 7
-    name: UNITTYPE
-    isEnable: 0
-    isArray: 0
-  - type: 5
-    name: Lotto
+    name: ZombieInterval
     isEnable: 0
     isArray: 0
   AccessCode: 
