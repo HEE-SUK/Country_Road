@@ -57,8 +57,11 @@ public class Theme : MonoBehaviour
         // 신호 표시 있는 길과 없는길 규칙 적용 
         if(settingData.isCrossWalk){
             road[0].SetActive(true);
-            leftTrafficlight[Random.Range(0,road.Length)].SetActive(true);
-            rightTrafficlight[Random.Range(0,road.Length)].SetActive(true);
+            if(leftTrafficlight.Length > 0){
+                leftTrafficlight[Random.Range(0,road.Length)].SetActive(true);
+                rightTrafficlight[Random.Range(0,road.Length)].SetActive(true);
+
+            }
         }else{
             road[Random.Range(1,road.Length)].SetActive(true);
         }
