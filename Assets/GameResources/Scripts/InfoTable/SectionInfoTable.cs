@@ -27,7 +27,7 @@ public class SectionInfoTable : IInfoTable<SectionInfo, SectionTableData>
         return this.sectionInfoDictionary.ContainsKey(_id);
     }
 
-    public SectionInfo[] GetSectionInfoArray(int _start, int _end)
+    public SectionInfo[] GetArray(int _start, int _end)
     {
         // 전체 배열
         SectionInfo[] dataArray = (new List<SectionInfo>(this.sectionInfoDictionary.Values)).ToArray();

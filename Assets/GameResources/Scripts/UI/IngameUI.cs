@@ -23,7 +23,6 @@ public class IngameUI : MonoBehaviour
     {
         // timeScale이 0 이하이면 1로
         Time.timeScale = (Time.timeScale <= 0f) ? 1f : 0f;
-        TableManager.SectionInfoTable.GetSectionInfoArray(2, 6);
     }
 
     private void UpdatedUI(EVENT_TYPE eventType, Component sender, object param = null)
