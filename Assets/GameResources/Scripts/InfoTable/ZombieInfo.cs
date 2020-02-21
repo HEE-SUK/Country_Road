@@ -27,8 +27,8 @@
         this.color = _data.Color;
         this.vfx = _data.VFX;
 
-        this.zone = _data.Zone;
-        this.interval = _data.Interval;
+        // this.zone = _data.Zone;
+        // this.interval = _data.Interval;
 
         this.hp = _data.Hp;
         this.atk = _data.Atk;

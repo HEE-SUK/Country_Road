@@ -16,54 +16,38 @@ MonoBehaviour:
   scriptFilePath: QuickSheet/Runtime
   editorScriptFilePath: QuickSheet/GDataPlugin/Editor
   sheetName: CountryRoad
-  workSheetName: SectionTable
+  workSheetName: CheckPointTable
   columnHeaderList:
   - type: 1
-    name: SID
+    name: ID
     isEnable: 0
     isArray: 0
   - type: 3
     name: Index
     isEnable: 0
     isArray: 0
+  - type: 1
+    name: Name
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: Image
+    isEnable: 0
+    isArray: 0
   - type: 3
-    name: SectionBlocks
+    name: Distance
     isEnable: 0
     isArray: 0
   - type: 3
-    name: RhyChance
+    name: Gold
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: zh
+  - type: 3
+    name: Dia
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: ja
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: WallID
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: RhythmID
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: CheckPointID
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: ThemeID
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: ZombieID
-    isEnable: 0
-    isArray: 0
-  - type: 5
-    name: ZombieInterval
+  - type: 3
+    name: Exp
     isEnable: 0
     isArray: 0
   AccessCode: 

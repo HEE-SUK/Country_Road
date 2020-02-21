@@ -12,7 +12,7 @@ public partial class GoogleDataAssetUtility
     public static void CreateCheckPointTableAssetFile()
     {
         CheckPointTable asset = CustomAssetUtility.CreateAsset<CheckPointTable>();
-        asset.SheetName = "좀비카 레이싱";
+        asset.SheetName = "CountryRoad";
         asset.WorksheetName = "CheckPointTable";
         EditorUtility.SetDirty(asset);        
     }

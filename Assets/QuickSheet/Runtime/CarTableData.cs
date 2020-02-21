@@ -57,20 +57,16 @@ public class CarTableData
   public int Atk { get {return atk; } set { this.atk = value;} }
   
   [SerializeField]
-  float atkspd;
-  public float Atkspd { get {return atkspd; } set { this.atkspd = value;} }
-  
-  [SerializeField]
   int bullet;
   public int Bullet { get {return bullet; } set { this.bullet = value;} }
   
   [SerializeField]
-  int reload;
-  public int Reload { get {return reload; } set { this.reload = value;} }
+  float atkspd;
+  public float Atkspd { get {return atkspd; } set { this.atkspd = value;} }
   
   [SerializeField]
-  float dps;
-  public float DPS { get {return dps; } set { this.dps = value;} }
+  int reload;
+  public int Reload { get {return reload; } set { this.reload = value;} }
   
   [SerializeField]
   int price;
@@ -87,5 +83,9 @@ public class CarTableData
   [SerializeField]
   float lotto;
   public float Lotto { get {return lotto; } set { this.lotto = value;} }
+  
+  [SerializeField]
+  float dps;
+  public float DPS { get {return dps; } set { this.dps = value;} }
   
 }

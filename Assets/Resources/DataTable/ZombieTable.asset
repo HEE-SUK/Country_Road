@@ -12,16 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0717efde648944cd6850de24a2a0469f, type: 3}
   m_Name: ZombieTable
   m_EditorClassIdentifier: 
-  SheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
+  SheetName: CountryRoad
   WorksheetName: ZombieTable
   dataArray:
   - id: Z001
-    index: 0
+    index: 1
     model: 
     color: 
     vfx: 
-    zone: 1
-    interval: 1
     hp: 12
     atk: 3
     spd: 0.21
@@ -30,12 +28,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z002
-    index: 1
+    index: 2
     model: 
     color: 
     vfx: 
-    zone: 2
-    interval: 1
     hp: 43
     atk: 7
     spd: 0.22
@@ -44,12 +40,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z003
-    index: 2
+    index: 3
     model: 
     color: 
     vfx: 
-    zone: 3
-    interval: 1
     hp: 94
     atk: 13
     spd: 0.23
@@ -58,12 +52,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z004
-    index: 3
+    index: 4
     model: 
     color: 
     vfx: 
-    zone: 4
-    interval: 1
     hp: 165
     atk: 21
     spd: 0.24
@@ -72,12 +64,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z005
-    index: 4
+    index: 5
     model: 
     color: 
     vfx: 
-    zone: 5
-    interval: 1
     hp: 256
     atk: 31
     spd: 0.25
@@ -86,12 +76,10 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: Z006
-    index: 5
+    index: 6
     model: 
     color: 
     vfx: 
-    zone: 6
-    interval: 1
     hp: 367
     atk: 43
     spd: 0.26
@@ -100,12 +88,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z007
-    index: 6
+    index: 7
     model: 
     color: 
     vfx: 
-    zone: 7
-    interval: 1
     hp: 498
     atk: 57
     spd: 0.27
@@ -114,12 +100,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z008
-    index: 7
+    index: 8
     model: 
     color: 
     vfx: 
-    zone: 8
-    interval: 1
     hp: 649
     atk: 73
     spd: 0.28
@@ -128,12 +112,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z009
-    index: 8
+    index: 9
     model: 
     color: 
     vfx: 
-    zone: 9
-    interval: 1
     hp: 820
     atk: 91
     spd: 0.29
@@ -142,12 +124,10 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: Z010
-    index: 9
+    index: 10
     model: 
     color: 
     vfx: 
-    zone: 10
-    interval: 1
     hp: 1011
     atk: 111
     spd: 0.3
@@ -156,12 +136,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z011
-    index: 10
+    index: 11
     model: 
     color: 
     vfx: 
-    zone: 11
-    interval: 1
     hp: 1222
     atk: 133
     spd: 0.31
@@ -170,12 +148,10 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: Z012
-    index: 11
+    index: 12
     model: 
     color: 
     vfx: 
-    zone: 12
-    interval: 1
     hp: 1453
     atk: 157
     spd: 0.32
@@ -184,12 +160,10 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: Z013
-    index: 12
+    index: 13
     model: 
     color: 
     vfx: 
-    zone: 13
-    interval: 1
     hp: 1704
     atk: 183
     spd: 0.33
@@ -198,12 +172,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z014
-    index: 13
+    index: 14
     model: 
     color: 
     vfx: 
-    zone: 14
-    interval: 1
     hp: 1975
     atk: 211
     spd: 0.34
@@ -212,12 +184,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z015
-    index: 14
+    index: 15
     model: 
     color: 
     vfx: 
-    zone: 15
-    interval: 1
     hp: 2266
     atk: 241
     spd: 0.35
@@ -226,12 +196,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z016
-    index: 15
+    index: 16
     model: 
     color: 
     vfx: 
-    zone: 16
-    interval: 1
     hp: 2577
     atk: 273
     spd: 0.36
@@ -240,12 +208,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z017
-    index: 16
+    index: 17
     model: 
     color: 
     vfx: 
-    zone: 17
-    interval: 1
     hp: 2908
     atk: 307
     spd: 0.37
@@ -254,12 +220,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z018
-    index: 17
+    index: 18
     model: 
     color: 
     vfx: 
-    zone: 18
-    interval: 1
     hp: 3259
     atk: 343
     spd: 0.38
@@ -268,12 +232,10 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: Z019
-    index: 18
+    index: 19
     model: 
     color: 
     vfx: 
-    zone: 19
-    interval: 1
     hp: 3630
     atk: 381
     spd: 0.39
@@ -282,12 +244,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z020
-    index: 19
+    index: 20
     model: 
     color: 
     vfx: 
-    zone: 20
-    interval: 1
     hp: 4021
     atk: 421
     spd: 0.4
@@ -296,12 +256,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z021
-    index: 20
+    index: 21
     model: 
     color: 
     vfx: 
-    zone: 21
-    interval: 1
     hp: 4432
     atk: 463
     spd: 0.41
@@ -310,12 +268,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z022
-    index: 21
+    index: 22
     model: 
     color: 
     vfx: 
-    zone: 22
-    interval: 1
     hp: 4863
     atk: 507
     spd: 0.42
@@ -324,12 +280,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z023
-    index: 22
+    index: 23
     model: 
     color: 
     vfx: 
-    zone: 23
-    interval: 1
     hp: 5314
     atk: 553
     spd: 0.43
@@ -338,12 +292,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z024
-    index: 23
+    index: 24
     model: 
     color: 
     vfx: 
-    zone: 24
-    interval: 1
     hp: 5785
     atk: 601
     spd: 0.44
@@ -352,12 +304,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z025
-    index: 24
+    index: 25
     model: 
     color: 
     vfx: 
-    zone: 25
-    interval: 1
     hp: 6276
     atk: 651
     spd: 0.45
@@ -366,12 +316,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z026
-    index: 25
+    index: 26
     model: 
     color: 
     vfx: 
-    zone: 26
-    interval: 1
     hp: 6787
     atk: 703
     spd: 0.46
@@ -380,12 +328,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z027
-    index: 26
+    index: 27
     model: 
     color: 
     vfx: 
-    zone: 27
-    interval: 1
     hp: 7318
     atk: 757
     spd: 0.47
@@ -394,12 +340,10 @@ MonoBehaviour:
     dia: 2
     diaper: 1
   - id: Z028
-    index: 27
+    index: 28
     model: 
     color: 
     vfx: 
-    zone: 28
-    interval: 1
     hp: 7869
     atk: 813
     spd: 0.48
@@ -408,12 +352,10 @@ MonoBehaviour:
     dia: 3
     diaper: 1
   - id: Z029
-    index: 28
+    index: 29
     model: 
     color: 
     vfx: 
-    zone: 29
-    interval: 1
     hp: 8440
     atk: 871
     spd: 0.49
@@ -422,12 +364,10 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: Z030
-    index: 29
+    index: 30
     model: 
     color: 
     vfx: 
-    zone: 30
-    interval: 1
     hp: 9031
     atk: 931
     spd: 0.5
