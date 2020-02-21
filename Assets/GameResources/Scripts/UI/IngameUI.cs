@@ -23,18 +23,18 @@ public class IngameUI : MonoBehaviour
         this.jemText.text = $"{0}";
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
         
+        this.StartCoroutine(this.DebugRhythm());
     }
     public void SetPause()
     {
         // timeScale이 0 이하이면 1로
         Time.timeScale = (Time.timeScale <= 0f) ? 1f : 0f;
         // TableManager.SectionInfoTable.GetArray(2, 5);
-        this.StartCoroutine(this.DebugRhythm());
     }
 
     private IEnumerator DebugRhythm()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         this.SetRhythmPanel();
     }
     public void SetRhythmPanel()

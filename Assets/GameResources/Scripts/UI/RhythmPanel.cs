@@ -19,25 +19,15 @@ public class RhythmPanel : MonoBehaviour
     {
         RhythmInfo rhythmInfo = TableManager.RhythmInfoTable.GetInfo(_rhythmId);
         this.gameObject.SetActive(true);
-        this.rhythmTarget.Init(Random.Range(-180f, 180f), 0.8f, 0.6f);
+        this.rhythmTarget.Init( 0.9f, 0.8f);
         this.rhythmArrow.Init();
 
-        this.StartCoroutine(this.TimeSlow());
-    }
-    private IEnumerator TimeSlow()
-    {
-        // 속도 slow
-        while (Time.timeScale > 0.3f)
-        {
-            Time.timeScale -= 0.05f;
-            yield return new WaitForSeconds(0.1f);
-        }
+        Time.timeScale = 0.1f;
         EventManager.on(EVENT_TYPE.ON_TOUCH_START, this.OnTouched);
     }
     private void OnTouched(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 
-        
     }
 
     private void OnDisable()
