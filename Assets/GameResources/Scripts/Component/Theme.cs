@@ -8,6 +8,7 @@ public class Theme : MonoBehaviour
     [SerializeField] private GameObject[] house = null;
     [SerializeField] private GameObject[] powerpole = null;
     [SerializeField] private GameObject[] road = null; // 0: 신호 표시 있는거, 1: 신호표시 없는거
+    [SerializeField] private GameObject[] trafficlight;
     [SerializeField] private GameObject[] floor = null;
     [SerializeField] private GameObject[] ground = null;
     [SerializeField] private GameObject[] options = null;
@@ -23,6 +24,7 @@ public class Theme : MonoBehaviour
         DisableObjectArr(floor);
         DisableObjectArr(ground);
         DisableObjectArr(options);
+        DisableObjectArr(trafficlight);
         // 랜덤으로 객체 활성
         house[Random.Range(0,house.Length)].SetActive(true);
         powerpole[Random.Range(0,powerpole.Length)].SetActive(true);
@@ -41,6 +43,7 @@ public class Theme : MonoBehaviour
         // 신호 표시 있는 길과 없는길 규칙 적용 
         if(settingData.isCrossWalk){
             road[0].SetActive(true);
+            trafficlight[Random.Range(0,road.Length)].SetActive(true);
         }else{
             road[Random.Range(1,road.Length)].SetActive(true);
         }
