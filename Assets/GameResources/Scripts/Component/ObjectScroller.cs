@@ -4,35 +4,49 @@ using UnityEngine;
 
 public class ObjectScroller : MonoBehaviour
 {
-    // 스크롤 할 하나의 오브젝트
+    #region 인스펙터
+    [Header("블럭 프리펩")]
     [SerializeField] private GameObject scrollObject = null;
-    // 스크롤에 쓰일 오브젝트 수 
+    [Header("스크롤에 쓰일 오브젝트 수")]
     [SerializeField] private int objectCount = 0;
     // 앞 오브젝트와 간격
+    [Header("오브젝트 사이간격")]
     [SerializeField] private float objectSpacing = 0f;
     // 스크롤 시작 위치
+    [Header("스크롤 시작 위치")]
     [SerializeField] private Transform startPos = null;
     // 스크롤 끝 위치
+    [Header("스크롤 끝 위치")]
     [SerializeField] private Transform endPos = null;
-
-    // 오브젝트 큐 
-    private Queue<BlockController> scrollObjQueue = new Queue<BlockController>();
     // 통과한 블럭의 수
+    [Header("현재 통과한 블럭 수")]
     [SerializeField] int passBlockNum = 0;
     // Test 전용: 통과한 블럭 몇개당 벽을 생성할지
+    [Header("몇 블럭당 벽 생성")]
     [SerializeField] int wallSpawnTurm = 0;
     // Test 전용: 스크롤 스피드 
+    [Header("스크롤 스피드")]
     [SerializeField] float scrollSpeed = 1;
     // Test 전용: 횡단보도 몇개당 생성할지;
+    [Header("황단보도 생성 텀")]
     [SerializeField] int crossWalkNum = 5;
     // Test 전용: 현재 테마;
+    [Header("현재 테마")]
     [SerializeField] int currentThemeIndex = 0;
     // Test 전용: 벽 번호;
+    [Header("벽 레벨(0부터 시작)")]
     [SerializeField] int wallIndex = 0;
+    [Header("현재 벽 데이터 키값")]
     [SerializeField] string wallId = string.Empty;
+    [Header("현재 섹션 인덱스")]
+    [SerializeField] int curSecIndex = 0;
+    #endregion
+    
     // 블럭 생성 관련 변수 
     private Transform lastBlock = null;
     private List<GameObject> activeList = new List<GameObject>();
+    // 오브젝트 큐 
+    private Queue<BlockController> scrollObjQueue = new Queue<BlockController>();
     void Start()
     {
         Init();
@@ -80,6 +94,8 @@ public class ObjectScroller : MonoBehaviour
         bool wallActive = false;
         if(passBlockNum % wallSpawnTurm == 0){
             wallActive = true;
+            curSecIndex++;
+            wallIndex++;
         }
         else
             wallActive = false;
