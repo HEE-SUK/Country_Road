@@ -11,6 +11,10 @@ public class IngameUI : MonoBehaviour
     private Text goldText = null;
     [SerializeField]
     private Text jemText = null;
+    
+    
+    [SerializeField]
+    private RhythmPanel rhythmPanel = null;
 
     private void Awake()
     {
