@@ -21,9 +21,6 @@ public class ObjectScroller : MonoBehaviour
     // 통과한 블럭의 수
     [Header("현재 통과한 블럭 수")]
     [SerializeField] int passBlockNum = 0;
-    // Test 전용: 통과한 블럭 몇개당 벽을 생성할지
-    [Header("몇 블럭당 벽 생성")]
-    [SerializeField] int wallSpawnTurm = 0;
     // Test 전용: 스크롤 스피드 
     [Header("스크롤 스피드")]
     [SerializeField] float scrollSpeed = 1;
@@ -45,6 +42,11 @@ public class ObjectScroller : MonoBehaviour
     // 블럭 생성 관련 변수 
     private Transform lastBlock = null;
     private List<GameObject> activeList = new List<GameObject>();
+    private SectionInfo[] sectionInfos = null;
+    // 현재 섹션 정보
+    private SectionInfo curSecInfo = null;
+    // 현재 섹션에서 지나간 블럭 수 
+    private int passBlockNumInSection = 0;
     // 오브젝트 큐 
     private Queue<BlockController> scrollObjQueue = new Queue<BlockController>();
     void Start()
@@ -62,6 +64,9 @@ public class ObjectScroller : MonoBehaviour
     }
     void Init()
     {
+        this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex,TableManager.SectionInfoTable.GetLength() - 1);
+        this.curSecInfo = sectionInfos[curSecIndex];
+        Debug.Log(curSecInfo.wallID);
         for (int i = 0; i < objectCount; i++)
         {
             var pos = new Vector3(transform.position.x, transform.position.y, endPos.position.z + i * objectSpacing);
@@ -71,7 +76,7 @@ public class ObjectScroller : MonoBehaviour
             if (roadCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
             roadCon.Init(endPos.position,ScrollingObject,
-                new BlockObjectSettingInfo(this.currentThemeIndex,false,false,0,TableManager.WallInfoTable.GetInfo("W001")));
+                new BlockObjectSettingInfo(this.currentThemeIndex,false,false,0,TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
             if(i == objectCount - 1){
                 lastBlock = roadCon.transform;
             }
@@ -81,7 +86,9 @@ public class ObjectScroller : MonoBehaviour
     private void ScrollingObject(BlockController obj)
     {
         // 현재 지나간 블럭 수
-        passBlockNum++;        
+        passBlockNum++;
+        // 현재 섹션에서 지나간 블럭 수
+        passBlockNumInSection++;        
         // 스크롤링
         obj.gameObject.SetActive(false);
         scrollObjQueue.Enqueue(obj);
@@ -92,10 +99,14 @@ public class ObjectScroller : MonoBehaviour
         newObj.transform.position = new Vector3(lastBlock.position.x,lastBlock.position.y,lastBlock.position.z + objectSpacing);
         // 벽 생성 주기
         bool wallActive = false;
-        if(passBlockNum % wallSpawnTurm == 0){
+        if(passBlockNumInSection >= curSecInfo.sectionBlocks){
+            // 다음 섹션 넘어가기
             wallActive = true;
+            passBlockNumInSection = 0;
             curSecIndex++;
-            wallIndex++;
+            curSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
+            if(curSecInfo.checkPointID != "None")
+                Debug.Log("체크포인트 도달");
         }
         else
             wallActive = false;
@@ -105,7 +116,10 @@ public class ObjectScroller : MonoBehaviour
             isCrossWalk = true;
         }
         // 블럭 객체들 세팅하기 
-        newObj.SetBlockObject(new BlockObjectSettingInfo(currentThemeIndex,isCrossWalk,wallActive,wallIndex,TableManager.WallInfoTable.GetInfo(wallId)));
+        WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
+        wallId = curSecInfo.wallID;
+        // TODO: wall Index 바꿔야함 테이블에서 추가 필요 
+        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length-1].ToString()),isCrossWalk,wallActive,wallIndex,wallInfo));
         newObj.gameObject.SetActive(true);
         lastBlock = newObj.transform;
     }
