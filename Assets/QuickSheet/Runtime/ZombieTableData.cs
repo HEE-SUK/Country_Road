@@ -29,14 +29,6 @@ public class ZombieTableData
   public string VFX { get {return vfx; } set { this.vfx = value;} }
   
   [SerializeField]
-  int zone;
-  public int Zone { get {return zone; } set { this.zone = value;} }
-  
-  [SerializeField]
-  int interval;
-  public int Interval { get {return interval; } set { this.interval = value;} }
-  
-  [SerializeField]
   int hp;
   public int Hp { get {return hp; } set { this.hp = value;} }
   

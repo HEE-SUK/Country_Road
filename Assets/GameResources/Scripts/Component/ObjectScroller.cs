@@ -66,7 +66,7 @@ public class ObjectScroller : MonoBehaviour
     {
         this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex,TableManager.SectionInfoTable.GetLength() - 1);
         this.curSecInfo = sectionInfos[curSecIndex];
-        Debug.Log(curSecInfo.wallID);
+        // Debug.Log(curSecInfo.wallID);
         for (int i = 0; i < objectCount; i++)
         {
             var pos = new Vector3(transform.position.x, transform.position.y, endPos.position.z + i * objectSpacing);

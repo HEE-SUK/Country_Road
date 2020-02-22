@@ -12,7 +12,7 @@ public partial class GoogleDataAssetUtility
     public static void CreateWallTableAssetFile()
     {
         WallTable asset = CustomAssetUtility.CreateAsset<WallTable>();
-        asset.SheetName = "좀비카 레이싱";
+        asset.SheetName = "CountryRoad";
         asset.WorksheetName = "WallTable";
         EditorUtility.SetDirty(asset);        
     }

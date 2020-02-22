@@ -12,7 +12,7 @@ public partial class GoogleDataAssetUtility
     public static void CreateCarTableAssetFile()
     {
         CarTable asset = CustomAssetUtility.CreateAsset<CarTable>();
-        asset.SheetName = "좀비카 레이싱";
+        asset.SheetName = "CountryRoad";
         asset.WorksheetName = "CarTable";
         EditorUtility.SetDirty(asset);        
     }

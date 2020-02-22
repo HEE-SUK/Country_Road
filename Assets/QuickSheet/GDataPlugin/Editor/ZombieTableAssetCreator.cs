@@ -12,7 +12,7 @@ public partial class GoogleDataAssetUtility
     public static void CreateZombieTableAssetFile()
     {
         ZombieTable asset = CustomAssetUtility.CreateAsset<ZombieTable>();
-        asset.SheetName = "좀비카 레이싱";
+        asset.SheetName = "CountryRoad";
         asset.WorksheetName = "ZombieTable";
         EditorUtility.SetDirty(asset);        
     }

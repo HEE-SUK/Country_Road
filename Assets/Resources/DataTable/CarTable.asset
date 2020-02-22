@@ -12,486 +12,606 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b934d4cfca05b4639b037909d8412364, type: 3}
   m_Name: CarTable
   m_EditorClassIdentifier: 
-  SheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
+  SheetName: CountryRoad
   WorksheetName: CarTable
   dataArray:
   - id: C001
-    index: 0
+    index: 1
     name: Juciy
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 3
-    mspd: 111
-    rhm: 3
+    def: 1
+    mspd: 60
+    rhm: 10
     atk: 3
-    reload: 2
-    price: 0
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 1007
+    convertprice: 1000
     unittype: 0
     lotto: 0.1
+    dps: 10
   - id: C002
-    index: 1
+    index: 2
     name: Aria
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 7
-    mspd: 138
-    rhm: 7
+    def: 1
+    mspd: 70
+    rhm: 10.1
     atk: 7
-    reload: 2
-    price: 7
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 2028
+    convertprice: 2000
     unittype: 0
     lotto: 0.539898
+    dps: 23.33
   - id: C003
-    index: 2
+    index: 3
     name: Lilian
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 13
-    mspd: 181
-    rhm: 13
+    def: 1
+    mspd: 80
+    rhm: 10.2
     atk: 13
-    reload: 2
-    price: 13
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 4083
+    convertprice: 4100
     unittype: 0
     lotto: 0.176367
+    dps: 43.33
   - id: C004
-    index: 3
+    index: 4
     name: Anita
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 21
-    mspd: 240
-    rhm: 21
+    def: 1
+    mspd: 90
+    rhm: 10.3
     atk: 21
-    reload: 2
-    price: 21
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 8222
+    convertprice: 8200
     unittype: 0
     lotto: 0.086384
+    dps: 70
   - id: C005
-    index: 4
+    index: 5
     name: Brionna
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 31
-    mspd: 315
-    rhm: 31
+    def: 1
+    mspd: 100
+    rhm: 10.4
     atk: 31
-    reload: 2
-    price: 31
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 16558
+    convertprice: 17000
     unittype: 0
     lotto: 0.05075
+    dps: 103.33
   - id: C006
-    index: 5
+    index: 6
     name: Bailee
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 43
-    mspd: 406
-    rhm: 43
+    def: 1
+    mspd: 110
+    rhm: 10.5
     atk: 43
-    reload: 2
-    price: 43
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 33343
+    convertprice: 33000
     unittype: 0
     lotto: 0.033114
+    dps: 143.33
   - id: C007
-    index: 6
+    index: 7
     name: Elissa
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 57
-    mspd: 513
-    rhm: 57
+    def: 2
+    mspd: 120
+    rhm: 10.6
     atk: 57
-    reload: 2
-    price: 57
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 67145
+    convertprice: 67000
     unittype: 0
     lotto: 0.023139
+    dps: 190
   - id: C008
-    index: 7
+    index: 8
     name: Marisa
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 73
-    mspd: 636
-    rhm: 73
+    def: 2
+    mspd: 130
+    rhm: 10.7
     atk: 73
-    reload: 2
-    price: 73
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 135213
+    convertprice: 140000
     unittype: 0
     lotto: 0.016968
+    dps: 243.33
   - id: C009
-    index: 8
+    index: 9
     name: Katerina
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 91
-    mspd: 775
-    rhm: 91
+    def: 2
+    mspd: 140
+    rhm: 10.8
     atk: 91
-    reload: 2
-    price: 91
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 272286
+    convertprice: 270000
     unittype: 0
     lotto: 0.012898
+    dps: 303.33
   - id: C010
-    index: 9
+    index: 10
     name: Cristal
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 111
-    mspd: 930
-    rhm: 111
+    def: 2
+    mspd: 150
+    rhm: 10.9
     atk: 111
-    reload: 2
-    price: 111
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 548317
+    convertprice: 550000
     unittype: 0
     lotto: 0.010078
+    dps: 370
   - id: C011
-    index: 10
+    index: 11
     name: Alyssa
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 133
-    mspd: 1101
-    rhm: 133
+    def: 2
+    mspd: 160
+    rhm: 11
     atk: 133
-    reload: 2
-    price: 133
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 1104174
+    convertprice: 1100000
     unittype: 0
     lotto: 0.008049
+    dps: 443.33
   - id: C012
-    index: 11
+    index: 12
     name: Loren
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 157
-    mspd: 1288
-    rhm: 157
+    def: 2
+    mspd: 170
+    rhm: 11.1
     atk: 157
-    reload: 2
-    price: 157
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 2223533
+    convertprice: 2200000
     unittype: 0
     lotto: 0.006544
+    dps: 523.33
   - id: C013
-    index: 12
+    index: 13
     name: Keyla
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 183
-    mspd: 1491
-    rhm: 183
+    def: 2
+    mspd: 180
+    rhm: 11.2
     atk: 183
-    reload: 2
-    price: 183
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 4477646
+    convertprice: 4500000
     unittype: 0
     lotto: 0.005399
+    dps: 610
   - id: C014
-    index: 13
+    index: 14
     name: Eliza
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 211
-    mspd: 1710
-    rhm: 211
+    def: 2
+    mspd: 190
+    rhm: 11.3
     atk: 211
-    reload: 2
-    price: 211
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 9016872
+    convertprice: 9000000
     unittype: 0
     lotto: 0.004509
+    dps: 703.33
   - id: C015
-    index: 14
+    index: 15
     name: Johana
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 241
-    mspd: 1945
-    rhm: 241
+    def: 2
+    mspd: 200
+    rhm: 11.4
     atk: 241
-    reload: 2
-    price: 241
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 18157751
+    convertprice: 18000000
     unittype: 0
     lotto: 0.003805
+    dps: 803.33
   - id: C016
-    index: 15
+    index: 16
     name: Christy
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 273
-    mspd: 2196
-    rhm: 273
+    def: 2
+    mspd: 210
+    rhm: 11.5
     atk: 273
-    reload: 2
-    price: 273
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 36565221
+    convertprice: 37000000
     unittype: 0
     lotto: 0.003239
+    dps: 910
   - id: C017
-    index: 16
+    index: 17
     name: Dana
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 307
-    mspd: 2463
-    rhm: 307
+    def: 3
+    mspd: 220
+    rhm: 11.6
     atk: 307
-    reload: 2
-    price: 307
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 73633313
+    convertprice: 74000000
     unittype: 0
     lotto: 0.002779
+    dps: 1023.33
   - id: C018
-    index: 17
+    index: 18
     name: Alia
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 343
-    mspd: 2746
-    rhm: 343
+    def: 3
+    mspd: 230
+    rhm: 11.7
     atk: 343
-    reload: 2
-    price: 343
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 148279283
+    convertprice: 150000000
     unittype: 0
     lotto: 0.0024
+    dps: 1143.33
   - id: C019
-    index: 18
+    index: 19
     name: Lola
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 381
-    mspd: 3045
-    rhm: 381
+    def: 3
+    mspd: 240
+    rhm: 11.8
     atk: 381
-    reload: 2
-    price: 381
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 298597807
+    convertprice: 300000000
     unittype: 0
     lotto: 0.002084
+    dps: 1270
   - id: C020
-    index: 19
+    index: 20
     name: Carissa
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 421
-    mspd: 3360
-    rhm: 421
+    def: 3
+    mspd: 250
+    rhm: 11.9
     atk: 421
-    reload: 2
-    price: 421
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 601302142
+    convertprice: 600000000
     unittype: 0
     lotto: 0.001819
+    dps: 1403.33
   - id: C021
-    index: 20
+    index: 21
     name: Hailee
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 463
-    mspd: 3691
-    rhm: 463
+    def: 3
+    mspd: 260
+    rhm: 12
     atk: 463
-    reload: 2
-    price: 463
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 1210873817
+    convertprice: 1200000000
     unittype: 0
     lotto: 0.001594
+    dps: 1543.33
   - id: C022
-    index: 21
+    index: 22
     name: Kenzie
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 507
-    mspd: 4038
-    rhm: 507
-    atk: 507
-    reload: 2
-    price: 3
+    def: 3
+    mspd: 150
+    rhm: 11
+    atk: 21
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 30
+    convertprice: 30
     unittype: 1
     lotto: 0.001402
+    dps: 70
   - id: C023
-    index: 22
+    index: 23
     name: Justine
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 553
-    mspd: 4401
-    rhm: 553
-    atk: 553
-    reload: 2
-    price: 7
+    def: 3
+    mspd: 150
+    rhm: 11.2
+    atk: 43
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 70
+    convertprice: 70
     unittype: 1
     lotto: 0.001238
+    dps: 143.33
   - id: C024
-    index: 23
+    index: 24
     name: Elaine
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 601
-    mspd: 4780
-    rhm: 601
-    atk: 601
-    reload: 2
-    price: 13
+    def: 3
+    mspd: 170
+    rhm: 11.4
+    atk: 73
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 120
+    convertprice: 120
     unittype: 1
     lotto: 0.001095
+    dps: 243.33
   - id: C025
-    index: 24
+    index: 25
     name: Casey
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 651
-    mspd: 5175
-    rhm: 651
-    atk: 651
-    reload: 2
-    price: 21
+    def: 3
+    mspd: 170
+    rhm: 11.6
+    atk: 111
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 180
+    convertprice: 180
     unittype: 1
     lotto: 0.000972
+    dps: 370
   - id: C026
-    index: 25
+    index: 26
     name: Kassandra
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 703
-    mspd: 5586
-    rhm: 703
-    atk: 703
-    reload: 2
-    price: 31
+    def: 3
+    mspd: 190
+    rhm: 11.6
+    atk: 157
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 250
+    convertprice: 250
     unittype: 1
     lotto: 0.000864
+    dps: 523.33
   - id: C027
-    index: 26
+    index: 27
     name: Bit
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 757
-    mspd: 6013
-    rhm: 757
-    atk: 757
-    reload: 2
-    price: 43
+    def: 4
+    mspd: 190
+    rhm: 11.8
+    atk: 211
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 600
+    convertprice: 600
     unittype: 1
     lotto: 0.000769
+    dps: 703.33
   - id: C028
-    index: 27
+    index: 28
     name: Pop
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 813
-    mspd: 6456
-    rhm: 813
-    atk: 813
-    reload: 2
-    price: 57
+    def: 4
+    mspd: 220
+    rhm: 12
+    atk: 273
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 1200
+    convertprice: 1200
     unittype: 1
     lotto: 0.000686
+    dps: 910
   - id: C029
-    index: 28
+    index: 29
     name: Hannah
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 871
-    mspd: 6915
-    rhm: 871
-    atk: 871
-    reload: 2
-    price: 73
+    def: 4
+    mspd: 220
+    rhm: 12
+    atk: 343
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 1900
+    convertprice: 1900
     unittype: 1
     lotto: 0.000612
+    dps: 1143.33
   - id: C030
-    index: 29
+    index: 30
     name: Frankie
     description: 
     image: 
     model: 
     color: 
     vfx: 
-    def: 931
-    mspd: 7390
-    rhm: 931
-    atk: 931
-    reload: 2
-    price: 91
+    def: 4
+    mspd: 250
+    rhm: 12
+    atk: 421
+    bullet: 10
+    atkspd: 0.2
+    reload: 1
+    price: 3000
+    convertprice: 3000
     unittype: 1
     lotto: 0.000546
+    dps: 1403.33

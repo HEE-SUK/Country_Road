@@ -16,3 +16,9 @@ public enum PRODUCTTYPE
     DIA,
     BOX,
 }
+public enum RHYTHMTYPE
+{
+    FAIL,
+    GOOD,
+    GREAT,
+}

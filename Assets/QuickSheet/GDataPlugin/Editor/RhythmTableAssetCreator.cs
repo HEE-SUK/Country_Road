@@ -12,7 +12,7 @@ public partial class GoogleDataAssetUtility
     public static void CreateRhythmTableAssetFile()
     {
         RhythmTable asset = CustomAssetUtility.CreateAsset<RhythmTable>();
-        asset.SheetName = "좀비카 레이싱";
+        asset.SheetName = "CountryRoad";
         asset.WorksheetName = "RhythmTable";
         EditorUtility.SetDirty(asset);        
     }

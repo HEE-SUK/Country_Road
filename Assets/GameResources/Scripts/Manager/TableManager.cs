@@ -5,7 +5,6 @@ using UnityEngine;
 public class TableManager : Singleton<TableManager>
 {
     // 'TableManager.해당테이블.GetInfo(아이디)'로 호출해서 원하는 정보 추출
-    
     public static CarInfoTable CarInfoTable 
     {
         get { return Instance.carInfoTable;}

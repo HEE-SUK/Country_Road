@@ -78,7 +78,7 @@ public class Theme : MonoBehaviour
     }
     private void DisableObjectArr(GameObject[] objArr){
         if(objArr.Length == 0){
-            Debug.Log("DisableObjectArr Failed, objArr.Length is " + objArr.Length);
+            // Debug.Log("DisableObjectArr Failed, objArr.Length is " + objArr.Length);
             return;
         }
         for (int i = 0; i < objArr.Length; i++)

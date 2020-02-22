@@ -10,28 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff58b2fffdbbf4ee0a303d89ec90ba96, type: 3}
-  m_Name: CheckPointTable
+  m_Name: New CheckPointTable
   m_EditorClassIdentifier: 
-  SheetName: "\uC880\uBE44\uCE74 \uB808\uC774\uC2F1"
+  SheetName: CountryRoad
   WorksheetName: CheckPointTable
   dataArray:
   - id: CP001
-    index: 0
-    name: 
-    image: 
-    distance: 150
-    gold: 3
-    dia: 3
-    exp: 3
-  - id: CP002
     index: 1
     name: 
     image: 
-    distance: 300
+    distance: 150
     gold: 7
     dia: 7
     exp: 7
-  - id: CP003
+  - id: CP002
     index: 2
     name: 
     image: 
@@ -39,7 +31,7 @@ MonoBehaviour:
     gold: 13
     dia: 13
     exp: 13
-  - id: CP004
+  - id: CP003
     index: 3
     name: 
     image: 
@@ -47,7 +39,7 @@ MonoBehaviour:
     gold: 21
     dia: 21
     exp: 21
-  - id: CP005
+  - id: CP004
     index: 4
     name: 
     image: 
@@ -55,7 +47,7 @@ MonoBehaviour:
     gold: 31
     dia: 31
     exp: 31
-  - id: CP006
+  - id: CP005
     index: 5
     name: 
     image: 
@@ -63,7 +55,7 @@ MonoBehaviour:
     gold: 43
     dia: 43
     exp: 43
-  - id: CP007
+  - id: CP006
     index: 6
     name: 
     image: 
@@ -71,7 +63,7 @@ MonoBehaviour:
     gold: 57
     dia: 57
     exp: 57
-  - id: CP008
+  - id: CP007
     index: 7
     name: 
     image: 
@@ -79,7 +71,7 @@ MonoBehaviour:
     gold: 73
     dia: 73
     exp: 73
-  - id: CP009
+  - id: CP008
     index: 8
     name: 
     image: 
@@ -87,7 +79,7 @@ MonoBehaviour:
     gold: 91
     dia: 91
     exp: 91
-  - id: CP010
+  - id: CP009
     index: 9
     name: 
     image: 
@@ -95,7 +87,7 @@ MonoBehaviour:
     gold: 111
     dia: 111
     exp: 111
-  - id: CP011
+  - id: CP010
     index: 10
     name: 
     image: 
@@ -103,7 +95,7 @@ MonoBehaviour:
     gold: 133
     dia: 133
     exp: 133
-  - id: CP012
+  - id: CP011
     index: 11
     name: 
     image: 
@@ -111,7 +103,7 @@ MonoBehaviour:
     gold: 157
     dia: 157
     exp: 157
-  - id: CP013
+  - id: CP012
     index: 12
     name: 
     image: 
@@ -119,7 +111,7 @@ MonoBehaviour:
     gold: 183
     dia: 183
     exp: 183
-  - id: CP014
+  - id: CP013
     index: 13
     name: 
     image: 
@@ -127,7 +119,7 @@ MonoBehaviour:
     gold: 211
     dia: 211
     exp: 211
-  - id: CP015
+  - id: CP014
     index: 14
     name: 
     image: 
@@ -135,7 +127,7 @@ MonoBehaviour:
     gold: 241
     dia: 241
     exp: 241
-  - id: CP016
+  - id: CP015
     index: 15
     name: 
     image: 
@@ -143,7 +135,7 @@ MonoBehaviour:
     gold: 273
     dia: 273
     exp: 273
-  - id: CP017
+  - id: CP016
     index: 16
     name: 
     image: 
@@ -151,7 +143,7 @@ MonoBehaviour:
     gold: 307
     dia: 307
     exp: 307
-  - id: CP018
+  - id: CP017
     index: 17
     name: 
     image: 
@@ -159,7 +151,7 @@ MonoBehaviour:
     gold: 343
     dia: 343
     exp: 343
-  - id: CP019
+  - id: CP018
     index: 18
     name: 
     image: 
@@ -167,7 +159,7 @@ MonoBehaviour:
     gold: 381
     dia: 381
     exp: 381
-  - id: CP020
+  - id: CP019
     index: 19
     name: 
     image: 
@@ -175,7 +167,7 @@ MonoBehaviour:
     gold: 421
     dia: 421
     exp: 421
-  - id: CP021
+  - id: CP020
     index: 20
     name: 
     image: 
@@ -183,7 +175,7 @@ MonoBehaviour:
     gold: 463
     dia: 463
     exp: 463
-  - id: CP022
+  - id: CP021
     index: 21
     name: 
     image: 
@@ -191,7 +183,7 @@ MonoBehaviour:
     gold: 507
     dia: 507
     exp: 507
-  - id: CP023
+  - id: CP022
     index: 22
     name: 
     image: 
@@ -199,7 +191,7 @@ MonoBehaviour:
     gold: 553
     dia: 553
     exp: 553
-  - id: CP024
+  - id: CP023
     index: 23
     name: 
     image: 
@@ -207,7 +199,7 @@ MonoBehaviour:
     gold: 601
     dia: 601
     exp: 601
-  - id: CP025
+  - id: CP024
     index: 24
     name: 
     image: 
@@ -215,7 +207,7 @@ MonoBehaviour:
     gold: 651
     dia: 651
     exp: 651
-  - id: CP026
+  - id: CP025
     index: 25
     name: 
     image: 
@@ -223,7 +215,7 @@ MonoBehaviour:
     gold: 703
     dia: 703
     exp: 703
-  - id: CP027
+  - id: CP026
     index: 26
     name: 
     image: 
@@ -231,7 +223,7 @@ MonoBehaviour:
     gold: 757
     dia: 757
     exp: 757
-  - id: CP028
+  - id: CP027
     index: 27
     name: 
     image: 
@@ -239,7 +231,7 @@ MonoBehaviour:
     gold: 813
     dia: 813
     exp: 813
-  - id: CP029
+  - id: CP028
     index: 28
     name: 
     image: 
@@ -247,7 +239,7 @@ MonoBehaviour:
     gold: 871
     dia: 871
     exp: 871
-  - id: CP030
+  - id: CP029
     index: 29
     name: 
     image: 
@@ -255,3 +247,11 @@ MonoBehaviour:
     gold: 931
     dia: 931
     exp: 931
+  - id: CP030
+    index: 30
+    name: 
+    image: 
+    distance: 4650
+    gold: 993
+    dia: 993
+    exp: 993
