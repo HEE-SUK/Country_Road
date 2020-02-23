@@ -22,7 +22,6 @@ public class IngameUI : MonoBehaviour
         this.goldText.text = $"{0}";
         this.jemText.text = $"{0}";
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
-        EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
         
         this.StartCoroutine(this.DebugRhythm());
     }
@@ -47,15 +46,9 @@ public class IngameUI : MonoBehaviour
     {
         // 골드, 금화, 체크포인트, 미터기 갱신
     }
-    private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
-    {
-        // 디버그용: 리듬터치시
-        this.StartCoroutine(this.DebugRhythm());
-    }
     
     private void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
-        EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
     }
 }

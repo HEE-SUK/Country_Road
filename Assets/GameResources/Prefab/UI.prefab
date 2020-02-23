@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 2583128380773045914}
   - component: {fileID: 2583128380773045915}
   - component: {fileID: 2583128380773045912}
+  - component: {fileID: 5929016030968643699}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -639,9 +640,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 8326806318130635994}
   - {fileID: 5430481738548039074}
   - {fileID: 9049727015337832175}
-  - {fileID: 8326806318130635994}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -710,6 +711,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5929016030968643699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583128380773045913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f4588db03154ac592c72702365fb75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingameUI: {fileID: 6985388336091895705}
+  outgameUI: {fileID: 408637565215977840}
 --- !u!1 &3012012436474577865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1358,7 @@ RectTransform:
   - {fileID: 795149614862521782}
   - {fileID: 7696363514440776073}
   m_Father: {fileID: 2583128380773045989}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1671,7 +1686,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2583128380773045989}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1939,6 +1954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9049727015337832175}
   - component: {fileID: 5152489004065069247}
+  - component: {fileID: 408637565215977840}
   m_Layer: 5
   m_Name: OutgameUI
   m_TagString: Untagged
@@ -1958,7 +1974,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2583128380773045989}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1980,6 +1996,18 @@ MonoBehaviour:
   ConformX: 0
   ConformY: 1
   Logging: 1
+--- !u!114 &408637565215977840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8556217484514577648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e53e1152d5b42f09033ccd557ebfb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8634208944414591765
 GameObject:
   m_ObjectHideFlags: 0
