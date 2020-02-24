@@ -7,10 +7,11 @@ public enum EVENT_TYPE {
     ON_TOUCH_START,
     ON_TOUCH_END,
     // 인게임
+    GAME_START,
     TOUCH_RHYTHM,
     UPDATE_UI,
     GAME_OVER,
-    SECTION_CHANGE
+    CHANGE_SECTION
 }
 
 public class EventManager: Singleton<EventManager> 
