@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff58b2fffdbbf4ee0a303d89ec90ba96, type: 3}
-  m_Name: New CheckPointTable
+  m_Name: CheckPointTable
   m_EditorClassIdentifier: 
   SheetName: CountryRoad
   WorksheetName: CheckPointTable
