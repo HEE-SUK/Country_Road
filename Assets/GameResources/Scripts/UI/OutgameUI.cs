@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class OutgameUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        this.gameObject.SetActive(false);
+    }
+    public void Init()
+    {
+        this.gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

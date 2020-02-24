@@ -8,14 +8,19 @@ public class UI : MonoBehaviour
     private IngameUI ingameUI = null;
     [SerializeField]
     private OutgameUI outgameUI = null;
-    void Start()
+    private void Awake()
     {
-        
+        // 아웃게임과 인게임 UI 스위치 및 전체적인 데이터만 관리
+    }
+    private void Start()
+    {
+        // 아웃게임과 인게임 UI 스위치 및 전체적인 데이터만 관리
+        this.outgameUI.Init();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartGame()
     {
-        
+        this.ingameUI.Init();
     }
+
 }

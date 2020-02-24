@@ -10,7 +10,7 @@ public enum EVENT_TYPE {
     TOUCH_RHYTHM,
     UPDATE_UI,
     GAME_OVER,
-    SECTION_CHANGE
+    CHANGE_SECTION
 }
 
 public class EventManager: Singleton<EventManager> 

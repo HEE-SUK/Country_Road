@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
+    // [SerializeField]
+    // private ObjectScroller objectScroller = null;
     private void Start()
     {
         EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
-        EventManager.on(EVENT_TYPE.SECTION_CHANGE, this.SectionChange);
+        // EventManager.on(EVENT_TYPE.CHANGE_SECTION, this.SectionChange);
 
     }
 
@@ -15,15 +17,15 @@ public class World : MonoBehaviour
     {
         float extraSpeed = (float)param;
         // Debug.Log($"추가 속도: {extraSpeed}");
+        // this.objectScroller.ChangeScollSpeed(extraSpeed, true);
     }
-    private void SectionChange(EVENT_TYPE eventType, Component sender, object param = null)
-    {
-        string extraSpeed = (string)param;
-        Debug.Log($"현재 섹션: {extraSpeed}");
-    }
+    // private void SectionChange(EVENT_TYPE eventType, Component sender, object param = null)
+    // {
+    //     string extraSpeed = (string)param;
+    //     Debug.Log($"현재 섹션: {extraSpeed}");
+    // }
     void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
-
     }
 }
