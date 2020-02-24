@@ -11,6 +11,7 @@ public enum EVENT_TYPE {
     TOUCH_RHYTHM,
     UPDATE_UI,
     GAME_OVER,
+    WALL_BROKEN,
     CHANGE_SECTION
 }
 
