@@ -47,8 +47,6 @@ public class RhythmPanel : MonoBehaviour
         }
         Time.timeScale = 1f;
         EventManager.emit(EVENT_TYPE.TOUCH_RHYTHM, this, extraSpeed);
-        
-        // TODO: 추가되는 속도 어디다가 보내는지 world 에 보내서 받을수있게 제어
         this.gameObject.SetActive(false);
     }
 

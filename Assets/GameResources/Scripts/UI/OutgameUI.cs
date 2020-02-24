@@ -13,4 +13,8 @@ public class OutgameUI : MonoBehaviour
         this.gameObject.SetActive(true);
     }
 
+    public void StartGame()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
