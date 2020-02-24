@@ -766,7 +766,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8625ff2d533014e008f84f2f4f3aa59b, type: 3}
-<<<<<<< HEAD
 --- !u!1001 &1587606412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -836,5 +835,4 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021f46ff04a084c26b1fd93d2b2fb770, type: 3}
-=======
->>>>>>> develop
+
