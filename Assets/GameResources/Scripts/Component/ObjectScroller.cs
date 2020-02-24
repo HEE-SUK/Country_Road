@@ -39,6 +39,15 @@ public class ObjectScroller : MonoBehaviour
     [SerializeField] int curSecIndex = 0;
     #endregion
     
+    public SectionInfo CurSecInfo{
+        get{
+            return curSecInfo;
+        }set{
+            curSecInfo = value;
+            EventManager.emit(EVENT_TYPE.SECTION_CHANGE,this,curSecInfo.id);
+        }
+    }
+
     // 블럭 생성 관련 변수 
     private Transform lastBlock = null;
     private List<GameObject> activeList = new List<GameObject>();
@@ -49,24 +58,39 @@ public class ObjectScroller : MonoBehaviour
     private int passBlockNumInSection = 0;
     // 오브젝트 큐 
     private Queue<BlockController> scrollObjQueue = new Queue<BlockController>();
+
+
+    // Mono
     void Start()
     {
         Init();
         GameManager.GameSpeed = scrollSpeed;
     }
     void Update(){
-        // Test
         GameManager.GameSpeed = scrollSpeed;
         for (int i = 0; i < activeList.Count; i++)
         {
             activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
         }
     }
-    void Init()
+    void OnDestroy()
     {
+        EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
+
+    }
+
+
+    private void Init()
+    {
+        OnEvent();
+        DataSetting();
+        InstantiateScrollObj();
+    }
+    private void DataSetting(){
         this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex,TableManager.SectionInfoTable.GetLength() - 1);
-        this.curSecInfo = sectionInfos[curSecIndex];
-        // Debug.Log(curSecInfo.wallID);
+        this.CurSecInfo = sectionInfos[curSecIndex];
+    }
+    private void InstantiateScrollObj(){
         for (int i = 0; i < objectCount; i++)
         {
             var pos = new Vector3(transform.position.x, transform.position.y, endPos.position.z + i * objectSpacing);
@@ -82,6 +106,24 @@ public class ObjectScroller : MonoBehaviour
             }
         }
     }
+    private void OnEvent(){
+        EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, TouchRhythm);
+    }
+
+    private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
+    {
+        float extraSpeed = (float)param;
+        // Debug.Log($"추가 속도: {extraSpeed}");
+        ChangeScollSpeed(extraSpeed, true);
+    }
+
+    public void ChangeScollSpeed(float speed, bool isPlus){
+        float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
+        this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
+        Debug.Log($"현재 속도: {this.scrollSpeed}");
+
+    }
+
     // 스크롤 오브젝트가 끝 위치에 진입했을때 불릴 함수
     private void ScrollingObject(BlockController obj)
     {
@@ -104,8 +146,8 @@ public class ObjectScroller : MonoBehaviour
             wallActive = true;
             passBlockNumInSection = 0;
             curSecIndex++;
-            curSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
-            if(curSecInfo.checkPointID != "None")
+            CurSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
+            if(curSecInfo.checkPointID != "None") // Test용 
                 Debug.Log("체크포인트 도달");
         }
         else
