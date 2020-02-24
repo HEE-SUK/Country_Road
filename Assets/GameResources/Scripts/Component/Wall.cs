@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
-    // [SerializeField] private GameObject[] walls;
     private WallInfo wallInfo;
     public void Init(WallInfo wallInfo){
         this.wallInfo = wallInfo;
@@ -13,7 +12,7 @@ public class Wall : MonoBehaviour
     void OnTriggerEnter(Collider collider){
         if(collider.CompareTag("Player")){
             Debug.Log("Player 충돌" + wallInfo.id);
-            this.gameObject.SetActive(false);
+            ObjectPoolDictionary.Instance.RemoveObject(gameObject, wallInfo.model);
         }
     }
 }
