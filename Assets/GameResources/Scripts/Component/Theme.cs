@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Theme : MonoBehaviour
 {
-    [SerializeField] private GameObject[] wall = null;
     [SerializeField] private GameObject[] leftHouse = null;
     [SerializeField] private GameObject[] rightHouse = null;
 
@@ -22,7 +21,6 @@ public class Theme : MonoBehaviour
     public void Init(BlockObjectSettingInfo settingData){
         
         // 세팅 전 비활성화
-        DisableObjectArr(wall);
         DisableObjectArr(leftHouse);
         DisableObjectArr(powerpole);
         DisableObjectArr(rightHouse);
@@ -42,17 +40,6 @@ public class Theme : MonoBehaviour
         rightFloor[Random.Range(0,rightFloor.Length)].SetActive(true);
         rightGround[Random.Range(0,rightGround.Length)].SetActive(true);
         powerpole[Random.Range(0,powerpole.Length)].SetActive(true);
-        // 벽 생성
-        if(settingData.isWallActive){
-            int wallIndex = settingData.wallIndex < wall.Length ? settingData.wallIndex : wall.Length - 1;
-            Wall activeWall = wall[wallIndex].GetComponent<Wall>();
-            if(activeWall == null)
-                Debug.Log("this object have not WallComponent");
-            activeWall.Init(settingData.wallInfo);
-            wall[wallIndex].SetActive(true);
-        }else{
-
-        }
         
         // 신호 표시 있는 길과 없는길 규칙 적용 
         if(settingData.isCrossWalk){

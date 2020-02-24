@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BlockController : MonoBehaviour
 {
-    // 벽 
     [SerializeField] private BlockObjectSet blockObjectSet; 
     private Vector3 endPos = new Vector3(0f, 0f, 0f);
     private EndPosAction endPosAction = null;
