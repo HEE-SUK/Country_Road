@@ -44,7 +44,7 @@ public class ObjectScroller : MonoBehaviour
             return curSecInfo;
         }set{
             curSecInfo = value;
-            EventManager.emit(EVENT_TYPE.SECTION_CHANGE,this,curSecInfo.id);
+            EventManager.emit(EVENT_TYPE.CHANGE_SECTION,this,curSecInfo.id);
         }
     }
 
