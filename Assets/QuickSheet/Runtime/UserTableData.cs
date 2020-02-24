@@ -6,7 +6,7 @@ using System.Collections;
 /// !!! DO NOT CHANGE Tabs to Spaces !!!
 ///
 [System.Serializable]
-public class WallTableData
+public class UserTableData
 {
   [SerializeField]
   string id;
@@ -17,24 +17,16 @@ public class WallTableData
   public int Index { get {return index; } set { this.index = value;} }
   
   [SerializeField]
-  string model;
-  public string Model { get {return model; } set { this.model = value;} }
+  string name;
+  public string Name { get {return name; } set { this.name = value;} }
   
   [SerializeField]
-  string color;
-  public string Color { get {return color; } set { this.color = value;} }
+  string car;
+  public string Car { get {return car; } set { this.car = value;} }
   
   [SerializeField]
-  string vfx;
-  public string VFX { get {return vfx; } set { this.vfx = value;} }
-  
-  [SerializeField]
-  float def;
-  public float Def { get {return def; } set { this.def = value;} }
-  
-  [SerializeField]
-  int exp;
-  public int Exp { get {return exp; } set { this.exp = value;} }
+  int startspd;
+  public int Startspd { get {return startspd; } set { this.startspd = value;} }
   
   [SerializeField]
   int gold;
@@ -43,9 +35,5 @@ public class WallTableData
   [SerializeField]
   int dia;
   public int Dia { get {return dia; } set { this.dia = value;} }
-  
-  [SerializeField]
-  int diaper;
-  public int Diaper { get {return diaper; } set { this.diaper = value;} }
   
 }

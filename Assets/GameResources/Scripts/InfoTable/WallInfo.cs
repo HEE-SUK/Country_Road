@@ -7,7 +7,7 @@
     public string color {get;}
     public string vfx {get;}
 
-    public int def {get;}
+    public float def {get;}
     public int exp {get;}
     public int gold {get;}
     public int dia {get;}

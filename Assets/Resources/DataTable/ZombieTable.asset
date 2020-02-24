@@ -20,10 +20,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 12
-    atk: 3
+    hp: 7
+    atk: 2
     spd: 0.21
-    exp: 3
+    exp: 2
     gold: 3
     dia: 2
     diaper: 1
@@ -32,10 +32,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 43
-    atk: 7
+    hp: 23
+    atk: 3
     spd: 0.22
-    exp: 7
+    exp: 4
     gold: 7
     dia: 3
     diaper: 1
@@ -44,10 +44,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 94
-    atk: 13
+    hp: 49
+    atk: 4
     spd: 0.23
-    exp: 13
+    exp: 7
     gold: 13
     dia: 3
     diaper: 1
@@ -56,10 +56,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 165
-    atk: 21
+    hp: 85
+    atk: 5
     spd: 0.24
-    exp: 21
+    exp: 11
     gold: 21
     dia: 2
     diaper: 1
@@ -68,10 +68,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 256
-    atk: 31
+    hp: 131
+    atk: 6
     spd: 0.25
-    exp: 31
+    exp: 16
     gold: 31
     dia: 1
     diaper: 1
@@ -80,10 +80,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 367
-    atk: 43
+    hp: 187
+    atk: 7
     spd: 0.26
-    exp: 43
+    exp: 22
     gold: 43
     dia: 2
     diaper: 1
@@ -92,10 +92,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 498
-    atk: 57
+    hp: 253
+    atk: 8
     spd: 0.27
-    exp: 57
+    exp: 29
     gold: 57
     dia: 3
     diaper: 1
@@ -104,10 +104,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 649
-    atk: 73
+    hp: 329
+    atk: 9
     spd: 0.28
-    exp: 73
+    exp: 37
     gold: 73
     dia: 3
     diaper: 1
@@ -116,10 +116,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 820
-    atk: 91
+    hp: 415
+    atk: 10
     spd: 0.29
-    exp: 91
+    exp: 46
     gold: 91
     dia: 1
     diaper: 1
@@ -128,10 +128,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1011
-    atk: 111
+    hp: 511
+    atk: 11
     spd: 0.3
-    exp: 111
+    exp: 56
     gold: 111
     dia: 2
     diaper: 1
@@ -140,10 +140,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1222
-    atk: 133
+    hp: 617
+    atk: 12
     spd: 0.31
-    exp: 133
+    exp: 67
     gold: 133
     dia: 1
     diaper: 1
@@ -152,10 +152,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1453
-    atk: 157
+    hp: 733
+    atk: 13
     spd: 0.32
-    exp: 157
+    exp: 79
     gold: 157
     dia: 1
     diaper: 1
@@ -164,10 +164,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1704
-    atk: 183
+    hp: 859
+    atk: 14
     spd: 0.33
-    exp: 183
+    exp: 92
     gold: 183
     dia: 3
     diaper: 1
@@ -176,10 +176,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1975
-    atk: 211
+    hp: 995
+    atk: 15
     spd: 0.34
-    exp: 211
+    exp: 106
     gold: 211
     dia: 2
     diaper: 1
@@ -188,10 +188,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2266
-    atk: 241
+    hp: 1141
+    atk: 16
     spd: 0.35
-    exp: 241
+    exp: 121
     gold: 241
     dia: 2
     diaper: 1
@@ -200,10 +200,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2577
-    atk: 273
+    hp: 1297
+    atk: 17
     spd: 0.36
-    exp: 273
+    exp: 137
     gold: 273
     dia: 3
     diaper: 1
@@ -212,10 +212,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2908
-    atk: 307
+    hp: 1463
+    atk: 18
     spd: 0.37
-    exp: 307
+    exp: 154
     gold: 307
     dia: 3
     diaper: 1
@@ -224,10 +224,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 3259
-    atk: 343
+    hp: 1639
+    atk: 19
     spd: 0.38
-    exp: 343
+    exp: 172
     gold: 343
     dia: 1
     diaper: 1
@@ -236,10 +236,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 3630
-    atk: 381
+    hp: 1825
+    atk: 20
     spd: 0.39
-    exp: 381
+    exp: 191
     gold: 381
     dia: 2
     diaper: 1
@@ -248,10 +248,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 4021
-    atk: 421
+    hp: 2021
+    atk: 21
     spd: 0.4
-    exp: 421
+    exp: 211
     gold: 421
     dia: 3
     diaper: 1
@@ -260,10 +260,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 4432
-    atk: 463
+    hp: 2227
+    atk: 22
     spd: 0.41
-    exp: 463
+    exp: 232
     gold: 463
     dia: 2
     diaper: 1
@@ -272,10 +272,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 4863
-    atk: 507
+    hp: 2443
+    atk: 23
     spd: 0.42
-    exp: 507
+    exp: 254
     gold: 507
     dia: 2
     diaper: 1
@@ -284,10 +284,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 5314
-    atk: 553
+    hp: 2669
+    atk: 24
     spd: 0.43
-    exp: 553
+    exp: 277
     gold: 553
     dia: 2
     diaper: 1
@@ -296,10 +296,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 5785
-    atk: 601
+    hp: 2905
+    atk: 25
     spd: 0.44
-    exp: 601
+    exp: 301
     gold: 601
     dia: 3
     diaper: 1
@@ -308,10 +308,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 6276
-    atk: 651
+    hp: 3151
+    atk: 26
     spd: 0.45
-    exp: 651
+    exp: 326
     gold: 651
     dia: 3
     diaper: 1
@@ -320,10 +320,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 6787
-    atk: 703
+    hp: 3407
+    atk: 27
     spd: 0.46
-    exp: 703
+    exp: 352
     gold: 703
     dia: 3
     diaper: 1
@@ -332,10 +332,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 7318
-    atk: 757
+    hp: 3673
+    atk: 28
     spd: 0.47
-    exp: 757
+    exp: 379
     gold: 757
     dia: 2
     diaper: 1
@@ -344,10 +344,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 7869
-    atk: 813
+    hp: 3949
+    atk: 29
     spd: 0.48
-    exp: 813
+    exp: 407
     gold: 813
     dia: 3
     diaper: 1
@@ -356,10 +356,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 8440
-    atk: 871
+    hp: 4235
+    atk: 30
     spd: 0.49
-    exp: 871
+    exp: 436
     gold: 871
     dia: 1
     diaper: 1
@@ -368,10 +368,10 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 9031
-    atk: 931
+    hp: 4531
+    atk: 31
     spd: 0.5
-    exp: 931
+    exp: 466
     gold: 931
     dia: 3
     diaper: 1

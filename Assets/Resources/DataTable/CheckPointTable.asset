@@ -20,238 +20,238 @@ MonoBehaviour:
     name: 
     image: 
     distance: 150
-    gold: 7
-    dia: 7
-    exp: 7
+    gold: 200
+    dia: 10
+    exp: 10
   - id: CP002
     index: 2
     name: 
     image: 
     distance: 450
-    gold: 13
-    dia: 13
-    exp: 13
+    gold: 245
+    dia: 15
+    exp: 16
   - id: CP003
     index: 3
     name: 
     image: 
     distance: 600
-    gold: 21
-    dia: 21
-    exp: 21
+    gold: 299
+    dia: 20
+    exp: 24
   - id: CP004
     index: 4
     name: 
     image: 
     distance: 750
-    gold: 31
-    dia: 31
-    exp: 31
+    gold: 365
+    dia: 25
+    exp: 34
   - id: CP005
     index: 5
     name: 
     image: 
     distance: 900
-    gold: 43
-    dia: 43
-    exp: 43
+    gold: 446
+    dia: 30
+    exp: 46
   - id: CP006
     index: 6
     name: 
     image: 
     distance: 1050
-    gold: 57
-    dia: 57
-    exp: 57
+    gold: 544
+    dia: 35
+    exp: 60
   - id: CP007
     index: 7
     name: 
     image: 
     distance: 1200
-    gold: 73
-    dia: 73
-    exp: 73
+    gold: 665
+    dia: 40
+    exp: 76
   - id: CP008
     index: 8
     name: 
     image: 
     distance: 1350
-    gold: 91
-    dia: 91
-    exp: 91
+    gold: 812
+    dia: 45
+    exp: 94
   - id: CP009
     index: 9
     name: 
     image: 
     distance: 1500
-    gold: 111
-    dia: 111
-    exp: 111
+    gold: 992
+    dia: 50
+    exp: 114
   - id: CP010
     index: 10
     name: 
     image: 
     distance: 1650
-    gold: 133
-    dia: 133
-    exp: 133
+    gold: 1212
+    dia: 55
+    exp: 136
   - id: CP011
     index: 11
     name: 
     image: 
     distance: 1800
-    gold: 157
-    dia: 157
-    exp: 157
+    gold: 1480
+    dia: 60
+    exp: 160
   - id: CP012
     index: 12
     name: 
     image: 
     distance: 1950
-    gold: 183
-    dia: 183
-    exp: 183
+    gold: 1808
+    dia: 65
+    exp: 186
   - id: CP013
     index: 13
     name: 
     image: 
     distance: 2100
-    gold: 211
-    dia: 211
-    exp: 211
+    gold: 2208
+    dia: 70
+    exp: 214
   - id: CP014
     index: 14
     name: 
     image: 
     distance: 2250
-    gold: 241
-    dia: 241
-    exp: 241
+    gold: 2697
+    dia: 75
+    exp: 244
   - id: CP015
     index: 15
     name: 
     image: 
     distance: 2400
-    gold: 273
-    dia: 273
-    exp: 273
+    gold: 3294
+    dia: 80
+    exp: 276
   - id: CP016
     index: 16
     name: 
     image: 
     distance: 2550
-    gold: 307
-    dia: 307
-    exp: 307
+    gold: 4023
+    dia: 85
+    exp: 310
   - id: CP017
     index: 17
     name: 
     image: 
     distance: 2700
-    gold: 343
-    dia: 343
-    exp: 343
+    gold: 4914
+    dia: 90
+    exp: 346
   - id: CP018
     index: 18
     name: 
     image: 
     distance: 2850
-    gold: 381
-    dia: 381
-    exp: 381
+    gold: 6002
+    dia: 95
+    exp: 384
   - id: CP019
     index: 19
     name: 
     image: 
     distance: 3000
-    gold: 421
-    dia: 421
-    exp: 421
+    gold: 7331
+    dia: 100
+    exp: 424
   - id: CP020
     index: 20
     name: 
     image: 
     distance: 3150
-    gold: 463
-    dia: 463
-    exp: 463
+    gold: 8954
+    dia: 105
+    exp: 466
   - id: CP021
     index: 21
     name: 
     image: 
     distance: 3300
-    gold: 507
-    dia: 507
-    exp: 507
+    gold: 10937
+    dia: 110
+    exp: 510
   - id: CP022
     index: 22
     name: 
     image: 
     distance: 3450
-    gold: 553
-    dia: 553
-    exp: 553
+    gold: 13358
+    dia: 115
+    exp: 556
   - id: CP023
     index: 23
     name: 
     image: 
     distance: 3600
-    gold: 601
-    dia: 601
-    exp: 601
+    gold: 16315
+    dia: 120
+    exp: 604
   - id: CP024
     index: 24
     name: 
     image: 
     distance: 3750
-    gold: 651
-    dia: 651
-    exp: 651
+    gold: 19928
+    dia: 125
+    exp: 654
   - id: CP025
     index: 25
     name: 
     image: 
     distance: 3900
-    gold: 703
-    dia: 703
-    exp: 703
+    gold: 24340
+    dia: 130
+    exp: 706
   - id: CP026
     index: 26
     name: 
     image: 
     distance: 4050
-    gold: 757
-    dia: 757
-    exp: 757
+    gold: 29729
+    dia: 135
+    exp: 760
   - id: CP027
     index: 27
     name: 
     image: 
     distance: 4200
-    gold: 813
-    dia: 813
-    exp: 813
+    gold: 36311
+    dia: 140
+    exp: 816
   - id: CP028
     index: 28
     name: 
     image: 
     distance: 4350
-    gold: 871
-    dia: 871
-    exp: 871
+    gold: 44350
+    dia: 145
+    exp: 874
   - id: CP029
     index: 29
     name: 
     image: 
     distance: 4500
-    gold: 931
-    dia: 931
-    exp: 931
+    gold: 54169
+    dia: 150
+    exp: 934
   - id: CP030
     index: 30
     name: 
     image: 
     distance: 4650
-    gold: 993
-    dia: 993
-    exp: 993
+    gold: 66162
+    dia: 155
+    exp: 996
