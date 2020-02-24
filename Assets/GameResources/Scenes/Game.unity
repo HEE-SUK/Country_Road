@@ -704,6 +704,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3353813609035165019, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353813609035165019, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353813609035165019, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353813609035165019, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3509784765548539388, guid: 8625ff2d533014e008f84f2f4f3aa59b,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -720,6 +740,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3509784765548539388, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532151703659273832, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532151703659273832, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532151703659273832, guid: 8625ff2d533014e008f84f2f4f3aa59b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532151703659273832, guid: 8625ff2d533014e008f84f2f4f3aa59b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0

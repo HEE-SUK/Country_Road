@@ -15,7 +15,7 @@ public class RhythmTarget : MonoBehaviour
     private float goodDegree = 0f;
     private float greatDegree = 0f;
     private float currentTarget = 0f;
-    public void Init(float _greatAmount, float _goodAmount)
+    public void Init(float _goodAmount, float _greatAmount)
     {
         float randomTarget = this.originDegree * (1 - _goodAmount) / 2;
         this.currentTarget = Random.Range(-randomTarget, randomTarget);
