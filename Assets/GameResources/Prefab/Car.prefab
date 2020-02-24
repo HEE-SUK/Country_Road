@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7064839633382036061}
   - component: {fileID: 7064839633382036060}
   - component: {fileID: 7064839633382036051}
+  - component: {fileID: 7251337715937750132}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Car
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,6 +63,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7251337715937750132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064839633382036062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917dcec4ef236479fa7d38970a143281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallBrokenParticle: {fileID: 1504631991481324611, guid: f48dbb66c16dc4622a5a842f10d45450,
+    type: 3}
 --- !u!1001 &8053293132581787512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,7 +92,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c0ea2f4e1b8ba44979eecc6ba6c884eb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c0ea2f4e1b8ba44979eecc6ba6c884eb,
         type: 3}

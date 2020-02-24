@@ -76,7 +76,7 @@ public class ObjectScroller : MonoBehaviour
     void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
-
+        EventManager.off(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
     }
 
 
@@ -100,7 +100,7 @@ public class ObjectScroller : MonoBehaviour
             if (roadCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
             roadCon.Init(endPos.position,ScrollingObject,
-                new BlockObjectSettingInfo(this.currentThemeIndex,false,false,0,TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
+                new BlockObjectSettingInfo(this.currentThemeIndex,false,false,TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
             if(i == objectCount - 1){
                 lastBlock = roadCon.transform;
             }
@@ -108,6 +108,7 @@ public class ObjectScroller : MonoBehaviour
     }
     private void OnEvent(){
         EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, TouchRhythm);
+        EventManager.on(EVENT_TYPE.WALL_BROKEN,WallBroken);
     }
 
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
@@ -116,12 +117,18 @@ public class ObjectScroller : MonoBehaviour
         // Debug.Log($"추가 속도: {extraSpeed}");
         ChangeScollSpeed(extraSpeed, true);
     }
+    private void WallBroken(EVENT_TYPE eventType, Component sender, object param = null){
+        WallInfo info = (WallInfo)param;
+        ChangeScollSpeed(info.def,false);
+
+        // Debug.Log(info.def);
+    }
+
 
     public void ChangeScollSpeed(float speed, bool isPlus){
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
-        Debug.Log($"현재 속도: {this.scrollSpeed}");
-
+        // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }
 
     // 스크롤 오브젝트가 끝 위치에 진입했을때 불릴 함수
@@ -160,8 +167,7 @@ public class ObjectScroller : MonoBehaviour
         // 블럭 객체들 세팅하기 
         WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
         wallId = curSecInfo.wallID;
-        // TODO: wall Index 바꿔야함 테이블에서 추가 필요 
-        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length-1].ToString()),isCrossWalk,wallActive,wallIndex,wallInfo));
+        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length-1].ToString()) - 1,isCrossWalk,wallActive,wallInfo));
         newObj.gameObject.SetActive(true);
         lastBlock = newObj.transform;
     }
