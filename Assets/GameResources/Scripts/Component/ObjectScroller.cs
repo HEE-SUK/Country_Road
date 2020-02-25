@@ -19,8 +19,8 @@ public class ObjectScroller : MonoBehaviour
     [Header("스크롤 끝 위치")]
     [SerializeField] private Transform endPos = null;
     // 통과한 블럭의 수
-    [Header("현재 통과한 블럭 수")]
-    [SerializeField] int passBlockNum = 0;
+    [Header("현재 통과한 섹션 수")]
+    [SerializeField] int passSectionNum = 0;
     // Test 전용: 스크롤 스피드 
     [Header("스크롤 스피드")]
     [SerializeField] float scrollSpeed = 1;
@@ -38,13 +38,17 @@ public class ObjectScroller : MonoBehaviour
     [Header("현재 섹션 인덱스")]
     [SerializeField] int curSecIndex = 0;
     #endregion
-    
-    public SectionInfo CurSecInfo{
-        get{
+
+    public SectionInfo CurSecInfo
+    {
+        get
+        {
             return curSecInfo;
-        }set{
+        }
+        set
+        {
             curSecInfo = value;
-            EventManager.emit(EVENT_TYPE.CHANGE_SECTION,this,curSecInfo.id);
+            EventManager.emit(EVENT_TYPE.CHANGE_SECTION, this, curSecInfo.id);
         }
     }
 
@@ -54,10 +58,11 @@ public class ObjectScroller : MonoBehaviour
     private SectionInfo[] sectionInfos = null;
     // 현재 섹션 정보
     private SectionInfo curSecInfo = null;
-    // 현재 섹션에서 지나간 블럭 수 
-    private int passBlockNumInSection = 0;
     // 오브젝트 큐 
     private Queue<BlockController> scrollObjQueue = new Queue<BlockController>();
+
+    // 현재 지나온 거리
+    private float curPassDistance = 0;
 
 
     // Mono
@@ -66,8 +71,10 @@ public class ObjectScroller : MonoBehaviour
         Init();
         GameManager.GameSpeed = scrollSpeed;
     }
-    void Update(){
+    void Update()
+    {
         GameManager.GameSpeed = scrollSpeed;
+        curPassDistance += scrollSpeed * Time.deltaTime;
         for (int i = 0; i < activeList.Count; i++)
         {
             activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
@@ -86,11 +93,13 @@ public class ObjectScroller : MonoBehaviour
         DataSetting();
         InstantiateScrollObj();
     }
-    private void DataSetting(){
-        this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex,TableManager.SectionInfoTable.GetLength() - 1);
+    private void DataSetting()
+    {
+        this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex, TableManager.SectionInfoTable.GetLength() - 1);
         this.CurSecInfo = sectionInfos[curSecIndex];
     }
-    private void InstantiateScrollObj(){
+    private void InstantiateScrollObj()
+    {
         for (int i = 0; i < objectCount; i++)
         {
             var pos = new Vector3(transform.position.x, transform.position.y, endPos.position.z + i * objectSpacing);
@@ -99,16 +108,18 @@ public class ObjectScroller : MonoBehaviour
             roadCon.name = i.ToString();
             if (roadCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
-            roadCon.Init(endPos.position,ScrollingObject,
-                new BlockObjectSettingInfo(this.currentThemeIndex,false,false,TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
-            if(i == objectCount - 1){
+            roadCon.Init(endPos.position, ScrollingObject,
+                new BlockObjectSettingInfo(this.currentThemeIndex, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
+            if (i == objectCount - 1)
+            {
                 lastBlock = roadCon.transform;
             }
         }
     }
-    private void OnEvent(){
+    private void OnEvent()
+    {
         EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, TouchRhythm);
-        EventManager.on(EVENT_TYPE.WALL_BROKEN,WallBroken);
+        EventManager.on(EVENT_TYPE.WALL_BROKEN, WallBroken);
     }
 
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
@@ -117,15 +128,17 @@ public class ObjectScroller : MonoBehaviour
         // Debug.Log($"추가 속도: {extraSpeed}");
         ChangeScollSpeed(extraSpeed, true);
     }
-    private void WallBroken(EVENT_TYPE eventType, Component sender, object param = null){
+    private void WallBroken(EVENT_TYPE eventType, Component sender, object param = null)
+    {
         WallInfo info = (WallInfo)param;
-        ChangeScollSpeed(info.def,false);
+        ChangeScollSpeed(info.def, false);
 
         // Debug.Log(info.def);
     }
 
 
-    public void ChangeScollSpeed(float speed, bool isPlus){
+    public void ChangeScollSpeed(float speed, bool isPlus)
+    {
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
@@ -134,41 +147,25 @@ public class ObjectScroller : MonoBehaviour
     // 스크롤 오브젝트가 끝 위치에 진입했을때 불릴 함수
     private void ScrollingObject(BlockController obj)
     {
-        // 현재 지나간 블럭 수
-        passBlockNum++;
-        // 현재 섹션에서 지나간 블럭 수
-        passBlockNumInSection++;        
         // 스크롤링
         obj.gameObject.SetActive(false);
         scrollObjQueue.Enqueue(obj);
         activeList.Remove(obj.gameObject);
         var newObj = scrollObjQueue.Dequeue();
         activeList.Add(newObj.gameObject);
-        if(lastBlock != null)
-        newObj.transform.position = new Vector3(lastBlock.position.x,lastBlock.position.y,lastBlock.position.z + objectSpacing);
-        // 벽 생성 주기
-        bool wallActive = false;
-        if(passBlockNumInSection >= curSecInfo.sectionBlocks){
-            // 다음 섹션 넘어가기
-            wallActive = true;
-            passBlockNumInSection = 0;
-            curSecIndex++;
-            CurSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
-            if(curSecInfo.checkPointID != "None") // Test용 
-                Debug.Log("체크포인트 도달");
-        }
-        else
-            wallActive = false;
-        // 횡단보도 생성 주기
-        bool isCrossWalk = false;
-        if(passBlockNum % crossWalkNum == 0){
-            isCrossWalk = true;
-        }
+        if (lastBlock != null)
+            newObj.transform.position = new Vector3(lastBlock.position.x, lastBlock.position.y, lastBlock.position.z + objectSpacing);
+        curSecIndex++;
+        CurSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
+        if (curSecInfo.checkPointID != "None") // Test용 
+            Debug.Log("체크포인트 도달");
         // 블럭 객체들 세팅하기 
+        Debug.Log(curSecInfo.wallID);
         WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
         wallId = curSecInfo.wallID;
-        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length-1].ToString()) - 1,isCrossWalk,wallActive,wallInfo));
+        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length - 1].ToString()) - 1, wallInfo));
         newObj.gameObject.SetActive(true);
         lastBlock = newObj.transform;
+        Debug.Log("현재 지나온 거리: " + curPassDistance);
     }
 }
