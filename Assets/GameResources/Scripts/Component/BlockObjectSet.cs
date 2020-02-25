@@ -17,6 +17,11 @@ public class BlockObjectSet : MonoBehaviour
             this.themes[themes.Length - 1].Init();
             this.themes[themes.Length - 1].gameObject.SetActive(true);
         }
+        var obj = ObjectPoolDictionary.Instance.GetObjectPrefab(settingInfo.wallInfo.model);
+        obj.GetComponent<Wall>().Init(settingInfo.wallInfo);
+        obj.transform.SetParent(this.transform);
+        obj.transform.position = wallPos.position;
+        obj.SetActive(true);
     }
     private void DisableObjectArr(Theme[] objArr){
         if(objArr.Length == 0){

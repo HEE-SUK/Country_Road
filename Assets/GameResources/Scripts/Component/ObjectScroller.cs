@@ -78,7 +78,7 @@ public class ObjectScroller : MonoBehaviour
             if (blockCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
             blockCon.Init(endPos.position, ScrollEndCallBack,
-                new BlockObjectSettingInfo(this.currentThemeIndex, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
+                new BlockObjectSettingInfo(this.currentThemeIndex,false, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
             if (i == objectCount - 1)
             {
                 lastBlock = blockCon.transform;
@@ -106,7 +106,7 @@ public class ObjectScroller : MonoBehaviour
             newObj.transform.position = new Vector3(lastBlock.position.x, lastBlock.position.y, lastBlock.position.z + objectSpacing);
         SectionInfo curSecInfo = this.scrollEndDataSetting();
         WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
-        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length - 1].ToString()) - 1, wallInfo));
+        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length - 1].ToString()) - 1,true, wallInfo));
         newObj.gameObject.SetActive(true);
         lastBlock = newObj.transform;
         Debug.Log("현재 지나온 거리: " + curPassDistance);
