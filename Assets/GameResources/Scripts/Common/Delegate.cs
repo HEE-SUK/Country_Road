@@ -5,3 +5,5 @@ using UnityEngine;
 public delegate void CallBack();
 
 public delegate void EndPosAction(BlockController roadPieceController);
+
+public delegate SectionInfo ScrollEndDataSetting();

@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &317422431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3693429525123492093, guid: f766ba158d9c44520a19bfc931dfe6e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 894604368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78c84b89b79142faaf1d3712927486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &424219272 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7064839633382036061, guid: 021f46ff04a084c26b1fd93d2b2fb770,
@@ -172,6 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d43c20bda7754aa18c9d2dfd1aa2a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectScroller: {fileID: 317422431}
+  curSecIndex: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +260,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 4.542e-42, w: 1.04e-43}
+  m_BoundingSphereOverride: {x: -Infinity, y: 4.5474732e-13, z: 0, w: 1.8e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
