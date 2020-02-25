@@ -107,14 +107,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollObject: {fileID: 4670017627637977437, guid: c4e9bf89f5b5a4f05a7574e50d6a3165,
     type: 3}
-  objectCount: 20
-  objectSpacing: 10
+  objectCount: 5
+  objectSpacing: 100
   startPos: {fileID: 2587558934615451315}
   endPos: {fileID: 2596189606748350998}
-  passBlockNum: 0
-  wallSpawnTurm: 10
+  passSectionNum: 0
   scrollSpeed: 30
   crossWalkNum: 5
   currentThemeIndex: 0
   wallIndex: 0
   wallId: W003
+  curSecIndex: 1

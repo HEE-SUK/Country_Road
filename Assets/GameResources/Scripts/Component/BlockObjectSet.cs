@@ -8,22 +8,15 @@ public class BlockObjectSet : MonoBehaviour
     [SerializeField] private Theme[] themes = null;
     public void SetBlock(BlockObjectSettingInfo settingInfo){
         DisableObjectArr(themes);
-        if(settingInfo.isWallActive){
-
-            Wall activeWall = ObjectPoolDictionary.Instance.GetObjectPrefab(settingInfo.wallInfo.model).GetComponent<Wall>();
-            if(activeWall == null)
-                Debug.Log("this object have not WallComponent");
-            activeWall.transform.SetParent(this.transform);
-            activeWall.transform.position = wallPos.transform.position;
-            activeWall.Init(settingInfo.wallInfo);
-            activeWall.gameObject.SetActive(true);
-        }
         if(settingInfo.themeIndex < themes.Length){
-            this.themes[settingInfo.themeIndex].Init(settingInfo);
+            this.themes[settingInfo.themeIndex].Init();
             this.themes[settingInfo.themeIndex].gameObject.SetActive(true);
         }
-        else
+        else{
             Debug.Log("SetBlock: 해당 테마가 없음 " + settingInfo.themeIndex);
+            this.themes[themes.Length - 1].Init();
+            this.themes[themes.Length - 1].gameObject.SetActive(true);
+        }
     }
     private void DisableObjectArr(Theme[] objArr){
         if(objArr.Length == 0){
