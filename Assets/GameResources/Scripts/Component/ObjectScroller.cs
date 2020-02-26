@@ -106,9 +106,10 @@ public class ObjectScroller : MonoBehaviour
             newObj.transform.position = new Vector3(lastBlock.position.x, lastBlock.position.y, lastBlock.position.z + objectSpacing);
         SectionInfo curSecInfo = this.scrollEndDataSetting();
         WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
-        newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length - 1].ToString()) - 1,true, wallInfo));
-        newObj.gameObject.SetActive(true);
-        lastBlock = newObj.transform;
+        // TODO: 여기 주석 해제
+        // newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length - 1].ToString()) - 1,true, wallInfo));
+        // newObj.gameObject.SetActive(true);
+        // lastBlock = newObj.transform;
         Debug.Log("현재 지나온 거리: " + curPassDistance);
     }
 }
