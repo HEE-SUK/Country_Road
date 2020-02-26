@@ -17,240 +17,240 @@ MonoBehaviour:
   dataArray:
   - rid: R001
     index: 0
-    barsize1: 0.1
-    barsize2: 0.01
+    barsize1: 0.2
+    barsize2: 0.1
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R002
     index: 1
-    barsize1: 0.1
-    barsize2: 0.00999
+    barsize1: 0.2
+    barsize2: 0.099965
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R003
     index: 2
-    barsize1: 0.0999
-    barsize2: 0.00998
+    barsize1: 0.1999
+    barsize2: 0.09993
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R004
     index: 3
-    barsize1: 0.0999
-    barsize2: 0.00997
+    barsize1: 0.1999
+    barsize2: 0.099895
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R005
     index: 4
-    barsize1: 0.0998
-    barsize2: 0.00996
+    barsize1: 0.1998
+    barsize2: 0.09986
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R006
     index: 5
-    barsize1: 0.0998
-    barsize2: 0.00995
+    barsize1: 0.1998
+    barsize2: 0.099825
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R007
     index: 6
-    barsize1: 0.0997
-    barsize2: 0.00994
+    barsize1: 0.1997
+    barsize2: 0.09979
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R008
     index: 7
-    barsize1: 0.0997
-    barsize2: 0.00993
+    barsize1: 0.1997
+    barsize2: 0.099755
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R009
     index: 8
-    barsize1: 0.0996
-    barsize2: 0.00992
+    barsize1: 0.1996
+    barsize2: 0.09972
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R010
     index: 9
-    barsize1: 0.0996
-    barsize2: 0.00991
+    barsize1: 0.1996
+    barsize2: 0.099685
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R011
     index: 10
-    barsize1: 0.0995
-    barsize2: 0.0099
+    barsize1: 0.1995
+    barsize2: 0.09965
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R012
     index: 11
-    barsize1: 0.0995
-    barsize2: 0.00989
+    barsize1: 0.1995
+    barsize2: 0.099615
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R013
     index: 12
-    barsize1: 0.0994
-    barsize2: 0.00988
+    barsize1: 0.1994
+    barsize2: 0.09958
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R014
     index: 13
-    barsize1: 0.0994
-    barsize2: 0.00987
+    barsize1: 0.1994
+    barsize2: 0.099545
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R015
     index: 14
-    barsize1: 0.0993
-    barsize2: 0.00986
+    barsize1: 0.1993
+    barsize2: 0.09951
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R016
     index: 15
-    barsize1: 0.0993
-    barsize2: 0.009851
+    barsize1: 0.1993
+    barsize2: 0.099476
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R017
     index: 16
-    barsize1: 0.0992
-    barsize2: 0.009841
+    barsize1: 0.1992
+    barsize2: 0.099441
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R018
     index: 17
-    barsize1: 0.0992
-    barsize2: 0.009831
+    barsize1: 0.1992
+    barsize2: 0.099406
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R019
     index: 18
-    barsize1: 0.0991
-    barsize2: 0.009821
+    barsize1: 0.1991
+    barsize2: 0.099371
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R020
     index: 19
-    barsize1: 0.0991
-    barsize2: 0.009811
+    barsize1: 0.1991
+    barsize2: 0.099336
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R021
     index: 20
-    barsize1: 0.099
-    barsize2: 0.009801
+    barsize1: 0.199
+    barsize2: 0.099301
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R022
     index: 21
-    barsize1: 0.099
-    barsize2: 0.009791
+    barsize1: 0.199
+    barsize2: 0.099266
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R023
     index: 22
-    barsize1: 0.0989
-    barsize2: 0.009781
+    barsize1: 0.1989
+    barsize2: 0.099231
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R024
     index: 23
-    barsize1: 0.0989
-    barsize2: 0.009771
+    barsize1: 0.1989
+    barsize2: 0.099196
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R025
     index: 24
-    barsize1: 0.0988
-    barsize2: 0.009761
+    barsize1: 0.1988
+    barsize2: 0.099161
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R026
     index: 25
-    barsize1: 0.0988
-    barsize2: 0.009752
+    barsize1: 0.1988
+    barsize2: 0.099127
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R027
     index: 26
-    barsize1: 0.0987
-    barsize2: 0.009742
+    barsize1: 0.1987
+    barsize2: 0.099092
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R028
     index: 27
-    barsize1: 0.0987
-    barsize2: 0.009732
+    barsize1: 0.1987
+    barsize2: 0.099057
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R029
     index: 28
-    barsize1: 0.0986
-    barsize2: 0.009722
+    barsize1: 0.1986
+    barsize2: 0.099022
     barsize3: 1
     spd1: 30
     spd2: 50
     spd3: 10
   - rid: R030
     index: 29
-    barsize1: 0.0986
-    barsize2: 0.009712
+    barsize1: 0.1986
+    barsize2: 0.098987
     barsize3: 1
     spd1: 30
     spd2: 50

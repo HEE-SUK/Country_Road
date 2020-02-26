@@ -13,19 +13,17 @@ public class RhythmPanel : MonoBehaviour
 
 
     private RhythmInfo rhythmInfo = null;
-    private void Awake()
+    void Awake()
     {
         this.gameObject.SetActive(false);
     }
     public void Init(string _rhythmId)
     {
-        // TODO: RID 어디서 받아오는지?
         this.rhythmInfo = TableManager.RhythmInfoTable.GetInfo(_rhythmId);
         this.gameObject.SetActive(true);
         this.rhythmTarget.Init(this.rhythmInfo.barSize1, this.rhythmInfo.barSize2);
         this.rhythmArrow.Init();
 
-        Time.timeScale = 0.1f;
         EventManager.on(EVENT_TYPE.ON_TOUCH_START, this.OnTouched);
     }
     private void OnTouched(EVENT_TYPE eventType, Component sender, object param = null)
@@ -45,12 +43,11 @@ public class RhythmPanel : MonoBehaviour
                 extraSpeed = this.rhythmInfo.spd3;
                 break;
         }
-        Time.timeScale = 1f;
         EventManager.emit(EVENT_TYPE.TOUCH_RHYTHM, this, extraSpeed);
         this.gameObject.SetActive(false);
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
         EventManager.off(EVENT_TYPE.ON_TOUCH_START, this.OnTouched);
     }
