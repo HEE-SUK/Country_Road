@@ -11,7 +11,7 @@ public class Wall : MonoBehaviour
 
     void OnTriggerEnter(Collider collider){
         if(collider.CompareTag("Player")){
-            Debug.Log("Player 충돌" + wallInfo.id);
+            // Debug.Log("Player 충돌" + wallInfo.id);
             ObjectPoolDictionary.Instance.RemoveObject(gameObject, wallInfo.model);
             EventManager.emit(EVENT_TYPE.WALL_BROKEN,this,wallInfo);
         }
