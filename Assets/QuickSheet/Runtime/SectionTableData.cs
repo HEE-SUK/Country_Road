@@ -17,24 +17,20 @@ public class SectionTableData
   public int Index { get {return index; } set { this.index = value;} }
   
   [SerializeField]
-  int sectionblocks;
-  public int Sectionblocks { get {return sectionblocks; } set { this.sectionblocks = value;} }
+  int themeindex;
+  public int Themeindex { get {return themeindex; } set { this.themeindex = value;} }
   
   [SerializeField]
-  int rhychance;
-  public int Rhychance { get {return rhychance; } set { this.rhychance = value;} }
-  
-  [SerializeField]
-  string model;
-  public string Model { get {return model; } set { this.model = value;} }
-  
-  [SerializeField]
-  string color;
-  public string Color { get {return color; } set { this.color = value;} }
+  bool wallbool;
+  public bool Wallbool { get {return wallbool; } set { this.wallbool = value;} }
   
   [SerializeField]
   string wallid;
   public string Wallid { get {return wallid; } set { this.wallid = value;} }
+  
+  [SerializeField]
+  bool rhybool;
+  public bool Rhybool { get {return rhybool; } set { this.rhybool = value;} }
   
   [SerializeField]
   string rhythmid;
@@ -43,10 +39,6 @@ public class SectionTableData
   [SerializeField]
   string checkpointid;
   public string Checkpointid { get {return checkpointid; } set { this.checkpointid = value;} }
-  
-  [SerializeField]
-  string themeid;
-  public string Themeid { get {return themeid; } set { this.themeid = value;} }
   
   [SerializeField]
   string zombieid;
