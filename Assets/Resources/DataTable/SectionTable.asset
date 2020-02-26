@@ -17,1201 +17,1001 @@ MonoBehaviour:
   dataArray:
   - sid: S001
     index: 0
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W001
+    rhybool: 1
     rhythmid: R001
     checkpointid: None
-    themeid: T001
     zombieid: Z001
     zombieinterval: 0.8
   - sid: S002
     index: 1
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W001
+    rhybool: 1
     rhythmid: R001
     checkpointid: None
-    themeid: T001
     zombieid: Z001
     zombieinterval: 0.8
   - sid: S003
     index: 2
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W002
+    rhybool: 1
     rhythmid: R001
     checkpointid: None
-    themeid: T001
     zombieid: Z001
     zombieinterval: 0.8
   - sid: S004
     index: 3
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W002
+    rhybool: 1
     rhythmid: R001
     checkpointid: None
-    themeid: T001
     zombieid: Z001
     zombieinterval: 0.8
   - sid: S005
     index: 4
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W003
+    rhybool: 1
     rhythmid: R002
     checkpointid: None
-    themeid: T001
     zombieid: Z002
     zombieinterval: 0.8
   - sid: S006
     index: 5
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W003
+    rhybool: 1
     rhythmid: R002
     checkpointid: None
-    themeid: T001
     zombieid: Z002
     zombieinterval: 0.8
   - sid: S007
     index: 6
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W004
+    rhybool: 1
     rhythmid: R002
     checkpointid: None
-    themeid: T001
     zombieid: Z002
     zombieinterval: 0.8
   - sid: S008
     index: 7
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W004
+    rhybool: 1
     rhythmid: R002
     checkpointid: None
-    themeid: T001
     zombieid: Z002
     zombieinterval: 0.8
   - sid: S009
     index: 8
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W005
+    rhybool: 1
     rhythmid: R003
     checkpointid: None
-    themeid: T001
     zombieid: Z003
     zombieinterval: 0.8
   - sid: S010
     index: 9
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 1
+    wallbool: 1
     wallid: W005
+    rhybool: 1
     rhythmid: R003
     checkpointid: CP001
-    themeid: T001
     zombieid: Z003
     zombieinterval: 0.8
   - sid: S011
     index: 10
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W006
+    rhybool: 1
     rhythmid: R003
     checkpointid: None
-    themeid: T002
     zombieid: Z003
     zombieinterval: 0.8
   - sid: S012
     index: 11
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W006
+    rhybool: 1
     rhythmid: R003
     checkpointid: None
-    themeid: T002
     zombieid: Z003
     zombieinterval: 0.8
   - sid: S013
     index: 12
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W007
+    rhybool: 1
     rhythmid: R004
     checkpointid: None
-    themeid: T002
     zombieid: Z004
     zombieinterval: 0.79
   - sid: S014
     index: 13
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W007
+    rhybool: 1
     rhythmid: R004
     checkpointid: None
-    themeid: T002
     zombieid: Z004
     zombieinterval: 0.79
   - sid: S015
     index: 14
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W008
+    rhybool: 1
     rhythmid: R004
     checkpointid: None
-    themeid: T002
     zombieid: Z004
     zombieinterval: 0.79
   - sid: S016
     index: 15
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W008
+    rhybool: 1
     rhythmid: R004
     checkpointid: None
-    themeid: T002
     zombieid: Z004
     zombieinterval: 0.79
   - sid: S017
     index: 16
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W009
+    rhybool: 1
     rhythmid: R005
     checkpointid: None
-    themeid: T002
     zombieid: Z005
     zombieinterval: 0.79
   - sid: S018
     index: 17
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W009
+    rhybool: 1
     rhythmid: R005
     checkpointid: None
-    themeid: T002
     zombieid: Z005
     zombieinterval: 0.79
   - sid: S019
     index: 18
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W010
+    rhybool: 1
     rhythmid: R005
     checkpointid: None
-    themeid: T002
     zombieid: Z005
     zombieinterval: 0.79
   - sid: S020
     index: 19
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 2
+    wallbool: 1
     wallid: W010
+    rhybool: 1
     rhythmid: R005
     checkpointid: CP002
-    themeid: T002
     zombieid: Z005
     zombieinterval: 0.79
   - sid: S021
     index: 20
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W011
+    rhybool: 1
     rhythmid: R006
     checkpointid: None
-    themeid: T003
     zombieid: Z006
     zombieinterval: 0.78
   - sid: S022
     index: 21
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W011
+    rhybool: 1
     rhythmid: R006
     checkpointid: None
-    themeid: T003
     zombieid: Z006
     zombieinterval: 0.78
   - sid: S023
     index: 22
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W012
+    rhybool: 1
     rhythmid: R006
     checkpointid: None
-    themeid: T003
     zombieid: Z006
     zombieinterval: 0.78
   - sid: S024
     index: 23
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W012
+    rhybool: 1
     rhythmid: R006
     checkpointid: None
-    themeid: T003
     zombieid: Z006
     zombieinterval: 0.78
   - sid: S025
     index: 24
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W013
+    rhybool: 1
     rhythmid: R007
     checkpointid: None
-    themeid: T003
     zombieid: Z007
     zombieinterval: 0.78
   - sid: S026
     index: 25
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W013
+    rhybool: 1
     rhythmid: R007
     checkpointid: None
-    themeid: T003
     zombieid: Z007
     zombieinterval: 0.78
   - sid: S027
     index: 26
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W014
+    rhybool: 1
     rhythmid: R007
     checkpointid: None
-    themeid: T003
     zombieid: Z007
     zombieinterval: 0.77
   - sid: S028
     index: 27
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W014
+    rhybool: 1
     rhythmid: R007
     checkpointid: None
-    themeid: T003
     zombieid: Z007
     zombieinterval: 0.77
   - sid: S029
     index: 28
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W015
+    rhybool: 1
     rhythmid: R008
     checkpointid: None
-    themeid: T003
     zombieid: Z008
     zombieinterval: 0.77
   - sid: S030
     index: 29
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 3
+    wallbool: 1
     wallid: W015
+    rhybool: 1
     rhythmid: R008
     checkpointid: CP003
-    themeid: T003
     zombieid: Z008
     zombieinterval: 0.77
   - sid: S031
     index: 30
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W016
+    rhybool: 1
     rhythmid: R008
     checkpointid: None
-    themeid: T004
     zombieid: Z008
     zombieinterval: 0.76
   - sid: S032
     index: 31
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W016
+    rhybool: 1
     rhythmid: R008
     checkpointid: None
-    themeid: T004
     zombieid: Z008
     zombieinterval: 0.76
   - sid: S033
     index: 32
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W017
+    rhybool: 1
     rhythmid: R009
     checkpointid: None
-    themeid: T004
     zombieid: Z009
     zombieinterval: 0.76
   - sid: S034
     index: 33
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W017
+    rhybool: 1
     rhythmid: R009
     checkpointid: None
-    themeid: T004
     zombieid: Z009
     zombieinterval: 0.76
   - sid: S035
     index: 34
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W018
+    rhybool: 1
     rhythmid: R009
     checkpointid: None
-    themeid: T004
     zombieid: Z009
     zombieinterval: 0.75
   - sid: S036
     index: 35
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W018
+    rhybool: 1
     rhythmid: R009
     checkpointid: None
-    themeid: T004
     zombieid: Z009
     zombieinterval: 0.75
   - sid: S037
     index: 36
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W019
+    rhybool: 1
     rhythmid: R010
     checkpointid: None
-    themeid: T004
     zombieid: Z010
     zombieinterval: 0.75
   - sid: S038
     index: 37
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W019
+    rhybool: 1
     rhythmid: R010
     checkpointid: None
-    themeid: T004
     zombieid: Z010
     zombieinterval: 0.75
   - sid: S039
     index: 38
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W020
+    rhybool: 1
     rhythmid: R010
     checkpointid: None
-    themeid: T004
     zombieid: Z010
     zombieinterval: 0.74
   - sid: S040
     index: 39
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 4
+    wallbool: 1
     wallid: W020
+    rhybool: 1
     rhythmid: R010
     checkpointid: CP004
-    themeid: T004
     zombieid: Z010
     zombieinterval: 0.74
   - sid: S041
     index: 40
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W021
+    rhybool: 1
     rhythmid: R011
     checkpointid: None
-    themeid: T005
     zombieid: Z011
     zombieinterval: 0.74
   - sid: S042
     index: 41
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W021
+    rhybool: 1
     rhythmid: R011
     checkpointid: None
-    themeid: T005
     zombieid: Z011
     zombieinterval: 0.73
   - sid: S043
     index: 42
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W022
+    rhybool: 1
     rhythmid: R011
     checkpointid: None
-    themeid: T005
     zombieid: Z011
     zombieinterval: 0.73
   - sid: S044
     index: 43
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W022
+    rhybool: 1
     rhythmid: R011
     checkpointid: None
-    themeid: T005
     zombieid: Z011
     zombieinterval: 0.73
   - sid: S045
     index: 44
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W023
+    rhybool: 1
     rhythmid: R012
     checkpointid: None
-    themeid: T005
     zombieid: Z012
     zombieinterval: 0.72
   - sid: S046
     index: 45
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W023
+    rhybool: 1
     rhythmid: R012
     checkpointid: None
-    themeid: T005
     zombieid: Z012
     zombieinterval: 0.72
   - sid: S047
     index: 46
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W024
+    rhybool: 1
     rhythmid: R012
     checkpointid: None
-    themeid: T005
     zombieid: Z012
     zombieinterval: 0.72
   - sid: S048
     index: 47
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W024
+    rhybool: 1
     rhythmid: R012
     checkpointid: None
-    themeid: T005
     zombieid: Z012
     zombieinterval: 0.71
   - sid: S049
     index: 48
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W025
+    rhybool: 1
     rhythmid: R013
     checkpointid: None
-    themeid: T005
     zombieid: Z013
     zombieinterval: 0.71
   - sid: S050
     index: 49
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 5
+    wallbool: 1
     wallid: W025
+    rhybool: 1
     rhythmid: R013
     checkpointid: CP005
-    themeid: T005
     zombieid: Z013
     zombieinterval: 0.7
   - sid: S051
     index: 50
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W026
+    rhybool: 1
     rhythmid: R013
     checkpointid: None
-    themeid: T006
     zombieid: Z013
     zombieinterval: 0.7
   - sid: S052
     index: 51
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W026
+    rhybool: 1
     rhythmid: R013
     checkpointid: None
-    themeid: T006
     zombieid: Z013
     zombieinterval: 0.7
   - sid: S053
     index: 52
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W027
+    rhybool: 1
     rhythmid: R014
     checkpointid: None
-    themeid: T006
     zombieid: Z014
     zombieinterval: 0.69
   - sid: S054
     index: 53
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W027
+    rhybool: 1
     rhythmid: R014
     checkpointid: None
-    themeid: T006
     zombieid: Z014
     zombieinterval: 0.69
   - sid: S055
     index: 54
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W028
+    rhybool: 1
     rhythmid: R014
     checkpointid: None
-    themeid: T006
     zombieid: Z014
     zombieinterval: 0.68
   - sid: S056
     index: 55
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W028
+    rhybool: 1
     rhythmid: R014
     checkpointid: None
-    themeid: T006
     zombieid: Z014
     zombieinterval: 0.68
   - sid: S057
     index: 56
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W029
+    rhybool: 1
     rhythmid: R015
     checkpointid: None
-    themeid: T006
     zombieid: Z015
     zombieinterval: 0.68
   - sid: S058
     index: 57
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W029
+    rhybool: 1
     rhythmid: R015
     checkpointid: None
-    themeid: T006
     zombieid: Z015
     zombieinterval: 0.67
   - sid: S059
     index: 58
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W030
+    rhybool: 1
     rhythmid: R015
     checkpointid: None
-    themeid: T006
     zombieid: Z015
     zombieinterval: 0.67
   - sid: S060
     index: 59
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 6
+    wallbool: 1
     wallid: W030
+    rhybool: 1
     rhythmid: R015
     checkpointid: CP006
-    themeid: T006
     zombieid: Z015
     zombieinterval: 0.66
   - sid: S061
     index: 60
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W031
+    rhybool: 1
     rhythmid: R016
     checkpointid: None
-    themeid: T007
     zombieid: Z016
     zombieinterval: 0.66
   - sid: S062
     index: 61
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W031
+    rhybool: 1
     rhythmid: R016
     checkpointid: None
-    themeid: T007
     zombieid: Z016
     zombieinterval: 0.65
   - sid: S063
     index: 62
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W032
+    rhybool: 1
     rhythmid: R016
     checkpointid: None
-    themeid: T007
     zombieid: Z016
     zombieinterval: 0.65
   - sid: S064
     index: 63
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W032
+    rhybool: 1
     rhythmid: R016
     checkpointid: None
-    themeid: T007
     zombieid: Z016
     zombieinterval: 0.64
   - sid: S065
     index: 64
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W033
+    rhybool: 1
     rhythmid: R017
     checkpointid: None
-    themeid: T007
     zombieid: Z017
     zombieinterval: 0.64
   - sid: S066
     index: 65
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W033
+    rhybool: 1
     rhythmid: R017
     checkpointid: None
-    themeid: T007
     zombieid: Z017
     zombieinterval: 0.63
   - sid: S067
     index: 66
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W034
+    rhybool: 1
     rhythmid: R017
     checkpointid: None
-    themeid: T007
     zombieid: Z017
     zombieinterval: 0.63
   - sid: S068
     index: 67
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W034
+    rhybool: 1
     rhythmid: R017
     checkpointid: None
-    themeid: T007
     zombieid: Z017
     zombieinterval: 0.62
   - sid: S069
     index: 68
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W035
+    rhybool: 1
     rhythmid: R018
     checkpointid: None
-    themeid: T007
     zombieid: Z018
     zombieinterval: 0.62
   - sid: S070
     index: 69
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 7
+    wallbool: 1
     wallid: W035
+    rhybool: 1
     rhythmid: R018
     checkpointid: CP007
-    themeid: T007
     zombieid: Z018
     zombieinterval: 0.61
   - sid: S071
     index: 70
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W036
+    rhybool: 1
     rhythmid: R018
     checkpointid: None
-    themeid: T008
     zombieid: Z018
     zombieinterval: 0.6
   - sid: S072
     index: 71
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W036
+    rhybool: 1
     rhythmid: R018
     checkpointid: None
-    themeid: T008
     zombieid: Z018
     zombieinterval: 0.6
   - sid: S073
     index: 72
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W037
+    rhybool: 1
     rhythmid: R019
     checkpointid: None
-    themeid: T008
     zombieid: Z019
     zombieinterval: 0.59
   - sid: S074
     index: 73
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W037
+    rhybool: 1
     rhythmid: R019
     checkpointid: None
-    themeid: T008
     zombieid: Z019
     zombieinterval: 0.59
   - sid: S075
     index: 74
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W038
+    rhybool: 1
     rhythmid: R019
     checkpointid: None
-    themeid: T008
     zombieid: Z019
     zombieinterval: 0.58
   - sid: S076
     index: 75
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W038
+    rhybool: 1
     rhythmid: R019
     checkpointid: None
-    themeid: T008
     zombieid: Z019
     zombieinterval: 0.58
   - sid: S077
     index: 76
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W039
+    rhybool: 1
     rhythmid: R020
     checkpointid: None
-    themeid: T008
     zombieid: Z020
     zombieinterval: 0.57
   - sid: S078
     index: 77
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W039
+    rhybool: 1
     rhythmid: R020
     checkpointid: None
-    themeid: T008
     zombieid: Z020
     zombieinterval: 0.56
   - sid: S079
     index: 78
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W040
+    rhybool: 1
     rhythmid: R020
     checkpointid: None
-    themeid: T008
     zombieid: Z020
     zombieinterval: 0.56
   - sid: S080
     index: 79
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 8
+    wallbool: 1
     wallid: W040
+    rhybool: 1
     rhythmid: R020
     checkpointid: CP008
-    themeid: T008
     zombieid: Z020
     zombieinterval: 0.55
   - sid: S081
     index: 80
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W041
+    rhybool: 1
     rhythmid: R021
     checkpointid: None
-    themeid: T009
     zombieid: Z021
     zombieinterval: 0.54
   - sid: S082
     index: 81
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W041
+    rhybool: 1
     rhythmid: R021
     checkpointid: None
-    themeid: T009
     zombieid: Z021
     zombieinterval: 0.54
   - sid: S083
     index: 82
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W042
+    rhybool: 1
     rhythmid: R021
     checkpointid: None
-    themeid: T009
     zombieid: Z021
     zombieinterval: 0.53
   - sid: S084
     index: 83
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W042
+    rhybool: 1
     rhythmid: R021
     checkpointid: None
-    themeid: T009
     zombieid: Z021
     zombieinterval: 0.52
   - sid: S085
     index: 84
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W043
+    rhybool: 1
     rhythmid: R022
     checkpointid: None
-    themeid: T009
     zombieid: Z022
     zombieinterval: 0.52
   - sid: S086
     index: 85
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W043
+    rhybool: 1
     rhythmid: R022
     checkpointid: None
-    themeid: T009
     zombieid: Z022
     zombieinterval: 0.51
   - sid: S087
     index: 86
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W044
+    rhybool: 1
     rhythmid: R022
     checkpointid: None
-    themeid: T009
     zombieid: Z022
     zombieinterval: 0.5
   - sid: S088
     index: 87
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W044
+    rhybool: 1
     rhythmid: R022
     checkpointid: None
-    themeid: T009
     zombieid: Z022
     zombieinterval: 0.5
   - sid: S089
     index: 88
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W045
+    rhybool: 1
     rhythmid: R023
     checkpointid: None
-    themeid: T009
     zombieid: Z023
     zombieinterval: 0.49
   - sid: S090
     index: 89
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 9
+    wallbool: 1
     wallid: W045
+    rhybool: 1
     rhythmid: R023
     checkpointid: CP009
-    themeid: T009
     zombieid: Z023
     zombieinterval: 0.48
   - sid: S091
     index: 90
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W046
+    rhybool: 1
     rhythmid: R023
     checkpointid: None
-    themeid: T010
     zombieid: Z023
     zombieinterval: 0.48
   - sid: S092
     index: 91
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W046
+    rhybool: 1
     rhythmid: R023
     checkpointid: None
-    themeid: T010
     zombieid: Z023
     zombieinterval: 0.47
   - sid: S093
     index: 92
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W047
+    rhybool: 1
     rhythmid: R024
     checkpointid: None
-    themeid: T010
     zombieid: Z024
     zombieinterval: 0.46
   - sid: S094
     index: 93
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W047
+    rhybool: 1
     rhythmid: R024
     checkpointid: None
-    themeid: T010
     zombieid: Z024
     zombieinterval: 0.45
   - sid: S095
     index: 94
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W048
+    rhybool: 1
     rhythmid: R024
     checkpointid: None
-    themeid: T010
     zombieid: Z024
     zombieinterval: 0.45
   - sid: S096
     index: 95
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W048
+    rhybool: 1
     rhythmid: R024
     checkpointid: None
-    themeid: T010
     zombieid: Z024
     zombieinterval: 0.44
   - sid: S097
     index: 96
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W049
+    rhybool: 1
     rhythmid: R025
     checkpointid: None
-    themeid: T010
     zombieid: Z025
     zombieinterval: 0.43
   - sid: S098
     index: 97
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W049
+    rhybool: 1
     rhythmid: R025
     checkpointid: None
-    themeid: T010
     zombieid: Z025
     zombieinterval: 0.42
   - sid: S099
     index: 98
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W050
+    rhybool: 1
     rhythmid: R025
     checkpointid: None
-    themeid: T010
     zombieid: Z025
     zombieinterval: 0.42
   - sid: S100
     index: 99
-    sectionblocks: 10
-    rhychance: 1
-    model: 
-    color: 
+    themeindex: 10
+    wallbool: 1
     wallid: W050
+    rhybool: 1
     rhythmid: R025
     checkpointid: CP010
-    themeid: T010
     zombieid: Z025
     zombieinterval: 0.41

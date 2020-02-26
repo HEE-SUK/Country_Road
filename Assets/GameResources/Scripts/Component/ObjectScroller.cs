@@ -73,6 +73,7 @@ public class ObjectScroller : MonoBehaviour
         {
             var pos = new Vector3(transform.position.x, transform.position.y, endPos.position.z + i * objectSpacing);
             var blockCon = Instantiate(scrollObject, pos, scrollObject.transform.rotation).GetComponent<BlockController>();
+            blockCon.transform.SetParent(this.transform);
             activeList.Add(blockCon.gameObject);
             blockCon.name = i.ToString();
             if (blockCon == null)
@@ -106,10 +107,9 @@ public class ObjectScroller : MonoBehaviour
             newObj.transform.position = new Vector3(lastBlock.position.x, lastBlock.position.y, lastBlock.position.z + objectSpacing);
         SectionInfo curSecInfo = this.scrollEndDataSetting();
         WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
-        // TODO: 여기 주석 해제
-        // newObj.SetBlockObject(new BlockObjectSettingInfo(int.Parse(curSecInfo.themeID[curSecInfo.themeID.Length - 1].ToString()) - 1,true, wallInfo));
-        // newObj.gameObject.SetActive(true);
-        // lastBlock = newObj.transform;
+        newObj.SetBlockObject(new BlockObjectSettingInfo(curSecInfo.themeIndex,true, wallInfo));
+        newObj.gameObject.SetActive(true);
+        lastBlock = newObj.transform;
         Debug.Log("현재 지나온 거리: " + curPassDistance);
     }
 }
