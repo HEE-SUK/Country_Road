@@ -16,7 +16,7 @@
     public SectionInfo(SectionTableData _data)
     {
         this.id = _data.SID;
-        this.index = _data.Index;
+        this.index = _data.Index; 
         this.themeIndex = _data.Themeindex;
 
         this.wallBool = _data.Wallbool;

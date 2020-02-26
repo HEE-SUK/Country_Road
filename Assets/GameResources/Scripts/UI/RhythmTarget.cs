@@ -11,7 +11,7 @@ public class RhythmTarget : MonoBehaviour
     [SerializeField]
     private Image[] greatTarget = {};
 
-    private float originDegree = 360f;
+    private float originDegree = 180f;
     private float goodDegree = 0f;
     private float greatDegree = 0f;
     private float currentTarget = 0f;
@@ -28,11 +28,11 @@ public class RhythmTarget : MonoBehaviour
         // good, great 너비값 설정
         foreach (var target in this.goodTarget)
         {
-            target.fillAmount = _goodAmount / 2;
+            target.fillAmount = _goodAmount / 4;
         }
         foreach (var target in this.greatTarget)
         {
-            target.fillAmount = _greatAmount / 2;
+            target.fillAmount = _greatAmount / 4;
         }
     }
     public RHYTHMTYPE StopPosition(float _arrow)

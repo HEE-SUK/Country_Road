@@ -8,11 +8,11 @@ public class UI : MonoBehaviour
     private IngameUI ingameUI = null;
     [SerializeField]
     private OutgameUI outgameUI = null;
-    private void Awake()
+    void Awake()
     {
         // 아웃게임과 인게임 UI 스위치 및 전체적인 데이터만 관리
     }
-    private void Start()
+    void Start()
     {
         // 아웃게임과 인게임 UI 스위치 및 전체적인 데이터만 관리
         // this.outgameUI.Init();
@@ -23,8 +23,14 @@ public class UI : MonoBehaviour
 
     public void StartGame()
     {
+        // 인게임으로
         this.ingameUI.Init();
         this.outgameUI.StartGame();
     }
-
+    public void ExitGame()
+    {
+        // 아웃게임으로
+        // this.ingameUI.Init();
+        // this.outgameUI.StartGame();
+    }
 }
