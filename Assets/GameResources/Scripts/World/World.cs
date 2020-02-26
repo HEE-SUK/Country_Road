@@ -57,13 +57,19 @@ public class World : MonoBehaviour
     // Event
     private void OnEvent()
     {
+        EventManager.on(EVENT_TYPE.START_GAME, StartGame);
         EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, TouchRhythm);
         EventManager.on(EVENT_TYPE.WALL_BROKEN, WallBroken);
     }
     private void OffEvent()
     {
+        EventManager.off(EVENT_TYPE.START_GAME, StartGame);
         EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
         EventManager.off(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
+    }
+    private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
+    {
+
     }
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
     {

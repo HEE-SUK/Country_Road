@@ -15,8 +15,10 @@ public class IngameUI : MonoBehaviour
     
     [SerializeField]
     private RhythmPanel rhythmPanel = null;
+    [SerializeField]
+    private ResultPanel resultPanel = null;
 
-    private void Awake()
+    void Awake()
     {
         this.checkPointText.text = $"{0}";
         this.goldText.text = $"{0}";
@@ -28,6 +30,7 @@ public class IngameUI : MonoBehaviour
         this.gameObject.SetActive(true);
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
         EventManager.on(EVENT_TYPE.CHANGE_SECTION, this.ChangedSection);
+        EventManager.on(EVENT_TYPE.FINISH_GAME, this.OnGameOver);
     }
     public void SetPause()
     {
@@ -48,9 +51,15 @@ public class IngameUI : MonoBehaviour
         SectionInfo sectionInfo = TableManager.SectionInfoTable.GetInfo(SID);
         this.rhythmPanel.Init(sectionInfo.rhythmID);
     }
-    private void OnDestroy()
+    private void OnGameOver(EVENT_TYPE eventType, Component sender, object param = null)
+    {
+        // 게임 오버
+        this.resultPanel.gameObject.SetActive(true);
+    }
+    void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
         EventManager.off(EVENT_TYPE.CHANGE_SECTION, this.ChangedSection);
+        EventManager.off(EVENT_TYPE.FINISH_GAME, this.OnGameOver);
     }
 }

@@ -1089,11 +1089,7 @@ namespace Minimalist
 
         private void OnClosed()
         {
-            #if UNITY_2019_OR_NEWER
             SceneView.duringSceneGui -= SceneGUI;
-            #else
-            SceneView.onSceneGUIDelegate -= SceneGUI;
-            #endif
         }
 
         private void TextureModule()
@@ -1266,13 +1262,8 @@ namespace Minimalist
 
 
                                                     //Start SceneView code
-                                                    #if UNITY_2019_OR_NEWER
                                                     SceneView.duringSceneGui -= SceneGUI;
                                                     SceneView.duringSceneGui += SceneGUI;
-                                                    #else
-                                                    SceneView.onSceneGUIDelegate -= SceneGUI;
-                                                    SceneView.onSceneGUIDelegate += SceneGUI;
-                                                    #endif
 
                                                 }
                                                 else
@@ -1676,11 +1667,7 @@ namespace Minimalist
             else
             {
                 Tools.hidden = false;
-                #if UNITY_2019_OR_NEWER
                 SceneView.duringSceneGui -= SceneGUI;
-                #else
-                SceneView.onSceneGUIDelegate -= SceneGUI;
-                #endif
             }
         }
 

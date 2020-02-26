@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OutgameUI : MonoBehaviour
+public class ResultPanel : MonoBehaviour
 {
     void Awake()
     {
@@ -13,8 +13,12 @@ public class OutgameUI : MonoBehaviour
         this.gameObject.SetActive(true);
     }
 
-    public void StartGame()
+    public void RevivedGame()
     {
-        this.gameObject.SetActive(false);
+        
+    }
+    public void ExitGame()
+    {
+        
     }
 }
