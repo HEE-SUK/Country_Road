@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 { 
-    [SerializeField] EnemyController enemyController;
-    public void Init(ZombieInfo zombieInfo){
+    [SerializeField] 
+    private EnemyController enemyController = null;
+    
+    public void Init(ZombieInfo zombieInfo)
+    {
         SpawnEnemy(zombieInfo);
     }
-    public void SpawnEnemy(ZombieInfo zombieInfo){
-        var enemy = Instantiate(enemyController,this.transform);
+    public void SpawnEnemy(ZombieInfo zombieInfo)
+    {
+        var enemy = Instantiate(this.enemyController, this.transform);
         enemy.Init(zombieInfo);
         enemy.gameObject.SetActive(true);
         // GameObject obj = ObjectPoolDictionary.Instance.GetObjectPrefab(zombieInfo.id);

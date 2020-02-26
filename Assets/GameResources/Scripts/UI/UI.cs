@@ -15,10 +15,10 @@ public class UI : MonoBehaviour
     void Start()
     {
         // 아웃게임과 인게임 UI 스위치 및 전체적인 데이터만 관리
-        // this.outgameUI.Init();
+        this.outgameUI.Init();
 
         // DEBUG    
-        this.ingameUI.Init();
+        // this.ingameUI.Init();
     }
 
     public void StartGame()
@@ -26,11 +26,12 @@ public class UI : MonoBehaviour
         // 인게임으로
         this.ingameUI.Init();
         this.outgameUI.StartGame();
+        EventManager.emit(EVENT_TYPE.START_GAME, this);
     }
     public void ExitGame()
     {
         // 아웃게임으로
         // this.ingameUI.Init();
-        // this.outgameUI.StartGame();
+        this.outgameUI.Init();
     }
 }

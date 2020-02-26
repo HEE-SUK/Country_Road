@@ -16,242 +16,242 @@ MonoBehaviour:
   WorksheetName: CheckPointTable
   dataArray:
   - id: CP001
-    index: 1
+    index: 0
     name: 
     image: 
     distance: 150
     gold: 200
+    dia: 5
+    exp: 6
+  - id: CP002
+    index: 1
+    name: 
+    image: 
+    distance: 300
+    gold: 245
     dia: 10
     exp: 10
-  - id: CP002
+  - id: CP003
     index: 2
     name: 
     image: 
     distance: 450
-    gold: 245
+    gold: 299
     dia: 15
     exp: 16
-  - id: CP003
+  - id: CP004
     index: 3
     name: 
     image: 
     distance: 600
-    gold: 299
+    gold: 365
     dia: 20
     exp: 24
-  - id: CP004
+  - id: CP005
     index: 4
     name: 
     image: 
     distance: 750
-    gold: 365
+    gold: 446
     dia: 25
     exp: 34
-  - id: CP005
+  - id: CP006
     index: 5
     name: 
     image: 
     distance: 900
-    gold: 446
+    gold: 544
     dia: 30
     exp: 46
-  - id: CP006
+  - id: CP007
     index: 6
     name: 
     image: 
     distance: 1050
-    gold: 544
+    gold: 665
     dia: 35
     exp: 60
-  - id: CP007
+  - id: CP008
     index: 7
     name: 
     image: 
     distance: 1200
-    gold: 665
+    gold: 812
     dia: 40
     exp: 76
-  - id: CP008
+  - id: CP009
     index: 8
     name: 
     image: 
     distance: 1350
-    gold: 812
+    gold: 992
     dia: 45
     exp: 94
-  - id: CP009
+  - id: CP010
     index: 9
     name: 
     image: 
     distance: 1500
-    gold: 992
+    gold: 1212
     dia: 50
     exp: 114
-  - id: CP010
+  - id: CP011
     index: 10
     name: 
     image: 
     distance: 1650
-    gold: 1212
+    gold: 1480
     dia: 55
     exp: 136
-  - id: CP011
+  - id: CP012
     index: 11
     name: 
     image: 
     distance: 1800
-    gold: 1480
+    gold: 1808
     dia: 60
     exp: 160
-  - id: CP012
+  - id: CP013
     index: 12
     name: 
     image: 
     distance: 1950
-    gold: 1808
+    gold: 2208
     dia: 65
     exp: 186
-  - id: CP013
+  - id: CP014
     index: 13
     name: 
     image: 
     distance: 2100
-    gold: 2208
+    gold: 2697
     dia: 70
     exp: 214
-  - id: CP014
+  - id: CP015
     index: 14
     name: 
     image: 
     distance: 2250
-    gold: 2697
+    gold: 3294
     dia: 75
     exp: 244
-  - id: CP015
+  - id: CP016
     index: 15
     name: 
     image: 
     distance: 2400
-    gold: 3294
+    gold: 4023
     dia: 80
     exp: 276
-  - id: CP016
+  - id: CP017
     index: 16
     name: 
     image: 
     distance: 2550
-    gold: 4023
+    gold: 4914
     dia: 85
     exp: 310
-  - id: CP017
+  - id: CP018
     index: 17
     name: 
     image: 
     distance: 2700
-    gold: 4914
+    gold: 6002
     dia: 90
     exp: 346
-  - id: CP018
+  - id: CP019
     index: 18
     name: 
     image: 
     distance: 2850
-    gold: 6002
+    gold: 7331
     dia: 95
     exp: 384
-  - id: CP019
+  - id: CP020
     index: 19
     name: 
     image: 
     distance: 3000
-    gold: 7331
+    gold: 8954
     dia: 100
     exp: 424
-  - id: CP020
+  - id: CP021
     index: 20
     name: 
     image: 
     distance: 3150
-    gold: 8954
+    gold: 10937
     dia: 105
     exp: 466
-  - id: CP021
+  - id: CP022
     index: 21
     name: 
     image: 
     distance: 3300
-    gold: 10937
+    gold: 13358
     dia: 110
     exp: 510
-  - id: CP022
+  - id: CP023
     index: 22
     name: 
     image: 
     distance: 3450
-    gold: 13358
+    gold: 16315
     dia: 115
     exp: 556
-  - id: CP023
+  - id: CP024
     index: 23
     name: 
     image: 
     distance: 3600
-    gold: 16315
+    gold: 19928
     dia: 120
     exp: 604
-  - id: CP024
+  - id: CP025
     index: 24
     name: 
     image: 
     distance: 3750
-    gold: 19928
+    gold: 24340
     dia: 125
     exp: 654
-  - id: CP025
+  - id: CP026
     index: 25
     name: 
     image: 
     distance: 3900
-    gold: 24340
+    gold: 29729
     dia: 130
     exp: 706
-  - id: CP026
+  - id: CP027
     index: 26
     name: 
     image: 
     distance: 4050
-    gold: 29729
+    gold: 36311
     dia: 135
     exp: 760
-  - id: CP027
+  - id: CP028
     index: 27
     name: 
     image: 
     distance: 4200
-    gold: 36311
+    gold: 44350
     dia: 140
     exp: 816
-  - id: CP028
+  - id: CP029
     index: 28
     name: 
     image: 
     distance: 4350
-    gold: 44350
+    gold: 54169
     dia: 145
     exp: 874
-  - id: CP029
+  - id: CP030
     index: 29
     name: 
     image: 
     distance: 4500
-    gold: 54169
+    gold: 66162
     dia: 150
     exp: 934
-  - id: CP030
-    index: 30
-    name: 
-    image: 
-    distance: 4650
-    gold: 66162
-    dia: 155
-    exp: 996

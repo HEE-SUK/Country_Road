@@ -16,7 +16,7 @@ MonoBehaviour:
   WorksheetName: CarTable
   dataArray:
   - id: C001
-    index: 1
+    index: 0
     name: Juciy
     description: 
     image: 
@@ -36,7 +36,7 @@ MonoBehaviour:
     lotto: 0.1
     dps: 10
   - id: C002
-    index: 2
+    index: 1
     name: Aria
     description: 
     image: 
@@ -56,7 +56,7 @@ MonoBehaviour:
     lotto: 0.539898
     dps: 23.33
   - id: C003
-    index: 3
+    index: 2
     name: Lilian
     description: 
     image: 
@@ -76,7 +76,7 @@ MonoBehaviour:
     lotto: 0.176367
     dps: 43.33
   - id: C004
-    index: 4
+    index: 3
     name: Anita
     description: 
     image: 
@@ -96,7 +96,7 @@ MonoBehaviour:
     lotto: 0.086384
     dps: 70
   - id: C005
-    index: 5
+    index: 4
     name: Brionna
     description: 
     image: 
@@ -116,7 +116,7 @@ MonoBehaviour:
     lotto: 0.05075
     dps: 103.33
   - id: C006
-    index: 6
+    index: 5
     name: Bailee
     description: 
     image: 
@@ -136,7 +136,7 @@ MonoBehaviour:
     lotto: 0.033114
     dps: 143.33
   - id: C007
-    index: 7
+    index: 6
     name: Elissa
     description: 
     image: 
@@ -156,7 +156,7 @@ MonoBehaviour:
     lotto: 0.023139
     dps: 190
   - id: C008
-    index: 8
+    index: 7
     name: Marisa
     description: 
     image: 
@@ -176,7 +176,7 @@ MonoBehaviour:
     lotto: 0.016968
     dps: 243.33
   - id: C009
-    index: 9
+    index: 8
     name: Katerina
     description: 
     image: 
@@ -196,7 +196,7 @@ MonoBehaviour:
     lotto: 0.012898
     dps: 303.33
   - id: C010
-    index: 10
+    index: 9
     name: Cristal
     description: 
     image: 
@@ -216,7 +216,7 @@ MonoBehaviour:
     lotto: 0.010078
     dps: 370
   - id: C011
-    index: 11
+    index: 10
     name: Alyssa
     description: 
     image: 
@@ -236,7 +236,7 @@ MonoBehaviour:
     lotto: 0.008049
     dps: 443.33
   - id: C012
-    index: 12
+    index: 11
     name: Loren
     description: 
     image: 
@@ -256,7 +256,7 @@ MonoBehaviour:
     lotto: 0.006544
     dps: 523.33
   - id: C013
-    index: 13
+    index: 12
     name: Keyla
     description: 
     image: 
@@ -276,7 +276,7 @@ MonoBehaviour:
     lotto: 0.005399
     dps: 610
   - id: C014
-    index: 14
+    index: 13
     name: Eliza
     description: 
     image: 
@@ -296,7 +296,7 @@ MonoBehaviour:
     lotto: 0.004509
     dps: 703.33
   - id: C015
-    index: 15
+    index: 14
     name: Johana
     description: 
     image: 
@@ -316,7 +316,7 @@ MonoBehaviour:
     lotto: 0.003805
     dps: 803.33
   - id: C016
-    index: 16
+    index: 15
     name: Christy
     description: 
     image: 
@@ -336,7 +336,7 @@ MonoBehaviour:
     lotto: 0.003239
     dps: 910
   - id: C017
-    index: 17
+    index: 16
     name: Dana
     description: 
     image: 
@@ -356,7 +356,7 @@ MonoBehaviour:
     lotto: 0.002779
     dps: 1023.33
   - id: C018
-    index: 18
+    index: 17
     name: Alia
     description: 
     image: 
@@ -376,7 +376,7 @@ MonoBehaviour:
     lotto: 0.0024
     dps: 1143.33
   - id: C019
-    index: 19
+    index: 18
     name: Lola
     description: 
     image: 
@@ -396,7 +396,7 @@ MonoBehaviour:
     lotto: 0.002084
     dps: 1270
   - id: C020
-    index: 20
+    index: 19
     name: Carissa
     description: 
     image: 
@@ -416,7 +416,7 @@ MonoBehaviour:
     lotto: 0.001819
     dps: 1403.33
   - id: C021
-    index: 21
+    index: 20
     name: Hailee
     description: 
     image: 
@@ -436,7 +436,7 @@ MonoBehaviour:
     lotto: 0.001594
     dps: 1543.33
   - id: C022
-    index: 22
+    index: 21
     name: Kenzie
     description: 
     image: 
@@ -444,9 +444,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 3
-    mspd: 150
-    rhm: 11
-    atk: 21
+    mspd: 270
+    rhm: 12.1
+    atk: 507
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -454,9 +454,9 @@ MonoBehaviour:
     convertprice: 30
     unittype: 1
     lotto: 0.001402
-    dps: 70
+    dps: 1690
   - id: C023
-    index: 23
+    index: 22
     name: Justine
     description: 
     image: 
@@ -464,9 +464,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 3
-    mspd: 150
-    rhm: 11.2
-    atk: 43
+    mspd: 280
+    rhm: 12.2
+    atk: 553
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -474,9 +474,9 @@ MonoBehaviour:
     convertprice: 70
     unittype: 1
     lotto: 0.001238
-    dps: 143.33
+    dps: 1843.33
   - id: C024
-    index: 24
+    index: 23
     name: Elaine
     description: 
     image: 
@@ -484,9 +484,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 3
-    mspd: 170
-    rhm: 11.4
-    atk: 73
+    mspd: 290
+    rhm: 12.3
+    atk: 601
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -494,9 +494,9 @@ MonoBehaviour:
     convertprice: 120
     unittype: 1
     lotto: 0.001095
-    dps: 243.33
+    dps: 2003.33
   - id: C025
-    index: 25
+    index: 24
     name: Casey
     description: 
     image: 
@@ -504,9 +504,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 3
-    mspd: 170
-    rhm: 11.6
-    atk: 111
+    mspd: 300
+    rhm: 12.4
+    atk: 651
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -514,9 +514,9 @@ MonoBehaviour:
     convertprice: 180
     unittype: 1
     lotto: 0.000972
-    dps: 370
+    dps: 2170
   - id: C026
-    index: 26
+    index: 25
     name: Kassandra
     description: 
     image: 
@@ -524,9 +524,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 3
-    mspd: 190
-    rhm: 11.6
-    atk: 157
+    mspd: 310
+    rhm: 12.5
+    atk: 703
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -534,9 +534,9 @@ MonoBehaviour:
     convertprice: 250
     unittype: 1
     lotto: 0.000864
-    dps: 523.33
+    dps: 2343.33
   - id: C027
-    index: 27
+    index: 26
     name: Bit
     description: 
     image: 
@@ -544,9 +544,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 4
-    mspd: 190
-    rhm: 11.8
-    atk: 211
+    mspd: 320
+    rhm: 12.6
+    atk: 757
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -554,9 +554,9 @@ MonoBehaviour:
     convertprice: 600
     unittype: 1
     lotto: 0.000769
-    dps: 703.33
+    dps: 2523.33
   - id: C028
-    index: 28
+    index: 27
     name: Pop
     description: 
     image: 
@@ -564,9 +564,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 4
-    mspd: 220
-    rhm: 12
-    atk: 273
+    mspd: 330
+    rhm: 12.7
+    atk: 813
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -574,9 +574,9 @@ MonoBehaviour:
     convertprice: 1200
     unittype: 1
     lotto: 0.000686
-    dps: 910
+    dps: 2710
   - id: C029
-    index: 29
+    index: 28
     name: Hannah
     description: 
     image: 
@@ -584,9 +584,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 4
-    mspd: 220
-    rhm: 12
-    atk: 343
+    mspd: 340
+    rhm: 12.8
+    atk: 871
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -594,9 +594,9 @@ MonoBehaviour:
     convertprice: 1900
     unittype: 1
     lotto: 0.000612
-    dps: 1143.33
+    dps: 2903.33
   - id: C030
-    index: 30
+    index: 29
     name: Frankie
     description: 
     image: 
@@ -604,9 +604,9 @@ MonoBehaviour:
     color: 
     vfx: 
     def: 4
-    mspd: 250
-    rhm: 12
-    atk: 421
+    mspd: 350
+    rhm: 12.9
+    atk: 931
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -614,4 +614,4 @@ MonoBehaviour:
     convertprice: 3000
     unittype: 1
     lotto: 0.000546
-    dps: 1403.33
+    dps: 3103.33
