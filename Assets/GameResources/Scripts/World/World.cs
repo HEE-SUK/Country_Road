@@ -51,7 +51,7 @@ public class World : MonoBehaviour
         if (curSecInfo.checkPointID != "None") // Test용 
             Debug.Log("체크포인트 도달");
         // 블럭 객체들 세팅하기 
-        Debug.Log(curSecInfo.wallID);
+        // Debug.Log(curSecInfo.wallID);
         return CurSecInfo;
     }
     // Event
