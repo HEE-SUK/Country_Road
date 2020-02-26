@@ -16,7 +16,7 @@ MonoBehaviour:
   WorksheetName: WallTable
   dataArray:
   - id: W001
-    index: 1
+    index: 0
     model: Background_A_door_01
     color: 
     vfx: 
@@ -26,292 +26,292 @@ MonoBehaviour:
     dia: 1
     diaper: 1
   - id: W002
-    index: 2
+    index: 1
     model: Background_A_door_02
     color: 
     vfx: 
-    def: 6
-    exp: 16
-    gold: 16
+    def: 5.5
+    exp: 14
+    gold: 14
     dia: 2
     diaper: 1
   - id: W003
-    index: 3
+    index: 2
     model: Background_A_door_03
     color: 
     vfx: 
-    def: 6.5
-    exp: 24
-    gold: 24
+    def: 6
+    exp: 20
+    gold: 20
     dia: 2
     diaper: 1
   - id: W004
-    index: 4
+    index: 3
     model: Background_A_door_04
     color: 
     vfx: 
-    def: 7
-    exp: 34
-    gold: 34
+    def: 6.5
+    exp: 28
+    gold: 28
     dia: 2
     diaper: 1
   - id: W005
+    index: 4
+    model: Background_A_door_05
+    color: 
+    vfx: 
+    def: 7
+    exp: 38
+    gold: 38
+    dia: 1
+    diaper: 1
+  - id: W006
     index: 5
     model: Background_A_door_05
     color: 
     vfx: 
     def: 7.5
-    exp: 46
-    gold: 46
-    dia: 1
+    exp: 50
+    gold: 50
+    dia: 2
     diaper: 1
-  - id: W006
+  - id: W007
     index: 6
     model: Background_A_door_05
     color: 
     vfx: 
     def: 8
-    exp: 60
-    gold: 60
-    dia: 2
+    exp: 64
+    gold: 64
+    dia: 3
     diaper: 1
-  - id: W007
+  - id: W008
     index: 7
     model: Background_A_door_05
     color: 
     vfx: 
     def: 8.5
-    exp: 76
-    gold: 76
-    dia: 3
+    exp: 80
+    gold: 80
+    dia: 1
     diaper: 1
-  - id: W008
+  - id: W009
     index: 8
     model: Background_A_door_05
     color: 
     vfx: 
     def: 9
-    exp: 94
-    gold: 94
-    dia: 1
+    exp: 98
+    gold: 98
+    dia: 2
     diaper: 1
-  - id: W009
+  - id: W010
     index: 9
     model: Background_A_door_05
     color: 
     vfx: 
     def: 9.5
-    exp: 114
-    gold: 114
-    dia: 2
+    exp: 118
+    gold: 118
+    dia: 1
     diaper: 1
-  - id: W010
+  - id: W011
     index: 10
     model: Background_A_door_05
     color: 
     vfx: 
     def: 10
-    exp: 136
-    gold: 136
+    exp: 140
+    gold: 140
     dia: 1
     diaper: 1
-  - id: W011
+  - id: W012
     index: 11
     model: Background_A_door_05
     color: 
     vfx: 
     def: 10.5
-    exp: 160
-    gold: 160
-    dia: 1
+    exp: 164
+    gold: 164
+    dia: 2
     diaper: 1
-  - id: W012
+  - id: W013
     index: 12
     model: Background_A_door_05
     color: 
     vfx: 
     def: 11
-    exp: 186
-    gold: 186
-    dia: 2
+    exp: 190
+    gold: 190
+    dia: 3
     diaper: 1
-  - id: W013
+  - id: W014
     index: 13
     model: Background_A_door_05
     color: 
     vfx: 
     def: 11.5
-    exp: 214
-    gold: 214
-    dia: 3
+    exp: 218
+    gold: 218
+    dia: 1
     diaper: 1
-  - id: W014
+  - id: W015
     index: 14
     model: Background_A_door_05
     color: 
     vfx: 
     def: 12
-    exp: 244
-    gold: 244
+    exp: 248
+    gold: 248
     dia: 1
     diaper: 1
-  - id: W015
+  - id: W016
     index: 15
     model: Background_A_door_05
     color: 
     vfx: 
     def: 12.5
-    exp: 276
-    gold: 276
-    dia: 1
+    exp: 280
+    gold: 280
+    dia: 2
     diaper: 1
-  - id: W016
+  - id: W017
     index: 16
     model: Background_A_door_05
     color: 
     vfx: 
     def: 13
-    exp: 310
-    gold: 310
+    exp: 314
+    gold: 314
     dia: 2
     diaper: 1
-  - id: W017
+  - id: W018
     index: 17
     model: Background_A_door_05
     color: 
     vfx: 
     def: 13.5
-    exp: 346
-    gold: 346
+    exp: 350
+    gold: 350
     dia: 2
     diaper: 1
-  - id: W018
+  - id: W019
     index: 18
     model: Background_A_door_05
     color: 
     vfx: 
     def: 14
-    exp: 384
-    gold: 384
-    dia: 2
+    exp: 388
+    gold: 388
+    dia: 3
     diaper: 1
-  - id: W019
+  - id: W020
     index: 19
     model: Background_A_door_05
     color: 
     vfx: 
     def: 14.5
-    exp: 424
-    gold: 424
-    dia: 3
+    exp: 428
+    gold: 428
+    dia: 2
     diaper: 1
-  - id: W020
+  - id: W021
     index: 20
     model: Background_A_door_05
     color: 
     vfx: 
     def: 15
-    exp: 466
-    gold: 466
-    dia: 2
+    exp: 470
+    gold: 470
+    dia: 3
     diaper: 1
-  - id: W021
+  - id: W022
     index: 21
     model: Background_A_door_05
     color: 
     vfx: 
     def: 15.5
-    exp: 510
-    gold: 510
-    dia: 3
+    exp: 514
+    gold: 514
+    dia: 1
     diaper: 1
-  - id: W022
+  - id: W023
     index: 22
     model: Background_A_door_05
     color: 
     vfx: 
     def: 16
-    exp: 556
-    gold: 556
+    exp: 560
+    gold: 560
     dia: 1
     diaper: 1
-  - id: W023
+  - id: W024
     index: 23
     model: Background_A_door_05
     color: 
     vfx: 
     def: 16.5
-    exp: 604
-    gold: 604
-    dia: 1
+    exp: 608
+    gold: 608
+    dia: 2
     diaper: 1
-  - id: W024
+  - id: W025
     index: 24
     model: Background_A_door_05
     color: 
     vfx: 
     def: 17
-    exp: 654
-    gold: 654
+    exp: 658
+    gold: 658
     dia: 2
     diaper: 1
-  - id: W025
+  - id: W026
     index: 25
     model: Background_A_door_05
     color: 
     vfx: 
     def: 17.5
-    exp: 706
-    gold: 706
+    exp: 710
+    gold: 710
     dia: 2
     diaper: 1
-  - id: W026
+  - id: W027
     index: 26
     model: Background_A_door_05
     color: 
     vfx: 
     def: 18
-    exp: 760
-    gold: 760
-    dia: 2
+    exp: 764
+    gold: 764
+    dia: 1
     diaper: 1
-  - id: W027
+  - id: W028
     index: 27
     model: Background_A_door_05
     color: 
     vfx: 
     def: 18.5
-    exp: 816
-    gold: 816
-    dia: 1
+    exp: 820
+    gold: 820
+    dia: 3
     diaper: 1
-  - id: W028
+  - id: W029
     index: 28
     model: Background_A_door_05
     color: 
     vfx: 
     def: 19
-    exp: 874
-    gold: 874
-    dia: 3
+    exp: 878
+    gold: 878
+    dia: 1
     diaper: 1
-  - id: W029
+  - id: W030
     index: 29
     model: Background_A_door_05
     color: 
     vfx: 
     def: 19.5
-    exp: 934
-    gold: 934
-    dia: 1
-    diaper: 1
-  - id: W030
-    index: 30
-    model: Background_A_door_05
-    color: 
-    vfx: 
-    def: 20
-    exp: 996
-    gold: 996
+    exp: 938
+    gold: 938
     dia: 3
     diaper: 1

@@ -11,8 +11,6 @@ public class GameManager : Singleton<GameManager>
             Instance.gameSpeed = value;
         }
     }
-    // 게임 전체 스피드
-    private float gameSpeed = 0;
     public static int SectionIndex{
         get{
             return Instance.curSecIndex;
@@ -21,7 +19,20 @@ public class GameManager : Singleton<GameManager>
             Instance.curSecIndex = value;
         }
     }
+    public static float TimeScale{
+        get{
+            return Instance.timeScale;
+        }
+        set{
+            Instance.timeScale = value;
+        }
+    }
+
+    // 게임 전체 스피드
+    private float gameSpeed = 0f;
     // 현재 섹션 인덱스
     private int curSecIndex = 0;
+    // 타임 스케일
+    private float timeScale = 1f;
     
 }

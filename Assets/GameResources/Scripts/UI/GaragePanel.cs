@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResultPanel : MonoBehaviour
+public class GaragePanel : MonoBehaviour
 {
     void Awake()
     {
@@ -11,14 +11,11 @@ public class ResultPanel : MonoBehaviour
     public void Init()
     {
         this.gameObject.SetActive(true);
+        
     }
 
-    public void RevivedGame()
+    public void OnExit()
     {
-        // 부활 버튼
-    }
-    public void ExitGame()
-    {
-        // 나가기 버튼 - 콜백으로 처리하자.
+        this.gameObject.SetActive(false);
     }
 }

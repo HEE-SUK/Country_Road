@@ -13,28 +13,28 @@ public class ObjectScroller : MonoBehaviour
     [Header("오브젝트 사이간격")]
     [SerializeField] private float objectSpacing = 0f;
     // 스크롤 시작 위치
-    [Header("스크롤 시작 위치")]
-    [SerializeField] private Transform startPos = null;
+    // [Header("스크롤 시작 위치")]
+    // [SerializeField] private Transform startPos = null;
     // 스크롤 끝 위치
     [Header("스크롤 끝 위치")]
     [SerializeField] private Transform endPos = null;
     // 통과한 블럭의 수
-    [Header("현재 통과한 섹션 수")]
-    [SerializeField] int passSectionNum = 0;
+    // [Header("현재 통과한 섹션 수")]
+    // [SerializeField] int passSectionNum = 0;
     // Test 전용: 스크롤 스피드 
     [Header("스크롤 스피드")]
     [SerializeField] float scrollSpeed = 1;
     // Test 전용: 횡단보도 몇개당 생성할지;
-    [Header("황단보도 생성 텀")]
-    [SerializeField] int crossWalkNum = 5;
+    // [Header("황단보도 생성 텀")]
+    // [SerializeField] int crossWalkNum = 5;
     // Test 전용: 현재 테마;
     [Header("현재 테마")]
     [SerializeField] int currentThemeIndex = 0;
     // Test 전용: 벽 번호;
-    [Header("벽 레벨(0부터 시작)")]
-    [SerializeField] int wallIndex = 0;
-    [Header("현재 벽 데이터 키값")]
-    [SerializeField] string wallId = string.Empty;
+    // [Header("벽 레벨(0부터 시작)")]
+    // [SerializeField] int wallIndex = 0;
+    // [Header("현재 벽 데이터 키값")]
+    // [SerializeField] string wallId = string.Empty;
     #endregion
 
     // 블럭 생성 관련 변수 

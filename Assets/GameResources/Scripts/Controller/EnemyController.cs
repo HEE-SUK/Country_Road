@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] float speed;
-    [SerializeField] private EnemyMovement enemyMov;
-    private ZombieInfo zombieInfo;
+    // [SerializeField] 
+    // private float speed = 0f;
+    [SerializeField] 
+    private EnemyMovement enemyMov = null;
+
+    private ZombieInfo zombieInfo = null;
     
     public void Init(ZombieInfo zombieInfo){
         this.zombieInfo = zombieInfo;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 0;
+    public float speed = 0f;
 
     public void Init(float speed){
         this.speed = GameManager.GameSpeed + speed;
