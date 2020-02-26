@@ -10,6 +10,6 @@ public class EnemyController : MonoBehaviour
     
     public void Init(ZombieInfo zombieInfo){
         this.zombieInfo = zombieInfo;
-        enemyMov.Init(GameManager.GameSpeed - speed);
+        enemyMov.Init(zombieInfo.spd);
     }
 }

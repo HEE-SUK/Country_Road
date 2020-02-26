@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d25017e9c26f4491a926629cb1e7a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fBXScriptableObject: {fileID: 11400000, guid: 95f707202c7804565a721333c60e81a5,
+  fBXScriptableObject: {fileID: 11400000, guid: 792b36f3ec9774472bb5a520f03f87c5,
     type: 2}
