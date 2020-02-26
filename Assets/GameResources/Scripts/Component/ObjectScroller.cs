@@ -50,20 +50,20 @@ public class ObjectScroller : MonoBehaviour
     // Mono
     void Start()
     {
-        GameManager.GameSpeed = scrollSpeed;
     }
     void Update()
     {
-        GameManager.GameSpeed = scrollSpeed;
         curPassDistance += scrollSpeed * Time.deltaTime;
         for (int i = 0; i < activeList.Count; i++)
         {
-            activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
+            activeList[i].transform.Translate(Vector3.back * scrollSpeed * Time.deltaTime);
         }
     }
     public void Init(ScrollEndDataSetting scrollEndDataSetting)
     {
         this.scrollEndDataSetting = scrollEndDataSetting;
+        GameManager.GameSpeed = scrollSpeed;
+        Debug.Log(GameManager.GameSpeed);
         InstantiateScrollObj(scrollEndDataSetting);
     }
     private void InstantiateScrollObj(ScrollEndDataSetting scrollEndDataSetting)
@@ -91,6 +91,7 @@ public class ObjectScroller : MonoBehaviour
     {
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
+        GameManager.GameSpeed = scrollSpeed;
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }
 

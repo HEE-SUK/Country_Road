@@ -17,6 +17,7 @@ public class World : MonoBehaviour
         }
     }
     [SerializeField] private ObjectScroller objectScroller = null;
+    [SerializeField] private EnemySpawner enemySpawner = null;
     
     [Header("현재 섹션 인덱스")]
     [SerializeField] int curSecIndex = 0;
@@ -42,6 +43,7 @@ public class World : MonoBehaviour
     {
         this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex, TableManager.SectionInfoTable.GetLength() - 1);
         this.CurSecInfo = sectionInfos[curSecIndex];
+        enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID));
     }
     
     // ScrollEndCallBack
@@ -69,7 +71,7 @@ public class World : MonoBehaviour
     }
     private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
     {
-
+        Debug.Log("Start");
     }
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
     {
