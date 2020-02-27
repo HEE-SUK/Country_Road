@@ -16,10 +16,6 @@ public class EnemySpawner : MonoBehaviour
         var enemy = Instantiate(this.enemyController, this.transform);
         enemy.Init(zombieInfo);
         enemy.gameObject.SetActive(true);
-        // GameObject obj = ObjectPoolDictionary.Instance.GetObjectPrefab(zombieInfo.id);
-        // if(obj == null){
-        //     Debug.Log("SpawnEnemy faild: " + zombieInfo.id);
-        //     return;
-        // }
+        
     }
 }
