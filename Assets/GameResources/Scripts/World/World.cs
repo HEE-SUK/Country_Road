@@ -43,7 +43,6 @@ public class World : MonoBehaviour
     {
         this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex, TableManager.SectionInfoTable.GetLength() - 1);
         this.CurSecInfo = sectionInfos[curSecIndex];
-        enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID));
     }
     
     // ScrollEndCallBack
@@ -72,7 +71,10 @@ public class World : MonoBehaviour
     private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 게임 스타트 이벤트
-        objectScroller.Init(ScrollEndSetting);
+        objectScroller.Init(ScrollEndSetting); 
+        // TODO: 시작시 자동차 정보 받기 
+        enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID),
+            TableManager.CarInfoTable.GetInfo("C001"));// 임시 자동차 정보
     }
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
     {

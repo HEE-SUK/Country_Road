@@ -56,7 +56,7 @@ public class ObjectScroller : MonoBehaviour
         curPassDistance += scrollSpeed * Time.deltaTime;
         for (int i = 0; i < activeList.Count; i++)
         {
-            activeList[i].transform.Translate(Vector3.back * scrollSpeed * Time.deltaTime);
+            activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
         }
     }
     public void Init(ScrollEndDataSetting scrollEndDataSetting)
@@ -91,6 +91,8 @@ public class ObjectScroller : MonoBehaviour
     {
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
+        if(scrollSpeed <= 0)
+            EventManager.emit(EVENT_TYPE.FINISH_GAME,this);
         GameManager.GameSpeed = scrollSpeed;
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }

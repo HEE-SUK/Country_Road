@@ -6,20 +6,17 @@ public class EnemySpawner : MonoBehaviour
 { 
     [SerializeField] 
     private EnemyController enemyController = null;
-    
-    public void Init(ZombieInfo zombieInfo)
+    private CarInfo carInfo = null;
+    public void Init(ZombieInfo zombieInfo,CarInfo carInfo)
     {
-        SpawnEnemy(zombieInfo);
+        this.carInfo = carInfo;
+        SpawnEnemy(zombieInfo,carInfo);
     }
-    public void SpawnEnemy(ZombieInfo zombieInfo)
+    public void SpawnEnemy(ZombieInfo zombieInfo,CarInfo carInfo)
     {
         var enemy = Instantiate(this.enemyController, this.transform);
-        enemy.Init(zombieInfo);
+        enemy.Init(zombieInfo,carInfo);
         enemy.gameObject.SetActive(true);
-        // GameObject obj = ObjectPoolDictionary.Instance.GetObjectPrefab(zombieInfo.id);
-        // if(obj == null){
-        //     Debug.Log("SpawnEnemy faild: " + zombieInfo.id);
-        //     return;
-        // }
+
     }
 }
