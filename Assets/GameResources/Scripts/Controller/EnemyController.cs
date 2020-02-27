@@ -10,9 +10,11 @@ public class EnemyController : MonoBehaviour
     private EnemyMovement enemyMov = null;
 
     private ZombieInfo zombieInfo = null;
+    private CarInfo carInfo = null;
     
-    public void Init(ZombieInfo zombieInfo){
+    public void Init(ZombieInfo zombieInfo,CarInfo carInfo){
         this.zombieInfo = zombieInfo;
-        enemyMov.Init(zombieInfo.spd);
+        this.carInfo = carInfo;
+        enemyMov.Init(zombieInfo.spd,carInfo.mSpd);
     }
 }
