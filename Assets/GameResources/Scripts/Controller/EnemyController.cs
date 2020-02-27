@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    // [SerializeField] 
-    // private float speed = 0f;
-    [SerializeField] 
-    private EnemyMovement enemyMov = null;
-
+    [SerializeField] private EnemyMovement enemyMov = null;
+    [SerializeField] private Animator anim = null;
     private ZombieInfo zombieInfo = null;
     private CarInfo carInfo = null;
+    private EnemyAttackCallBack enemyAttackCallBack = null;
     
-    public void Init(ZombieInfo zombieInfo,CarInfo carInfo){
+    public void Init(ZombieInfo zombieInfo,CarInfo carInfo,EnemyAttackCallBack enemyAttackCallBack){
         this.zombieInfo = zombieInfo;
         this.carInfo = carInfo;
-        enemyMov.Init(zombieInfo.spd,carInfo.mSpd);
+        this.enemyAttackCallBack = enemyAttackCallBack;
+        enemyMov.Init(zombieInfo.spd,carInfo.mSpd,TryAttack);
     }
+
+    private void TryAttack(){
+        anim.SetBool("Jump",true);
+        enemyAttackCallBack(zombieInfo);
+    }
+
+
 }

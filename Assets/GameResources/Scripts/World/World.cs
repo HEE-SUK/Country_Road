@@ -55,6 +55,10 @@ public class World : MonoBehaviour
         // Debug.Log(curSecInfo.wallID);
         return CurSecInfo;
     }
+    // Attacked Car
+    private void EnemyAttackCallBack(ZombieInfo zombieInfo){
+        objectScroller.ChangeScollSpeed(zombieInfo.atk, false);
+    }
     // Event
     private void OnEvent()
     {
@@ -74,7 +78,8 @@ public class World : MonoBehaviour
         objectScroller.Init(ScrollEndSetting); 
         // TODO: 시작시 자동차 정보 받기 
         enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID),
-            TableManager.CarInfoTable.GetInfo("C001"));// 임시 자동차 정보
+            TableManager.CarInfoTable.GetInfo("C001"),curSecInfo, EnemyAttackCallBack);// 임시 자동차 정보
+        enemySpawner.SpawnLoopStart(curSecInfo);
     }
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
     {
