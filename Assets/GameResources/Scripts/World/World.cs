@@ -71,8 +71,10 @@ public class World : MonoBehaviour
     private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 게임 스타트 이벤트
-        objectScroller.Init(ScrollEndSetting);
-        enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID));
+        objectScroller.Init(ScrollEndSetting); 
+        // TODO: 시작시 자동차 정보 받기 
+        enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID),
+            TableManager.CarInfoTable.GetInfo("C001"));// 임시 자동차 정보
     }
     private void TouchRhythm(EVENT_TYPE eventType, Component sender, object param = null)
     {
