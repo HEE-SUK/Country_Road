@@ -12,6 +12,9 @@ public class EnemyMovement : MonoBehaviour
     }
 
     void Update(){
-        transform.Translate(Vector3.back * (GameManager.GameSpeed - speed) * Time.deltaTime);
+        float curSpeed = GameManager.GameSpeed - speed;
+        if(transform.position.z < -80 && curSpeed > 0)
+            return;
+        transform.Translate(Vector3.back * curSpeed * Time.deltaTime);
     }
 }

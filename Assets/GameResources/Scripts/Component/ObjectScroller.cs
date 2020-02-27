@@ -56,7 +56,7 @@ public class ObjectScroller : MonoBehaviour
         curPassDistance += scrollSpeed * Time.deltaTime;
         for (int i = 0; i < activeList.Count; i++)
         {
-            activeList[i].transform.Translate(Vector3.back * scrollSpeed * Time.deltaTime);
+            activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
         }
     }
     public void Init(ScrollEndDataSetting scrollEndDataSetting)
