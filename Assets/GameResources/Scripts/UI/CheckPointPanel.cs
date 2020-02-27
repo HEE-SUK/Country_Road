@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class CheckPointPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        this.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        this.gameObject.SetActive(true);
+    }
+    
+    public void OnExit()
+    {
+        this.gameObject.SetActive(false);
     }
 }

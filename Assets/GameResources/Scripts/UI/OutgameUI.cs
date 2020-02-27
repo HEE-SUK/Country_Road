@@ -6,6 +6,8 @@ public class OutgameUI : MonoBehaviour
 {
     [SerializeField]
     private GaragePanel garagePanel = null;
+    [SerializeField]
+    private CheckPointPanel checkPointPanel = null;
 
     void Awake()
     {
@@ -26,7 +28,7 @@ public class OutgameUI : MonoBehaviour
     }
     public void OnCheckList()
     {
-        this.gameObject.SetActive(false);
+        this.checkPointPanel.Init();
     }
     public void OnOption()
     {
