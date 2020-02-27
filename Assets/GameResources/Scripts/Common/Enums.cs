@@ -22,3 +22,10 @@ public enum RHYTHMTYPE
     GOOD,
     GREAT,
 }
+public enum CARSTATUSTYPE
+{
+    STAT0,
+    STAT1,
+    STAT2,
+    STAT3,
+}
