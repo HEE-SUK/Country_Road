@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    [SerializeField] ParticleSystem wallBrokenParticle = null;
+    [SerializeField] private ParticleSystem wallBrokenParticle = null;
+    [SerializeField] private CarWeapon weapon = null;
 
+    private CarInfo carInfo = null;
     void Start(){
         OnEvent();
+        Init(TableManager.CarInfoTable.GetInfo("C001"));
     }
     void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
+    }
+
+
+
+    public void Init(CarInfo carInfo){
+        this.carInfo = carInfo;
+        this.weapon.Init(carInfo);
     }
 
     private void OnEvent(){

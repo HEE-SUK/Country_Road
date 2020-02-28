@@ -57,7 +57,6 @@ public class World : MonoBehaviour
     }
     // Attacked Car
     private void EnemyAttackCallBack(ZombieInfo zombieInfo){
-        Debug.Log(zombieInfo.atk);
         objectScroller.ChangeScollSpeed(zombieInfo.atk, false);
     }
     // Event
