@@ -24,10 +24,10 @@ public enum RHYTHMTYPE
 }
 public enum CARSTATUSTYPE
 {
-    STAT0,
-    STAT1,
-    STAT2,
-    STAT3,
+    DEF,
+    MSPD,
+    RHM,
+    ATK,
 }
 public enum LOCALIZETYPE
 {

@@ -16,13 +16,29 @@ public class CarStatusButton : MonoBehaviour
     private Text valueText = null;
     [SerializeField]
     private Text goldText = null;
-    public void Init(CARSTATUSTYPE _type, float _value)
+    public void Init(CARSTATUSTYPE _type, float _value, float _gold)
     {
         this.statusImage.sprite = this.statusSprites[(int)_type];
         this.statusImage.SetNativeSize();
-        this.nameText.text = $"이름";
-        this.valueText.text = $"값";
-        this.goldText.text = $"골드";
+        string name = "DEFAULT";
+        switch (_type)
+        {
+            case CARSTATUSTYPE.DEF:
+                name = "DEFENCE";
+                break;
+            case CARSTATUSTYPE.MSPD:
+                name = "MAXSPEED";
+                break;
+            case CARSTATUSTYPE.RHM:
+                name = "RHYTHM";
+                break;
+            case CARSTATUSTYPE.ATK:
+                name = "ATTACK";
+                break;
+        }
+        this.nameText.text = name;
+        this.valueText.text = $"{_value}";
+        this.goldText.text = $"{_gold}";
     }
 
     public void Upgrade()

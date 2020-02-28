@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8186004e37c49aab58c248baa0c2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carImage: {fileID: 4946807369329688783}
+  nameText: {fileID: 8310211127329040254}
 --- !u!1 &7899600194234976313
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,8 @@ public enum EVENT_TYPE {
     TOUCH_RHYTHM,
     UPDATE_UI,
     WALL_BROKEN,
-    CHANGE_SECTION
+    CHANGE_SECTION,
+    CHOICE_CAR,
 }
 
 public class EventManager: Singleton<EventManager> 

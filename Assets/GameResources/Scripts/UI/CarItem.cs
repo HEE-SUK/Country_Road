@@ -16,4 +16,8 @@ public class CarItem : MonoBehaviour
         this.info = _info;
         this.nameText.text = _info.name;
     }
+    public CarInfo GetInfo()
+    {
+        return this.info;
+    }
 }

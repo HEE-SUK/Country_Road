@@ -5,21 +5,22 @@ using UnityEngine;
 public class CarStatus : MonoBehaviour
 {
     [SerializeField]
-    private CarStatusButton status0 = null;
+    private CarStatusButton defence = null;
     [SerializeField]
-    private CarStatusButton status1 = null;
+    private CarStatusButton maxSpeed = null;
     [SerializeField]
-    private CarStatusButton status2 = null;
+    private CarStatusButton rhythm = null;
     [SerializeField]
-    private CarStatusButton status3 = null;
+    private CarStatusButton attack = null;
 
-    public void Init(CarInfo _info)
+    public void Init(CarItem _item)
     {
+        CarInfo info = _item.GetInfo();
         // status 초기화
-        this.status0.Init(CARSTATUSTYPE.STAT0, _info.mSpd);
-        this.status1.Init(CARSTATUSTYPE.STAT1, _info.mSpd);
-        this.status2.Init(CARSTATUSTYPE.STAT2, _info.mSpd);
-        this.status3.Init(CARSTATUSTYPE.STAT3, _info.mSpd);
+        this.defence.Init(CARSTATUSTYPE.DEF, info.def, info.price);
+        this.maxSpeed.Init(CARSTATUSTYPE.MSPD, info.mSpd, info.price);
+        this.rhythm.Init(CARSTATUSTYPE.RHM, info.rhm, info.price);
+        this.attack.Init(CARSTATUSTYPE.ATK, info.atk, info.price);
     }
 
 }
