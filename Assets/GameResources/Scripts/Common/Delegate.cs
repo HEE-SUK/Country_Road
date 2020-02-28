@@ -10,3 +10,4 @@ public delegate void EndPosAction(BlockController roadPieceController);
 public delegate SectionInfo ScrollEndDataSetting();
 
 public delegate void EnemyAttackCallBack(ZombieInfo zombieInfo);
+public delegate void ActiveCallBack(bool active);
