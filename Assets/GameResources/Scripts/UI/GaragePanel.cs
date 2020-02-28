@@ -61,7 +61,7 @@ public class GaragePanel : MonoBehaviour
         this.carStatus.Init(currentItem);            
 
         this.carItemParent.DOKill();
-        this.carItemParent.DOLocalMoveX(-currentItem.transform.localPosition.x, 0.5f);
+        this.carItemParent.DOLocalMoveX(-currentItem.transform.localPosition.x, 0.5f).SetEase(Ease.OutBack);
         EventManager.emit(EVENT_TYPE.CHOICE_CAR, this, currentItem.GetInfo());
     }
 

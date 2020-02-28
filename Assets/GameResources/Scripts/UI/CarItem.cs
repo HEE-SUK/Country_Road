@@ -13,6 +13,7 @@ public class CarItem : MonoBehaviour
     
     public void Init(CarInfo _info)
     {
+        this.carImage.SetNativeSize();
         this.info = _info;
         this.nameText.text = _info.name;
     }
