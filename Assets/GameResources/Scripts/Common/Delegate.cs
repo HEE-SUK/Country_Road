@@ -8,3 +8,5 @@ public delegate void IndexCallBack(int _index);
 public delegate void EndPosAction(BlockController roadPieceController);
 
 public delegate SectionInfo ScrollEndDataSetting();
+
+public delegate void EnemyAttackCallBack(ZombieInfo zombieInfo);
