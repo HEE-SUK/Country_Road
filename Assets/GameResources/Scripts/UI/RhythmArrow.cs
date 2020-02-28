@@ -8,6 +8,7 @@ public class RhythmArrow : MonoBehaviour
 
     public void Init()
     {
+        this.transform.DOKill();
         this.transform.localRotation = Quaternion.Euler(0f,0f, this.originRotation);
         this.transform.DOLocalRotate(new Vector3(0f, 0f, -this.originRotation), 1f, RotateMode.FastBeyond360)
                         .SetEase(Ease.Linear)

@@ -34,5 +34,16 @@ public class GameManager : Singleton<GameManager>
     private int curSecIndex = 0;
     // 타임 스케일
     private float timeScale = 1f;
-    
+    // 재화
+    private int gold = 0;
+    private int jem = 0;
+
+    public static int GetGold()
+    {
+        return Instance.gold;
+    }
+    public static int GetJem()
+    {
+        return Instance.jem;
+    }
 }

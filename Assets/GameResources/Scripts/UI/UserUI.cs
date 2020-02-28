@@ -9,20 +9,17 @@ public class UserUI : MonoBehaviour
     private Text goldText = null;
     [SerializeField]
     private Text jemText = null;
-    void Awake()
-    {
-        this.goldText.text = $"{0}";
-        this.jemText.text = $"{0}";
-    }
-
     void Start()
     {
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
+        EventManager.emit(EVENT_TYPE.UPDATE_UI, this);
     }
 
     private void UpdatedUI(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 골드, 금화
+        this.goldText.text = $"{GameManager.GetGold()}";
+        this.jemText.text = $"{GameManager.GetJem()}";
     }
 
     void OnDestroy()
