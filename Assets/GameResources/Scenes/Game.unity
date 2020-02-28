@@ -207,7 +207,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 19826.625}
+  m_BoundingSphereOverride: {x: 4.5799e-41, y: 0, z: 0, w: 881943}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -959,6 +959,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 877883677983685951, guid: 18f8b8304476a458e8c475e04ca06a11,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 967893531109828188, guid: 18f8b8304476a458e8c475e04ca06a11,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 2666672723905229585, guid: 18f8b8304476a458e8c475e04ca06a11,
         type: 3}
