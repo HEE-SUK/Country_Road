@@ -8,12 +8,12 @@ using UnityQuickSheet;
 /// 
 public partial class GoogleDataAssetUtility
 {
-    [MenuItem("Assets/Create/Google/TextTable")]
-    public static void CreateTextTableAssetFile()
+    [MenuItem("Assets/Create/Google/LocalizeTable")]
+    public static void CreateLocalizeTableAssetFile()
     {
-        TextTable asset = CustomAssetUtility.CreateAsset<TextTable>();
+        LocalizeTable asset = CustomAssetUtility.CreateAsset<LocalizeTable>();
         asset.SheetName = "CountryRoad";
-        asset.WorksheetName = "TextTable";
+        asset.WorksheetName = "LocalizeTable";
         EditorUtility.SetDirty(asset);        
     }
     

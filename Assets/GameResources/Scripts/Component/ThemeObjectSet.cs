@@ -75,7 +75,7 @@ public class ThemeObjectSet : MonoBehaviour
     }
 
     public GameObject ReturnDisableObj(GameObject[] objArr){
-        var shuffleArray = CollectionUtil.ShuffleArray(objArr);
+        var shuffleArray = Utility.ShuffleArray(objArr);
         for (int i = 0; i < shuffleArray.Length; i++)
         {
             if(!shuffleArray[i].activeSelf){

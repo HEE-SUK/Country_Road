@@ -29,6 +29,10 @@ public class TableManager : Singleton<TableManager>
     {
         get { return Instance.sectionInfoTable;}
     }
+    public static LocalizeInfoTable LocalizeInfoTable 
+    {
+        get { return Instance.localizeInfoTable;}
+    }
 
     private CarInfoTable carInfoTable = new CarInfoTable();
     private WallInfoTable wallInfoTable = new WallInfoTable();
@@ -36,4 +40,5 @@ public class TableManager : Singleton<TableManager>
     private CheckPointInfoTable checkPointInfoTable = new CheckPointInfoTable();
     private ZombieInfoTable zombieInfoTable = new ZombieInfoTable();
     private SectionInfoTable sectionInfoTable = new SectionInfoTable();
+    private LocalizeInfoTable localizeInfoTable =  new LocalizeInfoTable();
 }

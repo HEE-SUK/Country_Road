@@ -29,3 +29,12 @@ public enum CARSTATUSTYPE
     STAT2,
     STAT3,
 }
+public enum LOCALIZETYPE
+{
+    EN,
+    KO,
+    ZHTW,
+    ZH,
+    JA,
+    ES,
+}

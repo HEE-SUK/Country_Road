@@ -9,6 +9,8 @@ public class UserUI : MonoBehaviour
     private Text goldText = null;
     [SerializeField]
     private Text jemText = null;
+    [SerializeField]
+    private GameObject optionPanelPrefab = null;
     void Start()
     {
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
@@ -22,6 +24,11 @@ public class UserUI : MonoBehaviour
         this.jemText.text = $"{GameManager.GetJem()}";
     }
 
+    public void OnOption()
+    {
+        OptionPanel optionPanel = Instantiate(this.optionPanelPrefab).GetComponent<OptionPanel>();
+        optionPanel.Init();
+    }
     void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
