@@ -12,26 +12,26 @@ using UnityQuickSheet;
 ///
 /// !!! Machine generated code !!!
 ///
-[CustomEditor(typeof(TextTable))]
-public class TextTableEditor : BaseGoogleEditor<TextTable>
+[CustomEditor(typeof(LocalizeTable))]
+public class LocalizeTableEditor : BaseGoogleEditor<LocalizeTable>
 {	    
     public override bool Load()
     {        
-        TextTable targetData = target as TextTable;
+        LocalizeTable targetData = target as LocalizeTable;
         
         var client = new DatabaseClient("", "");
         string error = string.Empty;
         var db = client.GetDatabase(targetData.SheetName, ref error);	
-        var table = db.GetTable<TextTableData>(targetData.WorksheetName) ?? db.CreateTable<TextTableData>(targetData.WorksheetName);
+        var table = db.GetTable<LocalizeTableData>(targetData.WorksheetName) ?? db.CreateTable<LocalizeTableData>(targetData.WorksheetName);
         
-        List<TextTableData> myDataList = new List<TextTableData>();
+        List<LocalizeTableData> myDataList = new List<LocalizeTableData>();
         
         var all = table.FindAll();
         foreach(var elem in all)
         {
-            TextTableData data = new TextTableData();
+            LocalizeTableData data = new LocalizeTableData();
             
-            data = Cloner.DeepCopy<TextTableData>(elem.Element);
+            data = Cloner.DeepCopy<LocalizeTableData>(elem.Element);
             myDataList.Add(data);
         }
                 
