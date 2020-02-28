@@ -33,6 +33,9 @@ public class EnemySpawner : MonoBehaviour
         this.sectionInfo = sectionInfo;
         StartCoroutine("SpawnLoop");
     }
+    public void SpawnEnemyStop(){
+        StopCoroutine("SpawnLoop");
+    }
     private IEnumerator SpawnLoop(){
         while(true){
             yield return new WaitForSeconds(sectionInfo.zombieInterval);

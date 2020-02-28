@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     private ZombieInfo zombieInfo = null;
     private CarInfo carInfo = null;
     private EnemyAttackCallBack enemyAttackCallBack = null;
-    
+    private bool isAttackChance = false;
     public void Init(ZombieInfo zombieInfo,CarInfo carInfo,EnemyAttackCallBack enemyAttackCallBack){
         this.zombieInfo = zombieInfo;
         this.carInfo = carInfo;

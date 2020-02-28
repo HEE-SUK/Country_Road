@@ -57,6 +57,7 @@ public class World : MonoBehaviour
     }
     // Attacked Car
     private void EnemyAttackCallBack(ZombieInfo zombieInfo){
+        Debug.Log(zombieInfo.atk);
         objectScroller.ChangeScollSpeed(zombieInfo.atk, false);
     }
     // Event
@@ -65,12 +66,14 @@ public class World : MonoBehaviour
         EventManager.on(EVENT_TYPE.START_GAME, this.StartGame);
         EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
         EventManager.on(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
+        EventManager.on(EVENT_TYPE.FINISH_GAME, this.FinishGame);
     }
     private void OffEvent()
     {
         EventManager.off(EVENT_TYPE.START_GAME, this.StartGame);
         EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
         EventManager.off(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
+        EventManager.off(EVENT_TYPE.FINISH_GAME,this.FinishGame);
     }
     private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
     {
@@ -90,5 +93,8 @@ public class World : MonoBehaviour
     {
         WallInfo info = (WallInfo)param;
         objectScroller.ChangeScollSpeed(info.def, false);
+    }
+    private void FinishGame(EVENT_TYPE eventType, Component sender, object param = null){
+        enemySpawner.SpawnEnemyStop();
     }
 }

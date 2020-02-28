@@ -91,9 +91,9 @@ public class ObjectScroller : MonoBehaviour
     {
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
+        GameManager.GameSpeed = scrollSpeed;
         if(scrollSpeed <= 0)
             EventManager.emit(EVENT_TYPE.FINISH_GAME,this);
-        GameManager.GameSpeed = scrollSpeed;
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }
 
