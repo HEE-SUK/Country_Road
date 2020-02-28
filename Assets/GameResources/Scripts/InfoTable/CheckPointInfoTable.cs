@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckPointInfoTable : IInfoTable<CheckPointInfo, CheckPointTableData>
+public class CheckPointInfoTable : InfoTable<CheckPointInfo>
 {
-    private Dictionary<string, CheckPointInfo> checkPointInfoDictionary = new Dictionary<string, CheckPointInfo>();
-
     private string tableName = "CheckPointTable";
     public CheckPointInfoTable()
     {
@@ -15,26 +13,10 @@ public class CheckPointInfoTable : IInfoTable<CheckPointInfo, CheckPointTableDat
             this.AddInfo(data);
         }
     }
-    
-    public CheckPointInfo GetInfo(string _id)
-    {
-        // 키값에 해당되는 value 반환
-        return this.checkPointInfoDictionary[_id];
-    }
-    public bool IsExist(string _id)
-    {
-        // 키값에 해당되는 key 존재여부
-        return this.checkPointInfoDictionary.ContainsKey(_id);
-    }
-
-    public int GetLength() 
-    {
-        return this.checkPointInfoDictionary.Count;
-    }
 
     public void AddInfo(CheckPointTableData _data)
     {   
         CheckPointInfo checkPointInfo = new CheckPointInfo(_data);
-        this.checkPointInfoDictionary.Add(checkPointInfo.id, checkPointInfo);
+        this.infoDictionary.Add(checkPointInfo.id, checkPointInfo);
     }
 }

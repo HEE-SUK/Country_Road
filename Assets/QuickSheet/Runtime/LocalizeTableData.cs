@@ -6,7 +6,7 @@ using System.Collections;
 /// !!! DO NOT CHANGE Tabs to Spaces !!!
 ///
 [System.Serializable]
-public class TextTableData
+public class LocalizeTableData
 {
   [SerializeField]
   string id;

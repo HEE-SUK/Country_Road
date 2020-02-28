@@ -16,46 +16,34 @@ MonoBehaviour:
   scriptFilePath: QuickSheet/Runtime
   editorScriptFilePath: QuickSheet/GDataPlugin/Editor
   sheetName: CountryRoad
-  workSheetName: SectionTable
+  workSheetName: LocalizeTable
   columnHeaderList:
   - type: 1
-    name: SID
-    isEnable: 0
-    isArray: 0
-  - type: 3
-    name: Index
-    isEnable: 0
-    isArray: 0
-  - type: 3
-    name: ThemeIndex
-    isEnable: 0
-    isArray: 0
-  - type: 8
-    name: WallBool
+    name: ID
     isEnable: 0
     isArray: 0
   - type: 1
-    name: WallID
-    isEnable: 0
-    isArray: 0
-  - type: 8
-    name: RhyBool
+    name: en
     isEnable: 0
     isArray: 0
   - type: 1
-    name: RhythmID
+    name: ko
     isEnable: 0
     isArray: 0
   - type: 1
-    name: CheckPointID
+    name: zhTW
     isEnable: 0
     isArray: 0
   - type: 1
-    name: ZombieID
+    name: zh
     isEnable: 0
     isArray: 0
-  - type: 5
-    name: ZombieInterval
+  - type: 1
+    name: ja
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: es
     isEnable: 0
     isArray: 0
   AccessCode: 

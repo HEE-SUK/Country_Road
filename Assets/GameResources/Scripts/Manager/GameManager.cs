@@ -34,6 +34,8 @@ public class GameManager : Singleton<GameManager>
     private int curSecIndex = 0;
     // 타임 스케일
     private float timeScale = 1f;
+    // 언어
+    private LOCALIZETYPE localizeType = LOCALIZETYPE.EN;
     // 재화
     private int gold = 0;
     private int jem = 0;
@@ -45,5 +47,9 @@ public class GameManager : Singleton<GameManager>
     public static int GetJem()
     {
         return Instance.jem;
+    }
+    public static LOCALIZETYPE GetLocalizeType()
+    {
+        return Instance.localizeType;
     }
 }

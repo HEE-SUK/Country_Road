@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public static class CollectionUtil
+public static class Utility
 {
     public static T[] ShuffleArray<T>(T[] array)
     {
@@ -45,5 +45,38 @@ public static class CollectionUtil
             dataList[random2] = tmp;
         }
         return dataList;
+    }
+
+    public static string GetLocalized(string _id)
+    {
+        LocalizeInfo localizeInfo = TableManager.LocalizeInfoTable.GetInfo(_id);
+        string resultText = "";
+        
+        switch (GameManager.GetLocalizeType())
+        {
+            case LOCALIZETYPE.EN:
+                resultText = localizeInfo.en;
+                break;
+            case LOCALIZETYPE.KO:
+                resultText = localizeInfo.ko;
+                break;
+            case LOCALIZETYPE.ZHTW:
+                resultText = localizeInfo.zhTW;
+                break;
+            case LOCALIZETYPE.ZH:
+                resultText = localizeInfo.zh;
+                break;
+            case LOCALIZETYPE.JA:
+                resultText = localizeInfo.ja;
+                break;
+            case LOCALIZETYPE.ES:
+                resultText = localizeInfo.es;
+                break;
+            default:
+                // default는 EN
+                resultText = localizeInfo.en;
+                break;
+        }
+        return resultText;
     }
 }
