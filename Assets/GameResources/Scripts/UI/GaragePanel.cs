@@ -62,7 +62,7 @@ public class GaragePanel : MonoBehaviour
 
         this.carItemParent.DOKill();
         this.carItemParent.DOLocalMoveX(-currentItem.transform.localPosition.x, 0.5f).SetEase(Ease.OutBack);
-        EventManager.emit(EVENT_TYPE.CHOICE_CAR, this, currentItem.GetInfo());
+        EventManager.emit(EVENT_TYPE.CHOICE_CAR, this, currentItem.GetInfo().id);
     }
 
     public void OnLotto()
