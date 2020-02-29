@@ -20,7 +20,7 @@ MonoBehaviour:
     name: Juciy
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 1

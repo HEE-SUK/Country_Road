@@ -8,19 +8,19 @@ public class Theme : MonoBehaviour
 
     public void Init(){
         // 모두 disable 시키기
-        ReturnDisableObj(sections);
+        DisableObjectArr(sections);
         // 랜덤 엑티브 
         sections[Random.Range(0,sections.Length)].SetActive(true);
     }
 
-    public GameObject ReturnDisableObj(GameObject[] objArr){
-        var shuffleArray = Utility.ShuffleArray(objArr);
-        for (int i = 0; i < shuffleArray.Length; i++)
-        {
-            if(!shuffleArray[i].activeSelf){
-                return shuffleArray[i];
-            }
+    private void DisableObjectArr(GameObject[] objArr){
+        if(objArr.Length == 0){
+            Debug.Log("DisableObjectArr Failed, objArr.Length is " + objArr.Length);
+            return;
         }
-        return null;
+        for (int i = 0; i < objArr.Length; i++)
+        {
+            objArr[i].SetActive(false);
+        }
     }
 }
