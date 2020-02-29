@@ -18,19 +18,19 @@ public class EnemyMovement : MonoBehaviour
         isDie = true;
     }
     void Update(){
-        if(isDie){
+        if(isDie){// 죽었을때 
             transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
             return;
         }
-        if(!isAttackChance)
+        if(!isAttackChance) // 매달렸을때 
             return;
         float curSpeed = GameManager.GameSpeed - speed;
-        if(transform.position.z > -45 && isAttackChance){
+        if(transform.position.z > -8 && isAttackChance){ // 공격범위 일때 
             tryAttack();
             isAttackChance = false;
             return;
         }
-        if(transform.position.z < -80 && curSpeed > 0)
+        if(transform.position.z < -80 && curSpeed > 0) // 한계점 까지 밀렸을때
             return;
         transform.Translate(Vector3.back * curSpeed * Time.deltaTime);
     }

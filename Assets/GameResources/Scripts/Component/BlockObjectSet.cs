@@ -17,7 +17,8 @@ public class BlockObjectSet : MonoBehaviour
             this.themes[themes.Length - 1].Init();
             this.themes[themes.Length - 1].gameObject.SetActive(true);
         }
-        WallActive(settingInfo.wallInfo);
+        if(settingInfo.isWallActive)
+            WallActive(settingInfo.wallInfo);
     }
 
     private void WallActive(WallInfo wallInfo){

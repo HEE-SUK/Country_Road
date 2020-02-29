@@ -10,7 +10,6 @@ public class CarController : MonoBehaviour
     private CarInfo carInfo = null;
     void Start(){
         OnEvent();
-        Init(TableManager.CarInfoTable.GetInfo("C001"));
     }
     void OnDestroy()
     {

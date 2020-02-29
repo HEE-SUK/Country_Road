@@ -78,6 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallBrokenParticle: {fileID: 1504631991481324611, guid: f48dbb66c16dc4622a5a842f10d45450,
     type: 3}
+  weapon: {fileID: 7033167014250161782}
 --- !u!1001 &3482563431696648369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -153,6 +154,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3482563431696648369}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7033167014250161782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5894746679297142471, guid: 2431bcab0ed1e40e0a6adb2fb7772493,
+    type: 3}
+  m_PrefabInstance: {fileID: 3482563431696648369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a154dadeb07b54afba1aa129f3af6152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8053293132581787512
 PrefabInstance:
   m_ObjectHideFlags: 0

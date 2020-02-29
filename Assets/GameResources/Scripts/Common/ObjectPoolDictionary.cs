@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ObjectPoolDictionary : MonoSingleton<ObjectPoolDictionary>
 {
-    [SerializeField]
-    private FBXScriptableObject fBXScriptableObject = null;
+    [SerializeField] private FBXScriptableObject fBXScriptableObject = null;
     private Dictionary<string, GameObjectPool<GameObject>> fbxPoolDic = new Dictionary<string, GameObjectPool<GameObject>>();
     private List<GameObject> activeList = new List<GameObject>();
     void Awake()
