@@ -5,8 +5,8 @@ using UnityEngine;
 public class AutoAttack : MonoBehaviour
 {
     // 총구
-    [SerializeField] private Transform muzzle = null;
-    [SerializeField] private ParticleSystem muzzleParticle = null;
+    // [SerializeField] private Transform muzzle = null;
+    [SerializeField] private GameObject muzzleParticle = null;
     // 타워 헤드
     [SerializeField] private Transform towerHead = null;
     // 사거리
@@ -82,10 +82,12 @@ public class AutoAttack : MonoBehaviour
                 if (curBulletNum <= 0)
                 {
                     activeCallBack(false);
+                    muzzleParticle.SetActive(false);
                     yield return new WaitForSeconds(this.reloadTime);
                     curBulletNum = bulletNum;
                 }
                 activeCallBack(targetTrans == null ? false : true);
+                muzzleParticle.SetActive(targetTrans == null ? false : true);
                 yield return new WaitForSeconds(delayTime);
                 Fire();
             }
@@ -95,6 +97,7 @@ public class AutoAttack : MonoBehaviour
     private void Fire()
     {
         curBulletNum = curBulletNum > 0 ? curBulletNum - 1 : 0;
+        muzzleParticle.SetActive(false);
         if(targetEnemy == null){
             return;
         }
