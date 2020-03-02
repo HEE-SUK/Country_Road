@@ -11,7 +11,7 @@ public class GameManager : Singleton<GameManager>
         }
         set
         {
-            Instance.gameSpeed = Mathf.Floor(Mathf.Lerp(Instance.gameSpeed,value,0.5f) * 100f) * 0.01f;
+            Instance.gameSpeed = Mathf.Floor(Mathf.Lerp(Instance.gameSpeed, value, 0.5f) * 100f) * 0.01f;
         }
     }
     public static int SectionIndex

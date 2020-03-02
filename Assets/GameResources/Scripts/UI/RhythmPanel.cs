@@ -33,10 +33,10 @@ public class RhythmPanel : MonoBehaviour
         float extraSpeed = 0f;
         switch (this.rhythmTarget.StopPosition(stopPosition))
         {
-            case RHYTHMTYPE.GREAT:
+            case RHYTHMTYPE.GOOD:
                 extraSpeed = this.rhythmInfo.spd1;
                 break;
-            case RHYTHMTYPE.GOOD:
+            case RHYTHMTYPE.GREAT:
                 extraSpeed = this.rhythmInfo.spd2;
                 break;
             default:

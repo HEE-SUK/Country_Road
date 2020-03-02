@@ -20,14 +20,14 @@ public class World : MonoBehaviour
     [SerializeField] private EnemySpawner enemySpawner = null;
     [SerializeField] private CarSpawner carSpawner = null;
     [SerializeField] private string testCarInfoKey = null;
-    
+
     [Header("현재 섹션 인덱스")]
     [SerializeField] int curSecIndex = 0;
 
     private SectionInfo[] sectionInfos = null;
     // 현재 섹션 정보
     private SectionInfo curSecInfo = null;
-    
+
     // Mono
     void Start()
     {
@@ -45,12 +45,20 @@ public class World : MonoBehaviour
     {
         this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex, TableManager.SectionInfoTable.GetLength() - 1);
         this.CurSecInfo = sectionInfos[curSecIndex];
+        CarInfo carInfo = TableManager.CarInfoTable.GetInfo(testCarInfoKey);
+        CarController carCon = carSpawner.CarChange(carInfo.model);
+        if (carCon != null)
+            carCon.Init(carInfo);
+        else
+            Debug.Log("StartGame CarController Init faild");
     }
-    
+
     // ScrollEndCallBack
-    private SectionInfo ScrollEndSetting(){
+    private SectionInfo ScrollEndSetting()
+    {
         curSecIndex++;
         CurSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
+        enemySpawner.SpawnLoopStart(CurSecInfo);
         if (curSecInfo.checkPointID != "None") // Test용 
             Debug.Log("체크포인트 도달");
         // 블럭 객체들 세팅하기 
@@ -58,7 +66,8 @@ public class World : MonoBehaviour
         return CurSecInfo;
     }
     // Attacked Car
-    private void EnemyAttackCallBack(ZombieInfo zombieInfo){
+    private void EnemyAttackCallBack(ZombieInfo zombieInfo)
+    {
         objectScroller.ChangeScollSpeed(zombieInfo.atk, false);
     }
     // Event
@@ -68,28 +77,28 @@ public class World : MonoBehaviour
         EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
         EventManager.on(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
         EventManager.on(EVENT_TYPE.FINISH_GAME, this.FinishGame);
-        EventManager.on(EVENT_TYPE.CHOICE_CAR,this.ChoiceCar);
+        EventManager.on(EVENT_TYPE.CHOICE_CAR, this.ChoiceCar);
     }
     private void OffEvent()
     {
         EventManager.off(EVENT_TYPE.START_GAME, this.StartGame);
         EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
         EventManager.off(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
-        EventManager.off(EVENT_TYPE.FINISH_GAME,this.FinishGame);
-        EventManager.off(EVENT_TYPE.CHOICE_CAR,this.ChoiceCar);
+        EventManager.off(EVENT_TYPE.FINISH_GAME, this.FinishGame);
+        EventManager.off(EVENT_TYPE.CHOICE_CAR, this.ChoiceCar);
 
     }
     private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 게임 스타트 이벤트
-        objectScroller.Init(ScrollEndSetting); 
+        objectScroller.Init(ScrollEndSetting);
         // TODO: 시작시 자동차 정보 받기 
         enemySpawner.Init(TableManager.ZombieInfoTable.GetInfo(curSecInfo.zombieID),
-            TableManager.CarInfoTable.GetInfo("C001"),curSecInfo, EnemyAttackCallBack);// 임시 자동차 정보
+            TableManager.CarInfoTable.GetInfo("C001"), curSecInfo, EnemyAttackCallBack);// 임시 자동차 정보
         enemySpawner.SpawnLoopStart(curSecInfo);
         CarInfo carInfo = TableManager.CarInfoTable.GetInfo(testCarInfoKey);
         CarController carCon = carSpawner.CarChange(carInfo.model);
-        if(carCon != null)
+        if (carCon != null)
             carCon.Init(carInfo);
         else
             Debug.Log("StartGame CarController Init faild");
@@ -104,10 +113,12 @@ public class World : MonoBehaviour
         WallInfo info = (WallInfo)param;
         objectScroller.ChangeScollSpeed(info.def, false);
     }
-    private void FinishGame(EVENT_TYPE eventType, Component sender, object param = null){
+    private void FinishGame(EVENT_TYPE eventType, Component sender, object param = null)
+    {
         enemySpawner.SpawnEnemyStop();
     }
-    private void ChoiceCar(EVENT_TYPE eventType, Component sender, object param = null){
+    private void ChoiceCar(EVENT_TYPE eventType, Component sender, object param = null)
+    {
         Debug.Log("선택된 차: " + param.ToString());
         string infoKey = (string)param;
         CarInfo carInfo = TableManager.CarInfoTable.GetInfo(infoKey);

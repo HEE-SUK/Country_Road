@@ -46,7 +46,6 @@ public class ObjectScroller : MonoBehaviour
         {
             activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
         }
-        Debug.Log(GameManager.GameSpeed);
     }
     public void Init(ScrollEndDataSetting scrollEndDataSetting)
     {
@@ -68,7 +67,7 @@ public class ObjectScroller : MonoBehaviour
             if (blockCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
             blockCon.Init(endPos.position, ScrollEndCallBack,
-                new BlockObjectSettingInfo(this.currentThemeIndex,i > wallStartIndex, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
+                new BlockObjectSettingInfo(this.currentThemeIndex, i > wallStartIndex, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
             if (i == objectCount - 1)
             {
                 lastBlock = blockCon.transform;
@@ -82,9 +81,10 @@ public class ObjectScroller : MonoBehaviour
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
         GameManager.GameSpeed = scrollSpeed;
-        if(GameManager.GameSpeed <= 0){
+        if (GameManager.GameSpeed <= 0)
+        {
             speedLineVFX.gameObject.SetActive(false);
-            EventManager.emit(EVENT_TYPE.FINISH_GAME,this);
+            EventManager.emit(EVENT_TYPE.FINISH_GAME, this);
         }
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }
@@ -102,7 +102,7 @@ public class ObjectScroller : MonoBehaviour
             newObj.transform.position = new Vector3(lastBlock.position.x, lastBlock.position.y, lastBlock.position.z + objectSpacing);
         SectionInfo curSecInfo = this.scrollEndDataSetting();
         WallInfo wallInfo = TableManager.WallInfoTable.GetInfo(curSecInfo.wallID);
-        newObj.SetBlockObject(new BlockObjectSettingInfo(curSecInfo.themeIndex,true, wallInfo));
+        newObj.SetBlockObject(new BlockObjectSettingInfo(curSecInfo.themeIndex, true, wallInfo));
         newObj.gameObject.SetActive(true);
         lastBlock = newObj.transform;
         Debug.Log("현재 지나온 거리: " + curPassDistance);

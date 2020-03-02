@@ -6,15 +6,18 @@ public class Theme : MonoBehaviour
 {
     [SerializeField] private GameObject[] sections = null;
 
-    public void Init(){
+    public void Init()
+    {
         // 모두 disable 시키기
         DisableObjectArr(sections);
         // 랜덤 엑티브 
-        sections[Random.Range(0,sections.Length)].SetActive(true);
+        sections[Random.Range(0, sections.Length)].SetActive(true);
     }
 
-    private void DisableObjectArr(GameObject[] objArr){
-        if(objArr.Length == 0){
+    private void DisableObjectArr(GameObject[] objArr)
+    {
+        if (objArr.Length == 0)
+        {
             Debug.Log("DisableObjectArr Failed, objArr.Length is " + objArr.Length);
             return;
         }
