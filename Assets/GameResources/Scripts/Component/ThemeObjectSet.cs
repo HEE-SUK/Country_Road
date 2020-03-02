@@ -9,8 +9,8 @@ public class ThemeObjectSet : MonoBehaviour
 
     [SerializeField] private GameObject[] powerpole = null;
     [SerializeField] private GameObject[] road = null; // 0: 신호 표시 있는거, 1: 신호표시 없는거
-    [SerializeField] private GameObject[] leftTrafficlight = {};
-    [SerializeField] private GameObject[] rightTrafficlight = {};
+    [SerializeField] private GameObject[] leftTrafficlight = { };
+    [SerializeField] private GameObject[] rightTrafficlight = { };
     [SerializeField] private GameObject[] leftFloor = null;
     [SerializeField] private GameObject[] rightFloor = null;
     [SerializeField] private GameObject[] leftGround = null;
@@ -18,8 +18,9 @@ public class ThemeObjectSet : MonoBehaviour
     [SerializeField] private GameObject[] options = null;
     [SerializeField] private Transform[] optionPos = null;
 
-    public void Init(BlockObjectSettingInfo settingData){
-        
+    public void Init(BlockObjectSettingInfo settingData)
+    {
+
         // 세팅 전 비활성화
         DisableObjectArr(leftHouse);
         DisableObjectArr(powerpole);
@@ -33,14 +34,14 @@ public class ThemeObjectSet : MonoBehaviour
         DisableObjectArr(leftTrafficlight);
         DisableObjectArr(rightTrafficlight);
         // 랜덤으로 객체 활성
-        leftHouse[Random.Range(0,leftHouse.Length)].SetActive(true);
-        leftFloor[Random.Range(0,leftFloor.Length)].SetActive(true);
-        leftGround[Random.Range(0,leftGround.Length)].SetActive(true);
-        rightHouse[Random.Range(0,rightHouse.Length)].SetActive(true);
-        rightFloor[Random.Range(0,rightFloor.Length)].SetActive(true);
-        rightGround[Random.Range(0,rightGround.Length)].SetActive(true);
-        powerpole[Random.Range(0,powerpole.Length)].SetActive(true);
-        
+        leftHouse[Random.Range(0, leftHouse.Length)].SetActive(true);
+        leftFloor[Random.Range(0, leftFloor.Length)].SetActive(true);
+        leftGround[Random.Range(0, leftGround.Length)].SetActive(true);
+        rightHouse[Random.Range(0, rightHouse.Length)].SetActive(true);
+        rightFloor[Random.Range(0, rightFloor.Length)].SetActive(true);
+        rightGround[Random.Range(0, rightGround.Length)].SetActive(true);
+        powerpole[Random.Range(0, powerpole.Length)].SetActive(true);
+
         // 신호 표시 있는 길과 없는길 규칙 적용 
         // if(settingData.isCrossWalk){
         //     road[0].SetActive(true);
@@ -57,14 +58,17 @@ public class ThemeObjectSet : MonoBehaviour
         for (int i = 0; i < optionPos.Length; i++)
         {
             var obj = ReturnDisableObj(options);
-            if(obj != null){
+            if (obj != null)
+            {
                 obj.transform.position = optionPos[i].position;
                 obj.SetActive(true);
             }
         }
     }
-    private void DisableObjectArr(GameObject[] objArr){
-        if(objArr.Length == 0){
+    private void DisableObjectArr(GameObject[] objArr)
+    {
+        if (objArr.Length == 0)
+        {
             // Debug.Log("DisableObjectArr Failed, objArr.Length is " + objArr.Length);
             return;
         }
@@ -74,11 +78,13 @@ public class ThemeObjectSet : MonoBehaviour
         }
     }
 
-    public GameObject ReturnDisableObj(GameObject[] objArr){
+    public GameObject ReturnDisableObj(GameObject[] objArr)
+    {
         var shuffleArray = Utility.ShuffleArray(objArr);
         for (int i = 0; i < shuffleArray.Length; i++)
         {
-            if(!shuffleArray[i].activeSelf){
+            if (!shuffleArray[i].activeSelf)
+            {
                 return shuffleArray[i];
             }
         }

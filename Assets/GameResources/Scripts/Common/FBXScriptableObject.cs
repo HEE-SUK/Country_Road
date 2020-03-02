@@ -6,10 +6,13 @@ using UnityEngine;
 public class FBXScriptableObject : ScriptableObject
 {
     [SerializeField]
-    GameObject[] fbxArray = {};
-    public GameObject[] FBXArray{
-        get {
+    GameObject[] fbxArray = { };
+    public GameObject[] FBXArray
+    {
+        get
+        {
             return fbxArray;
-        }set{}
+        }
+        set { }
     }
 }
