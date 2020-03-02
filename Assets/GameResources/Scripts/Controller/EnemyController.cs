@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public bool IsDie{
-        get{
+    public bool IsDie
+    {
+        get
+        {
             return isDie;
         }
     }
@@ -17,30 +19,34 @@ public class EnemyController : MonoBehaviour
     private EnemyDieCallBack enemyDieCallBack = null;
     private bool isDie = false;
     private float hp = 0;
-    public void Init(ZombieInfo zombieInfo,CarInfo carInfo,EnemyAttackCallBack enemyAttackCallBack, EnemyDieCallBack enemyDieCallBack){
+    public void Init(float stopPos, ZombieInfo zombieInfo, CarInfo carInfo, EnemyAttackCallBack enemyAttackCallBack, EnemyDieCallBack enemyDieCallBack)
+    {
         this.zombieInfo = zombieInfo;
         this.hp = zombieInfo.hp;
         this.carInfo = carInfo;
         this.enemyAttackCallBack = enemyAttackCallBack;
         this.enemyDieCallBack = enemyDieCallBack;
-        enemyMov.Init(zombieInfo.spd,carInfo.mSpd,TryAttack);
+        enemyMov.Init(stopPos, zombieInfo.spd, carInfo.mSpd, TryAttack);
     }
 
-    private void TryAttack(){
-        anim.SetBool("Jump",true);
+    private void TryAttack()
+    {
+        anim.SetBool("Jump", true);
         enemyAttackCallBack(zombieInfo);
     }
 
-    public void Hurt(float demage){
+    public void Hurt(float demage)
+    {
         hp -= demage;
-        if(hp <= 0){
+        if (hp <= 0)
+        {
             isDie = true;
             enemyDieCallBack(this);
-            anim.SetBool("Die",true);
-            anim.SetBool("Jump",false);
+            anim.SetBool("Die", true);
+            anim.SetBool("Jump", false);
             gameObject.layer = 0;
             enemyMov.Die();
-            Destroy(gameObject,3f);
+            Destroy(gameObject, 3f);
         }
     }
 

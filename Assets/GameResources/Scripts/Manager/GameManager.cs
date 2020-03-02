@@ -3,27 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
-    public static float GameSpeed{
-        get{
+    public static float GameSpeed
+    {
+        get
+        {
             return Instance.gameSpeed;
         }
-        set{
-            Instance.gameSpeed = Mathf.Floor(Mathf.Lerp(Instance.gameSpeed,value,0.5f) * 100f) * 0.01f;
+        set
+        {
+            Instance.gameSpeed = Mathf.Floor(Mathf.Lerp(Instance.gameSpeed, value, 0.5f) * 100f) * 0.01f;
         }
     }
-    public static int SectionIndex{
-        get{
+    public static int SectionIndex
+    {
+        get
+        {
             return Instance.curSecIndex;
         }
-        set{
+        set
+        {
             Instance.curSecIndex = value;
         }
     }
-    public static float TimeScale{
-        get{
+    public static float TimeScale
+    {
+        get
+        {
             return Instance.timeScale;
         }
-        set{
+        set
+        {
             Instance.timeScale = value;
         }
     }

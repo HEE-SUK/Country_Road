@@ -14,7 +14,7 @@ public class ObjectPoolDictionary : MonoSingleton<ObjectPoolDictionary>
         {
             var pool = new GameObjectPool<GameObject>(10, () =>
             {
-                GameObject obj = Instantiate(fbxArr[i],this.transform);
+                GameObject obj = Instantiate(fbxArr[i], this.transform);
                 obj.transform.SetParent(transform);
                 obj.SetActive(false);
                 return obj;
@@ -31,13 +31,17 @@ public class ObjectPoolDictionary : MonoSingleton<ObjectPoolDictionary>
         activeList.Add(prefab);
         return prefab;
     }
-    public void RemoveObject(GameObject obj, string key){
-        if(activeList.Contains(obj)){
+    public void RemoveObject(GameObject obj, string key)
+    {
+        if (activeList.Contains(obj))
+        {
             obj.SetActive(false);
             obj.transform.SetParent(this.transform);
             fbxPoolDic[key].push(obj);
             activeList.Remove(obj);
-        }else{
+        }
+        else
+        {
             Debug.Log("ActiveList not found :" + key);
         }
     }

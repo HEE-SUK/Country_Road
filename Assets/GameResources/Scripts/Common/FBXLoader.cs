@@ -6,9 +6,10 @@ public class FBXLoader : MonoBehaviour
 {
     [SerializeField]
     private FBXScriptableObject fBXScriptableObject = null;
-    private Dictionary<string, GameObject> towerBodyDic = new Dictionary<string, GameObject>();    
-    
-    void Awake(){
+    private Dictionary<string, GameObject> towerBodyDic = new Dictionary<string, GameObject>();
+
+    void Awake()
+    {
         var towerFbx = fBXScriptableObject.FBXArray;
         for (int i = 0; i < fBXScriptableObject.FBXArray.Length; i++)
         {
@@ -17,8 +18,9 @@ public class FBXLoader : MonoBehaviour
         }
     }
 
-    public GameObject GetObjectPrefab(string key){
-        if(towerBodyDic.ContainsKey(key) == false)
+    public GameObject GetObjectPrefab(string key)
+    {
+        if (towerBodyDic.ContainsKey(key) == false)
             Debug.Log(key + " key not found");
         return towerBodyDic[key];
     }
