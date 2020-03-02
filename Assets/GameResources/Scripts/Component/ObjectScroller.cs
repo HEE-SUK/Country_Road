@@ -12,29 +12,14 @@ public class ObjectScroller : MonoBehaviour
     // 앞 오브젝트와 간격
     [Header("오브젝트 사이간격")]
     [SerializeField] private float objectSpacing = 0f;
-    // 스크롤 시작 위치
-    // [Header("스크롤 시작 위치")]
-    // [SerializeField] private Transform startPos = null;
-    // 스크롤 끝 위치
     [Header("스크롤 끝 위치")]
     [SerializeField] private Transform endPos = null;
-    // 통과한 블럭의 수
-    // [Header("현재 통과한 섹션 수")]
-    // [SerializeField] int passSectionNum = 0;
-    // Test 전용: 스크롤 스피드 
     [Header("스크롤 스피드")]
     [SerializeField] float scrollSpeed = 1;
-    // Test 전용: 횡단보도 몇개당 생성할지;
-    // [Header("황단보도 생성 텀")]
-    // [SerializeField] int crossWalkNum = 5;
-    // Test 전용: 현재 테마;
     [Header("현재 테마")]
     [SerializeField] int currentThemeIndex = 0;
-    // Test 전용: 벽 번호;
-    // [Header("벽 레벨(0부터 시작)")]
-    // [SerializeField] int wallIndex = 0;
-    // [Header("현재 벽 데이터 키값")]
-    // [SerializeField] string wallId = string.Empty;
+    [Header("벽 시작 세션 넘버")]
+    [SerializeField] int wallStartIndex = 3;
     #endregion
 
     // 블럭 생성 관련 변수 
@@ -58,12 +43,13 @@ public class ObjectScroller : MonoBehaviour
         {
             activeList[i].transform.Translate(Vector3.back * GameManager.GameSpeed * Time.deltaTime);
         }
+        Debug.Log(GameManager.GameSpeed);
     }
     public void Init(ScrollEndDataSetting scrollEndDataSetting)
     {
         this.scrollEndDataSetting = scrollEndDataSetting;
         GameManager.GameSpeed = scrollSpeed;
-        Debug.Log(GameManager.GameSpeed);
+        // Debug.Log(GameManager.GameSpeed);
         InstantiateScrollObj(scrollEndDataSetting);
     }
     private void InstantiateScrollObj(ScrollEndDataSetting scrollEndDataSetting)
@@ -79,7 +65,7 @@ public class ObjectScroller : MonoBehaviour
             if (blockCon == null)
                 Debug.Log("ObjectScroller: 해당 객체에 RoadPieceController 컴포넌트가 없음");
             blockCon.Init(endPos.position, ScrollEndCallBack,
-                new BlockObjectSettingInfo(this.currentThemeIndex,false, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
+                new BlockObjectSettingInfo(this.currentThemeIndex,i > wallStartIndex, TableManager.WallInfoTable.GetInfo(curSecInfo.wallID)));
             if (i == objectCount - 1)
             {
                 lastBlock = blockCon.transform;
@@ -92,7 +78,7 @@ public class ObjectScroller : MonoBehaviour
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
         GameManager.GameSpeed = scrollSpeed;
-        if(scrollSpeed <= 0)
+        if(GameManager.GameSpeed <= 0)
             EventManager.emit(EVENT_TYPE.FINISH_GAME,this);
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }
