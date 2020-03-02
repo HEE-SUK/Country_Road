@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     }
     [SerializeField] private EnemyMovement enemyMov = null;
     [SerializeField] private Animator anim = null;
+    [SerializeField] private ParticleSystem hitParticle = null;
     private ZombieInfo zombieInfo = null;
     private CarInfo carInfo = null;
     private EnemyAttackCallBack enemyAttackCallBack = null;
@@ -27,6 +28,7 @@ public class EnemyController : MonoBehaviour
         this.enemyAttackCallBack = enemyAttackCallBack;
         this.enemyDieCallBack = enemyDieCallBack;
         enemyMov.Init(stopPos, zombieInfo.spd, carInfo.mSpd, TryAttack);
+        hitParticle.gameObject.SetActive(false);
     }
 
     private void TryAttack()
@@ -41,6 +43,7 @@ public class EnemyController : MonoBehaviour
         if (hp <= 0)
         {
             isDie = true;
+            hitParticle.gameObject.SetActive(true);
             enemyDieCallBack(this);
             anim.SetBool("Die", true);
             anim.SetBool("Jump", false);
