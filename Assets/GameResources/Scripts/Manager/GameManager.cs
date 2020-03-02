@@ -25,6 +25,17 @@ public class GameManager : Singleton<GameManager>
             Instance.curSecIndex = value;
         }
     }
+    public static string CheckPointSecKey
+    {
+        get
+        {
+            return Instance.checkPointSecKey;
+        }    
+        set
+        {
+            Instance.checkPointSecKey = value;
+        }
+    }
     public static float TimeScale
     {
         get
@@ -72,6 +83,8 @@ public class GameManager : Singleton<GameManager>
 
     // 게임 전체 스피드
     private float gameSpeed = 0f;
+    // 마지막 체크포인트 세션 키
+    private string checkPointSecKey = string.Empty;
     // 현재 섹션 인덱스
     private int curSecIndex = 0;
     // 타임 스케일

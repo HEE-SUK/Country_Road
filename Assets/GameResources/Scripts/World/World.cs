@@ -43,6 +43,9 @@ public class World : MonoBehaviour
     //Init
     private void DataSetting()
     {
+        // SectionInfo lastSecInfo = TableManager.SectionInfoTable.GetInfo(GameManager.CheckPointSecKey);
+        bool isExist = TableManager.SectionInfoTable.IsExist(GameManager.CheckPointSecKey);
+        this.curSecIndex = isExist ? TableManager.SectionInfoTable.GetInfo(GameManager.CheckPointSecKey).index : 0;
         this.sectionInfos = TableManager.SectionInfoTable.GetArray(curSecIndex, TableManager.SectionInfoTable.GetLength() - 1);
         this.CurSecInfo = sectionInfos[curSecIndex];
         CarInfo carInfo = TableManager.CarInfoTable.GetInfo(testCarInfoKey);
@@ -59,9 +62,13 @@ public class World : MonoBehaviour
         curSecIndex++;
         CurSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
         enemySpawner.SpawnLoopStart(CurSecInfo);
-        if (curSecInfo.checkPointID != "None") // Test용 
-            Debug.Log("체크포인트 도달");
-        // 블럭 객체들 세팅하기 
+        if (curSecInfo.checkPointID != "None")
+        {
+            Debug.Log("체크포인트 도달" + curSecInfo.checkPointID);
+            // 체크포인트 도달 시 게임매니저에 현재 섹션 키 저장 
+            GameManager.CheckPointSecKey = curSecInfo.id;
+        } 
+        // 블럭 객체들 세팅하기
         // Debug.Log(curSecInfo.wallID);
         return CurSecInfo;
     }
