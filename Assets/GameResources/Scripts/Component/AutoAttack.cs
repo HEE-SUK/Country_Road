@@ -98,11 +98,10 @@ public class AutoAttack : MonoBehaviour
     {
         curBulletNum = curBulletNum > 0 ? curBulletNum - 1 : 0;
         muzzleParticle.SetActive(false);
-        if(targetEnemy == null){
+        if(targetEnemy == null || targetEnemy.IsDie){
             return;
         }
         targetEnemy.Hurt(demage);
-        Debug.Log(demage);
     }
     void Start()
     {
