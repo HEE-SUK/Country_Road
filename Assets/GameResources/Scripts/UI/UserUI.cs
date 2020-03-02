@@ -11,6 +11,8 @@ public class UserUI : MonoBehaviour
     private Text jemText = null;
     [SerializeField]
     private GameObject optionPanelPrefab = null;
+    [SerializeField]
+    private GameObject shopPanelPrefab = null;
     void Start()
     {
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
@@ -27,7 +29,14 @@ public class UserUI : MonoBehaviour
     public void OnOption()
     {
         OptionPanel optionPanel = Instantiate(this.optionPanelPrefab).GetComponent<OptionPanel>();
+        optionPanel.transform.SetParent(this.transform, false);
         optionPanel.Init();
+    }
+    public void OnShop()
+    {
+        ShopPanel shopPanel = Instantiate(this.shopPanelPrefab).GetComponent<ShopPanel>();
+        shopPanel.transform.SetParent(this.transform, false);
+        shopPanel.Init();
     }
     void OnDestroy()
     {

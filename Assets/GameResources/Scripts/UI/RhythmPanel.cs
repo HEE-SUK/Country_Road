@@ -11,15 +11,21 @@ public class RhythmPanel : MonoBehaviour
     [SerializeField]
     private RhythmArrow rhythmArrow = null;
 
-
     private RhythmInfo rhythmInfo = null;
+
+    private bool isOpened = false;
     void Awake()
     {
+        this.isOpened = false;
         this.gameObject.SetActive(false);
     }
     public void Init(string _rhythmId)
     {
+        if(this.isOpened) { return; }
+        
+        // for DEBUG 좀더 뚜렷한 로직 필요
         this.rhythmInfo = TableManager.RhythmInfoTable.GetInfo(_rhythmId);
+        this.isOpened = true;
         this.gameObject.SetActive(true);
         this.rhythmTarget.Init(this.rhythmInfo.barSize1, this.rhythmInfo.barSize2);
         this.rhythmArrow.Init();
@@ -49,6 +55,7 @@ public class RhythmPanel : MonoBehaviour
 
     void OnDisable()
     {
+        this.isOpened = false;
         EventManager.off(EVENT_TYPE.ON_TOUCH_START, this.OnTouched);
     }
 }
