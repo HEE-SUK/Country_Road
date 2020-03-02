@@ -17,10 +17,15 @@ public class OutgameUI : MonoBehaviour
     {
         this.gameObject.SetActive(true);
     }
-
     public void StartGame()
     {
         this.gameObject.SetActive(false);
+    }
+
+    public void OnButtonStart()
+    {
+        EventManager.emit(EVENT_TYPE.START_GAME, this);
+        this.gameObject.SetActive(false);        
     }
     public void OnGarage()
     {

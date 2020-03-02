@@ -20,8 +20,8 @@ public class UserUI : MonoBehaviour
     private void UpdatedUI(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 골드, 금화
-        this.goldText.text = $"{GameManager.GetGold()}";
-        this.jemText.text = $"{GameManager.GetJem()}";
+        this.goldText.text = $"{GameManager.Gold}";
+        this.jemText.text = $"{GameManager.Jem}";
     }
 
     public void OnOption()

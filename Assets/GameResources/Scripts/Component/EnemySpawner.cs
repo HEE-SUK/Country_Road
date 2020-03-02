@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private int maxSpawnNum = 20;
 
     private EnemyAttackCallBack enemyAttackCallBack = null;
-    private EnemyDieCallBack enemyDieCallBack = null;
+    // private EnemyDieCallBack enemyDieCallBack = null;
 
     private CarInfo carInfo = null;
     private ZombieInfo zombieInfo = null;
