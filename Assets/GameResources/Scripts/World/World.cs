@@ -58,6 +58,7 @@ public class World : MonoBehaviour
     {
         curSecIndex++;
         CurSecInfo = sectionInfos[curSecIndex < sectionInfos.Length ? curSecIndex : sectionInfos.Length - 1];
+        enemySpawner.SpawnLoopStart(CurSecInfo);
         if (curSecInfo.checkPointID != "None") // Test용 
             Debug.Log("체크포인트 도달");
         // 블럭 객체들 세팅하기 

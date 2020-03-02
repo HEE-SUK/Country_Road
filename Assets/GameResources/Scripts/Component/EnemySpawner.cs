@@ -9,7 +9,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private int maxSpawnNum = 20;
 
     private EnemyAttackCallBack enemyAttackCallBack = null;
-    private EnemyDieCallBack enemyDieCallBack = null;
 
     private CarInfo carInfo = null;
     private ZombieInfo zombieInfo = null;
@@ -39,11 +38,11 @@ public class EnemySpawner : MonoBehaviour
             activeList.Remove(enemy);
         // Debug.Log("남은 좀비 수: " + activeList.Count);
     }
-
     public void SpawnLoopStart(SectionInfo sectionInfo)
     {
         StopCoroutine("SpawnLoop");
         this.sectionInfo = sectionInfo;
+        this.zombieInfo = TableManager.ZombieInfoTable.GetInfo(sectionInfo.zombieID);
         StartCoroutine("SpawnLoop");
     }
     public void SpawnEnemyStop()
@@ -56,6 +55,7 @@ public class EnemySpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(sectionInfo.zombieInterval);
             SpawnEnemy(zombieInfo, carInfo);
+            Debug.Log(zombieInfo.id);
         }
     }
 }
