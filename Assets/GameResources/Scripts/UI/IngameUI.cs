@@ -11,8 +11,6 @@ public class IngameUI : MonoBehaviour
     
     [SerializeField]
     private RhythmPanel rhythmPanel = null;
-    [SerializeField]
-    private GameObject resultPanelPrefab = null;
 
     void Awake()
     {
@@ -24,7 +22,10 @@ public class IngameUI : MonoBehaviour
         this.gameObject.SetActive(true);
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
         EventManager.on(EVENT_TYPE.CHANGE_SECTION, this.ChangedSection);
-        EventManager.on(EVENT_TYPE.FINISH_GAME, this.FinishedGame);
+    }
+    public void ExitGame()
+    {
+        this.gameObject.SetActive(false);
     }
     public void SetPause()
     {
@@ -44,21 +45,9 @@ public class IngameUI : MonoBehaviour
         SectionInfo sectionInfo = TableManager.SectionInfoTable.GetInfo(SID);
         this.rhythmPanel.Init(sectionInfo.rhythmID);
     }
-    private void FinishedGame(EVENT_TYPE eventType, Component sender, object param = null)
-    {
-        // 게임 오버
-        ResultPanel resultPanel = Instantiate(this.resultPanelPrefab).GetComponent<ResultPanel>();
-        resultPanel.transform.SetParent(this.transform, false);
-        resultPanel.Init();
-    }
-    private void ExitGame()
-    {
-        this.gameObject.SetActive(false);
-    }
     void OnDestroy()
     {
         EventManager.off(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
         EventManager.off(EVENT_TYPE.CHANGE_SECTION, this.ChangedSection);
-        EventManager.off(EVENT_TYPE.FINISH_GAME, this.FinishedGame);
     }
 }

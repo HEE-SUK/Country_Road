@@ -756,10 +756,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 475009c2-df84-45ee-8db5-5b0b1a71d531
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: mad_zombie
+  organizationId: popsicle_studio
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
