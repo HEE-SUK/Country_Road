@@ -6,13 +6,16 @@ public class EnemySpawner : MonoBehaviour
 { 
     [SerializeField] private EnemyController enemyController = null;
     [SerializeField] private Transform[] spawnPos = null;
+    [SerializeField] private int maxSpawnNum = 20;
 
     private EnemyAttackCallBack enemyAttackCallBack = null;
+    private EnemyDieCallBack enemyDieCallBack = null;
 
     private CarInfo carInfo = null;
     private ZombieInfo zombieInfo = null;
     private SectionInfo sectionInfo = null;
 
+    private List<EnemyController> activeList = new List<EnemyController>();
     public void Init(ZombieInfo zombieInfo,CarInfo carInfo,SectionInfo sectionInfo,EnemyAttackCallBack enemyAttackCallBack)
     {
         this.carInfo = carInfo;
@@ -22,10 +25,18 @@ public class EnemySpawner : MonoBehaviour
     }
     public void SpawnEnemy(ZombieInfo zombieInfo,CarInfo carInfo)
     {
+        if(maxSpawnNum < activeList.Count)
+            return;
         var enemy = Instantiate(this.enemyController, this.transform);
         enemy.transform.position = spawnPos[Random.Range(0,spawnPos.Length)].position;
-        enemy.Init(zombieInfo,carInfo,enemyAttackCallBack);
+        enemy.Init(zombieInfo,carInfo,enemyAttackCallBack,EnemyDie);
+        activeList.Add(enemy);
         enemy.gameObject.SetActive(true);
+    }
+    private void EnemyDie(EnemyController enemy){
+        if(activeList.Contains(enemy))
+            activeList.Remove(enemy);
+        // Debug.Log("남은 좀비 수: " + activeList.Count);
     }
 
     public void SpawnLoopStart(SectionInfo sectionInfo){
