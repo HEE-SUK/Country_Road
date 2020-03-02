@@ -34,6 +34,8 @@ public class ObjectScroller : MonoBehaviour
     private float curPassDistance = 0;
     private ScrollEndDataSetting scrollEndDataSetting = null;
 
+    // 게임오버
+    private bool isStoped = false;
     // Mono
     void Start()
     {
@@ -49,6 +51,7 @@ public class ObjectScroller : MonoBehaviour
     }
     public void Init(ScrollEndDataSetting scrollEndDataSetting)
     {
+        this.isStoped = false;
         this.scrollEndDataSetting = scrollEndDataSetting;
         GameManager.GameSpeed = scrollSpeed;
         // Debug.Log(GameManager.GameSpeed);
@@ -81,8 +84,9 @@ public class ObjectScroller : MonoBehaviour
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
         GameManager.GameSpeed = scrollSpeed;
-        if (GameManager.GameSpeed <= 0)
+        if (GameManager.GameSpeed <= 0 && !this.isStoped)
         {
+            this.isStoped = true;
             speedLineVFX.gameObject.SetActive(false);
             EventManager.emit(EVENT_TYPE.FINISH_GAME, this);
         }

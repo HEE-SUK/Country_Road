@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ResultPanel : MonoBehaviour
 {
+    private CallBack callback = null;
     void Awake()
     {
         this.gameObject.SetActive(false);
     }
-    public void Init()
+    public void Init(CallBack _callback)
     {
+        this.callback = _callback;
         this.gameObject.SetActive(true);
     }
 
@@ -20,5 +22,7 @@ public class ResultPanel : MonoBehaviour
     public void ExitGame()
     {
         // 나가기 버튼 - 콜백으로 처리하자.
+        this.callback();
+        Destroy(this.gameObject);  
     }
 }
