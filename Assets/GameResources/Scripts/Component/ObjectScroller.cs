@@ -7,6 +7,8 @@ public class ObjectScroller : MonoBehaviour
     #region 인스펙터
     [Header("블럭 프리펩")]
     [SerializeField] private GameObject scrollObject = null;
+    [Header("속도 효과 프리펩")]
+    [SerializeField] private ParticleSystem speedLineVFX = null;
     [Header("스크롤에 쓰일 오브젝트 수")]
     [SerializeField] private int objectCount = 0;
     // 앞 오브젝트와 간격
@@ -35,6 +37,7 @@ public class ObjectScroller : MonoBehaviour
     // Mono
     void Start()
     {
+        speedLineVFX.gameObject.SetActive(false);
     }
     void Update()
     {
@@ -75,11 +78,14 @@ public class ObjectScroller : MonoBehaviour
 
     public void ChangeScollSpeed(float speed, bool isPlus)
     {
+        speedLineVFX.gameObject.SetActive(isPlus);
         float result = isPlus ? scrollSpeed + speed : scrollSpeed - speed;
         this.scrollSpeed = result < 0 ? 0 : result; // 마이너스 값인지 검사
         GameManager.GameSpeed = scrollSpeed;
-        if(GameManager.GameSpeed <= 0)
+        if(GameManager.GameSpeed <= 0){
+            speedLineVFX.gameObject.SetActive(false);
             EventManager.emit(EVENT_TYPE.FINISH_GAME,this);
+        }
         // Debug.Log($"현재 속도: {this.scrollSpeed}");
     }
 
