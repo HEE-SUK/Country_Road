@@ -40,11 +40,11 @@ public class EnemyController : MonoBehaviour
     public void Hurt(float demage)
     {
         hp -= demage;
+        hitParticle.gameObject.SetActive(false);
+        hitParticle.gameObject.SetActive(true);
         if (hp <= 0)
         {
             isDie = true;
-            hitParticle.gameObject.SetActive(false);
-            hitParticle.gameObject.SetActive(true);
             enemyDieCallBack(this);
             anim.SetBool("Die", true);
             anim.SetBool("Jump", false);
