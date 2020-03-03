@@ -16,7 +16,7 @@ public enum PRODUCTTYPE
     DIA,
     BOX,
 }
-public enum RHYTHMTYPE
+public enum BOOSTERTYPE
 {
     FAIL,
     GOOD,

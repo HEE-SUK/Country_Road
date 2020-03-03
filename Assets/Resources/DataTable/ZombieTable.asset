@@ -20,7 +20,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 7
+    hp: 20
     atk: 2
     spd: 0.21
     exp: 2
@@ -32,7 +32,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 23
+    hp: 31
     atk: 3
     spd: 0.22
     exp: 4
@@ -56,7 +56,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 85
+    hp: 77
     atk: 5
     spd: 0.24
     exp: 11
@@ -68,7 +68,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 131
+    hp: 121
     atk: 6
     spd: 0.25
     exp: 16
@@ -80,7 +80,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 187
+    hp: 190
     atk: 7
     spd: 0.26
     exp: 22
@@ -92,7 +92,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 253
+    hp: 298
     atk: 8
     spd: 0.27
     exp: 29
@@ -104,7 +104,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 329
+    hp: 467
     atk: 9
     spd: 0.28
     exp: 37
@@ -116,7 +116,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 415
+    hp: 732
     atk: 10
     spd: 0.29
     exp: 46
@@ -128,7 +128,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 511
+    hp: 1148
     atk: 11
     spd: 0.3
     exp: 56
@@ -140,7 +140,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 617
+    hp: 1800
     atk: 12
     spd: 0.31
     exp: 67
@@ -152,7 +152,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 733
+    hp: 2823
     atk: 13
     spd: 0.32
     exp: 79
@@ -164,7 +164,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 859
+    hp: 4428
     atk: 14
     spd: 0.33
     exp: 92
@@ -176,7 +176,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 995
+    hp: 6945
     atk: 15
     spd: 0.34
     exp: 106
@@ -188,7 +188,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1141
+    hp: 10891
     atk: 16
     spd: 0.35
     exp: 121
@@ -200,7 +200,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1297
+    hp: 17081
     atk: 17
     spd: 0.36
     exp: 137
@@ -212,7 +212,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1463
+    hp: 26789
     atk: 18
     spd: 0.37
     exp: 154
@@ -224,7 +224,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1639
+    hp: 42013
     atk: 19
     spd: 0.38
     exp: 172
@@ -236,7 +236,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 1825
+    hp: 65889
     atk: 20
     spd: 0.39
     exp: 191
@@ -248,7 +248,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2021
+    hp: 103335
     atk: 21
     spd: 0.4
     exp: 211
@@ -260,7 +260,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2227
+    hp: 162062
     atk: 22
     spd: 0.41
     exp: 232
@@ -272,7 +272,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2443
+    hp: 254163
     atk: 23
     spd: 0.42
     exp: 254
@@ -284,7 +284,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2669
+    hp: 398607
     atk: 24
     spd: 0.43
     exp: 277
@@ -296,7 +296,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 2905
+    hp: 625141
     atk: 25
     spd: 0.44
     exp: 301
@@ -308,7 +308,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 3151
+    hp: 980416
     atk: 26
     spd: 0.45
     exp: 326
@@ -320,7 +320,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 3407
+    hp: 1537598
     atk: 27
     spd: 0.46
     exp: 352
@@ -332,7 +332,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 3673
+    hp: 2411434
     atk: 28
     spd: 0.47
     exp: 379
@@ -344,7 +344,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 3949
+    hp: 3781882
     atk: 29
     spd: 0.48
     exp: 407
@@ -356,7 +356,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 4235
+    hp: 5931171
     atk: 30
     spd: 0.49
     exp: 436
@@ -368,7 +368,7 @@ MonoBehaviour:
     model: 
     color: 
     vfx: 
-    hp: 4531
+    hp: 9301928
     atk: 31
     spd: 0.5
     exp: 466

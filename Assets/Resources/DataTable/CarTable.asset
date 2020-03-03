@@ -34,19 +34,19 @@ MonoBehaviour:
     convertprice: 1000
     unittype: 0
     lotto: 0.1
-    dps: 10
+    dps: 9
   - id: C002
     index: 1
     name: Aria
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 1
     mspd: 70
     rhm: 10.1
-    atk: 7
+    atk: 5
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -54,19 +54,19 @@ MonoBehaviour:
     convertprice: 2000
     unittype: 0
     lotto: 0.539898
-    dps: 23.33
+    dps: 17
   - id: C003
     index: 2
     name: Lilian
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 1
     mspd: 80
     rhm: 10.2
-    atk: 13
+    atk: 9
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -74,19 +74,19 @@ MonoBehaviour:
     convertprice: 4100
     unittype: 0
     lotto: 0.176367
-    dps: 43.33
+    dps: 30
   - id: C004
     index: 3
     name: Anita
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 1
     mspd: 90
     rhm: 10.3
-    atk: 21
+    atk: 17
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -94,19 +94,19 @@ MonoBehaviour:
     convertprice: 8200
     unittype: 0
     lotto: 0.086384
-    dps: 70
+    dps: 55
   - id: C005
     index: 4
     name: Brionna
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 1
     mspd: 100
     rhm: 10.4
-    atk: 31
+    atk: 30
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -114,19 +114,19 @@ MonoBehaviour:
     convertprice: 17000
     unittype: 0
     lotto: 0.05075
-    dps: 103.33
+    dps: 100
   - id: C006
     index: 5
     name: Bailee
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 1
     mspd: 110
     rhm: 10.5
-    atk: 43
+    atk: 55
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -134,19 +134,19 @@ MonoBehaviour:
     convertprice: 33000
     unittype: 0
     lotto: 0.033114
-    dps: 143.33
+    dps: 182
   - id: C007
     index: 6
     name: Elissa
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 120
     rhm: 10.6
-    atk: 57
+    atk: 100
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -154,19 +154,19 @@ MonoBehaviour:
     convertprice: 67000
     unittype: 0
     lotto: 0.023139
-    dps: 190
+    dps: 333
   - id: C008
     index: 7
     name: Marisa
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 130
     rhm: 10.7
-    atk: 73
+    atk: 182
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -174,19 +174,19 @@ MonoBehaviour:
     convertprice: 140000
     unittype: 0
     lotto: 0.016968
-    dps: 243.33
+    dps: 607
   - id: C009
     index: 8
     name: Katerina
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 140
     rhm: 10.8
-    atk: 91
+    atk: 332
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -194,19 +194,19 @@ MonoBehaviour:
     convertprice: 270000
     unittype: 0
     lotto: 0.012898
-    dps: 303.33
+    dps: 1107
   - id: C010
     index: 9
     name: Cristal
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 150
     rhm: 10.9
-    atk: 111
+    atk: 605
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -214,19 +214,19 @@ MonoBehaviour:
     convertprice: 550000
     unittype: 0
     lotto: 0.010078
-    dps: 370
+    dps: 2017
   - id: C011
     index: 10
     name: Alyssa
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 160
     rhm: 11
-    atk: 133
+    atk: 1103
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -234,19 +234,19 @@ MonoBehaviour:
     convertprice: 1100000
     unittype: 0
     lotto: 0.008049
-    dps: 443.33
+    dps: 3675
   - id: C012
     index: 11
     name: Loren
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 170
     rhm: 11.1
-    atk: 157
+    atk: 2009
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -254,19 +254,19 @@ MonoBehaviour:
     convertprice: 2200000
     unittype: 0
     lotto: 0.006544
-    dps: 523.33
+    dps: 6697
   - id: C013
     index: 12
     name: Keyla
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 180
     rhm: 11.2
-    atk: 183
+    atk: 3661
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -274,19 +274,19 @@ MonoBehaviour:
     convertprice: 4500000
     unittype: 0
     lotto: 0.005399
-    dps: 610
+    dps: 12203
   - id: C014
     index: 13
     name: Eliza
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 190
     rhm: 11.3
-    atk: 211
+    atk: 6671
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -294,19 +294,19 @@ MonoBehaviour:
     convertprice: 9000000
     unittype: 0
     lotto: 0.004509
-    dps: 703.33
+    dps: 22235
   - id: C015
     index: 14
     name: Johana
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 200
     rhm: 11.4
-    atk: 241
+    atk: 12155
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -314,19 +314,19 @@ MonoBehaviour:
     convertprice: 18000000
     unittype: 0
     lotto: 0.003805
-    dps: 803.33
+    dps: 40515
   - id: C016
     index: 15
     name: Christy
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 2
     mspd: 210
     rhm: 11.5
-    atk: 273
+    atk: 22147
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -334,19 +334,19 @@ MonoBehaviour:
     convertprice: 37000000
     unittype: 0
     lotto: 0.003239
-    dps: 910
+    dps: 73824
   - id: C017
     index: 16
     name: Dana
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
     mspd: 220
     rhm: 11.6
-    atk: 307
+    atk: 40355
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -354,19 +354,19 @@ MonoBehaviour:
     convertprice: 74000000
     unittype: 0
     lotto: 0.002779
-    dps: 1023.33
+    dps: 134516
   - id: C018
     index: 17
     name: Alia
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
     mspd: 230
     rhm: 11.7
-    atk: 343
+    atk: 73531
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -374,19 +374,19 @@ MonoBehaviour:
     convertprice: 150000000
     unittype: 0
     lotto: 0.0024
-    dps: 1143.33
+    dps: 245104
   - id: C019
     index: 18
     name: Lola
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
     mspd: 240
     rhm: 11.8
-    atk: 381
+    atk: 133983
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -394,19 +394,19 @@ MonoBehaviour:
     convertprice: 300000000
     unittype: 0
     lotto: 0.002084
-    dps: 1270
+    dps: 446609
   - id: C020
     index: 19
     name: Carissa
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
     mspd: 250
     rhm: 11.9
-    atk: 421
+    atk: 244132
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -414,19 +414,19 @@ MonoBehaviour:
     convertprice: 600000000
     unittype: 0
     lotto: 0.001819
-    dps: 1403.33
+    dps: 813774
   - id: C021
     index: 20
     name: Hailee
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
     mspd: 260
     rhm: 12
-    atk: 463
+    atk: 444838
     bullet: 10
     atkspd: 0.2
     reload: 1
@@ -434,13 +434,13 @@ MonoBehaviour:
     convertprice: 1200000000
     unittype: 0
     lotto: 0.001594
-    dps: 1543.33
+    dps: 1482793
   - id: C022
     index: 21
     name: Kenzie
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
@@ -460,7 +460,7 @@ MonoBehaviour:
     name: Justine
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
@@ -480,7 +480,7 @@ MonoBehaviour:
     name: Elaine
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
@@ -500,7 +500,7 @@ MonoBehaviour:
     name: Casey
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
@@ -520,7 +520,7 @@ MonoBehaviour:
     name: Kassandra
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 3
@@ -540,7 +540,7 @@ MonoBehaviour:
     name: Bit
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 4
@@ -560,7 +560,7 @@ MonoBehaviour:
     name: Pop
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 4
@@ -580,7 +580,7 @@ MonoBehaviour:
     name: Hannah
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 4
@@ -600,7 +600,7 @@ MonoBehaviour:
     name: Frankie
     description: 
     image: 
-    model: 
+    model: Car
     color: 
     vfx: 
     def: 4

@@ -25,6 +25,7 @@ public class UI : MonoBehaviour
     private void StartGame(EVENT_TYPE eventType, Component sender, object param = null)
     {
         // 게임 시작
+        GameManager.PlayVibration();
         this.ingameUI.Init();
         this.outgameUI.StartGame();
     }
