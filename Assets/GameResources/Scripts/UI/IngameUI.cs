@@ -10,7 +10,7 @@ public class IngameUI : MonoBehaviour
     
     
     [SerializeField]
-    private RhythmPanel rhythmPanel = null;
+    private BoosterPanel boosterPanel = null;
 
     void Awake()
     {
@@ -22,6 +22,7 @@ public class IngameUI : MonoBehaviour
         this.gameObject.SetActive(true);
         EventManager.on(EVENT_TYPE.UPDATE_UI, this.UpdatedUI);
         EventManager.on(EVENT_TYPE.CHANGE_SECTION, this.ChangedSection);
+        this.boosterPanel.Init();
     }
     public void ExitGame()
     {
@@ -43,7 +44,6 @@ public class IngameUI : MonoBehaviour
         // 인게임 섹션 변화
         string SID = (string)param;
         SectionInfo sectionInfo = TableManager.SectionInfoTable.GetInfo(SID);
-        this.rhythmPanel.Init(sectionInfo.rhythmID);
     }
     void OnDestroy()
     {

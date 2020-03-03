@@ -81,7 +81,7 @@ public class World : MonoBehaviour
     private void OnEvent()
     {
         EventManager.on(EVENT_TYPE.START_GAME, this.StartGame);
-        EventManager.on(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
+        EventManager.on(EVENT_TYPE.TOUCH_BOOSTER, this.TouchRhythm);
         EventManager.on(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
         EventManager.on(EVENT_TYPE.FINISH_GAME, this.FinishGame);
         EventManager.on(EVENT_TYPE.CHOICE_CAR, this.ChoiceCar);
@@ -89,7 +89,7 @@ public class World : MonoBehaviour
     private void OffEvent()
     {
         EventManager.off(EVENT_TYPE.START_GAME, this.StartGame);
-        EventManager.off(EVENT_TYPE.TOUCH_RHYTHM, this.TouchRhythm);
+        EventManager.off(EVENT_TYPE.TOUCH_BOOSTER, this.TouchRhythm);
         EventManager.off(EVENT_TYPE.WALL_BROKEN, this.WallBroken);
         EventManager.off(EVENT_TYPE.FINISH_GAME, this.FinishGame);
         EventManager.off(EVENT_TYPE.CHOICE_CAR, this.ChoiceCar);

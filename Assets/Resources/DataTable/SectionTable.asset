@@ -24,7 +24,7 @@ MonoBehaviour:
     rhythmid: R001
     checkpointid: None
     zombieid: Z001
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S002
     index: 1
     themeindex: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
     rhythmid: R001
     checkpointid: None
     zombieid: Z001
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S003
     index: 2
     themeindex: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     rhythmid: R001
     checkpointid: None
     zombieid: Z001
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S004
     index: 3
     themeindex: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
     rhythmid: R001
     checkpointid: None
     zombieid: Z001
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S005
     index: 4
     themeindex: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
     rhythmid: R002
     checkpointid: None
     zombieid: Z002
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S006
     index: 5
     themeindex: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
     rhythmid: R002
     checkpointid: None
     zombieid: Z002
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S007
     index: 6
     themeindex: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
     rhythmid: R002
     checkpointid: None
     zombieid: Z002
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S008
     index: 7
     themeindex: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
     rhythmid: R002
     checkpointid: None
     zombieid: Z002
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S009
     index: 8
     themeindex: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
     rhythmid: R003
     checkpointid: None
     zombieid: Z003
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S010
     index: 9
     themeindex: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
     rhythmid: R003
     checkpointid: CP001
     zombieid: Z003
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S011
     index: 10
     themeindex: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
     rhythmid: R003
     checkpointid: None
     zombieid: Z003
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S012
     index: 11
     themeindex: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
     rhythmid: R003
     checkpointid: None
     zombieid: Z003
-    zombieinterval: 0.8
+    zombieinterval: 1
   - sid: S013
     index: 12
     themeindex: 1
@@ -144,7 +144,7 @@ MonoBehaviour:
     rhythmid: R004
     checkpointid: None
     zombieid: Z004
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S014
     index: 13
     themeindex: 1
@@ -154,7 +154,7 @@ MonoBehaviour:
     rhythmid: R004
     checkpointid: None
     zombieid: Z004
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S015
     index: 14
     themeindex: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
     rhythmid: R004
     checkpointid: None
     zombieid: Z004
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S016
     index: 15
     themeindex: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
     rhythmid: R004
     checkpointid: None
     zombieid: Z004
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S017
     index: 16
     themeindex: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
     rhythmid: R005
     checkpointid: None
     zombieid: Z005
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S018
     index: 17
     themeindex: 1
@@ -194,7 +194,7 @@ MonoBehaviour:
     rhythmid: R005
     checkpointid: None
     zombieid: Z005
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S019
     index: 18
     themeindex: 1
@@ -204,7 +204,7 @@ MonoBehaviour:
     rhythmid: R005
     checkpointid: None
     zombieid: Z005
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S020
     index: 19
     themeindex: 1
@@ -214,7 +214,7 @@ MonoBehaviour:
     rhythmid: R005
     checkpointid: CP002
     zombieid: Z005
-    zombieinterval: 0.79
+    zombieinterval: 0.99
   - sid: S021
     index: 20
     themeindex: 2
@@ -224,7 +224,7 @@ MonoBehaviour:
     rhythmid: R006
     checkpointid: None
     zombieid: Z006
-    zombieinterval: 0.78
+    zombieinterval: 0.98
   - sid: S022
     index: 21
     themeindex: 2
@@ -234,7 +234,7 @@ MonoBehaviour:
     rhythmid: R006
     checkpointid: None
     zombieid: Z006
-    zombieinterval: 0.78
+    zombieinterval: 0.98
   - sid: S023
     index: 22
     themeindex: 2
@@ -244,7 +244,7 @@ MonoBehaviour:
     rhythmid: R006
     checkpointid: None
     zombieid: Z006
-    zombieinterval: 0.78
+    zombieinterval: 0.98
   - sid: S024
     index: 23
     themeindex: 2
@@ -254,7 +254,7 @@ MonoBehaviour:
     rhythmid: R006
     checkpointid: None
     zombieid: Z006
-    zombieinterval: 0.78
+    zombieinterval: 0.98
   - sid: S025
     index: 24
     themeindex: 2
@@ -264,7 +264,7 @@ MonoBehaviour:
     rhythmid: R007
     checkpointid: None
     zombieid: Z007
-    zombieinterval: 0.78
+    zombieinterval: 0.98
   - sid: S026
     index: 25
     themeindex: 2
@@ -274,7 +274,7 @@ MonoBehaviour:
     rhythmid: R007
     checkpointid: None
     zombieid: Z007
-    zombieinterval: 0.78
+    zombieinterval: 0.98
   - sid: S027
     index: 26
     themeindex: 2
@@ -284,7 +284,7 @@ MonoBehaviour:
     rhythmid: R007
     checkpointid: None
     zombieid: Z007
-    zombieinterval: 0.77
+    zombieinterval: 0.97
   - sid: S028
     index: 27
     themeindex: 2
@@ -294,7 +294,7 @@ MonoBehaviour:
     rhythmid: R007
     checkpointid: None
     zombieid: Z007
-    zombieinterval: 0.77
+    zombieinterval: 0.97
   - sid: S029
     index: 28
     themeindex: 2
@@ -304,7 +304,7 @@ MonoBehaviour:
     rhythmid: R008
     checkpointid: None
     zombieid: Z008
-    zombieinterval: 0.77
+    zombieinterval: 0.97
   - sid: S030
     index: 29
     themeindex: 2
@@ -314,7 +314,7 @@ MonoBehaviour:
     rhythmid: R008
     checkpointid: CP003
     zombieid: Z008
-    zombieinterval: 0.77
+    zombieinterval: 0.97
   - sid: S031
     index: 30
     themeindex: 3
@@ -324,7 +324,7 @@ MonoBehaviour:
     rhythmid: R008
     checkpointid: None
     zombieid: Z008
-    zombieinterval: 0.76
+    zombieinterval: 0.96
   - sid: S032
     index: 31
     themeindex: 3
@@ -334,7 +334,7 @@ MonoBehaviour:
     rhythmid: R008
     checkpointid: None
     zombieid: Z008
-    zombieinterval: 0.76
+    zombieinterval: 0.96
   - sid: S033
     index: 32
     themeindex: 3
@@ -344,7 +344,7 @@ MonoBehaviour:
     rhythmid: R009
     checkpointid: None
     zombieid: Z009
-    zombieinterval: 0.76
+    zombieinterval: 0.96
   - sid: S034
     index: 33
     themeindex: 3
@@ -354,7 +354,7 @@ MonoBehaviour:
     rhythmid: R009
     checkpointid: None
     zombieid: Z009
-    zombieinterval: 0.76
+    zombieinterval: 0.96
   - sid: S035
     index: 34
     themeindex: 3
@@ -364,7 +364,7 @@ MonoBehaviour:
     rhythmid: R009
     checkpointid: None
     zombieid: Z009
-    zombieinterval: 0.75
+    zombieinterval: 0.95
   - sid: S036
     index: 35
     themeindex: 3
@@ -374,7 +374,7 @@ MonoBehaviour:
     rhythmid: R009
     checkpointid: None
     zombieid: Z009
-    zombieinterval: 0.75
+    zombieinterval: 0.95
   - sid: S037
     index: 36
     themeindex: 3
@@ -384,7 +384,7 @@ MonoBehaviour:
     rhythmid: R010
     checkpointid: None
     zombieid: Z010
-    zombieinterval: 0.75
+    zombieinterval: 0.95
   - sid: S038
     index: 37
     themeindex: 3
@@ -394,7 +394,7 @@ MonoBehaviour:
     rhythmid: R010
     checkpointid: None
     zombieid: Z010
-    zombieinterval: 0.75
+    zombieinterval: 0.95
   - sid: S039
     index: 38
     themeindex: 3
@@ -404,7 +404,7 @@ MonoBehaviour:
     rhythmid: R010
     checkpointid: None
     zombieid: Z010
-    zombieinterval: 0.74
+    zombieinterval: 0.94
   - sid: S040
     index: 39
     themeindex: 3
@@ -414,7 +414,7 @@ MonoBehaviour:
     rhythmid: R010
     checkpointid: CP004
     zombieid: Z010
-    zombieinterval: 0.74
+    zombieinterval: 0.94
   - sid: S041
     index: 40
     themeindex: 4
@@ -424,7 +424,7 @@ MonoBehaviour:
     rhythmid: R011
     checkpointid: None
     zombieid: Z011
-    zombieinterval: 0.74
+    zombieinterval: 0.94
   - sid: S042
     index: 41
     themeindex: 4
@@ -434,7 +434,7 @@ MonoBehaviour:
     rhythmid: R011
     checkpointid: None
     zombieid: Z011
-    zombieinterval: 0.73
+    zombieinterval: 0.93
   - sid: S043
     index: 42
     themeindex: 4
@@ -444,7 +444,7 @@ MonoBehaviour:
     rhythmid: R011
     checkpointid: None
     zombieid: Z011
-    zombieinterval: 0.73
+    zombieinterval: 0.93
   - sid: S044
     index: 43
     themeindex: 4
@@ -454,7 +454,7 @@ MonoBehaviour:
     rhythmid: R011
     checkpointid: None
     zombieid: Z011
-    zombieinterval: 0.73
+    zombieinterval: 0.93
   - sid: S045
     index: 44
     themeindex: 4
@@ -464,7 +464,7 @@ MonoBehaviour:
     rhythmid: R012
     checkpointid: None
     zombieid: Z012
-    zombieinterval: 0.72
+    zombieinterval: 0.92
   - sid: S046
     index: 45
     themeindex: 4
@@ -474,7 +474,7 @@ MonoBehaviour:
     rhythmid: R012
     checkpointid: None
     zombieid: Z012
-    zombieinterval: 0.72
+    zombieinterval: 0.92
   - sid: S047
     index: 46
     themeindex: 4
@@ -484,7 +484,7 @@ MonoBehaviour:
     rhythmid: R012
     checkpointid: None
     zombieid: Z012
-    zombieinterval: 0.72
+    zombieinterval: 0.92
   - sid: S048
     index: 47
     themeindex: 4
@@ -494,7 +494,7 @@ MonoBehaviour:
     rhythmid: R012
     checkpointid: None
     zombieid: Z012
-    zombieinterval: 0.71
+    zombieinterval: 0.91
   - sid: S049
     index: 48
     themeindex: 4
@@ -504,7 +504,7 @@ MonoBehaviour:
     rhythmid: R013
     checkpointid: None
     zombieid: Z013
-    zombieinterval: 0.71
+    zombieinterval: 0.91
   - sid: S050
     index: 49
     themeindex: 4
@@ -514,7 +514,7 @@ MonoBehaviour:
     rhythmid: R013
     checkpointid: CP005
     zombieid: Z013
-    zombieinterval: 0.7
+    zombieinterval: 0.9
   - sid: S051
     index: 50
     themeindex: 5
@@ -524,7 +524,7 @@ MonoBehaviour:
     rhythmid: R013
     checkpointid: None
     zombieid: Z013
-    zombieinterval: 0.7
+    zombieinterval: 0.9
   - sid: S052
     index: 51
     themeindex: 5
@@ -534,7 +534,7 @@ MonoBehaviour:
     rhythmid: R013
     checkpointid: None
     zombieid: Z013
-    zombieinterval: 0.7
+    zombieinterval: 0.9
   - sid: S053
     index: 52
     themeindex: 5
@@ -544,7 +544,7 @@ MonoBehaviour:
     rhythmid: R014
     checkpointid: None
     zombieid: Z014
-    zombieinterval: 0.69
+    zombieinterval: 0.89
   - sid: S054
     index: 53
     themeindex: 5
@@ -554,7 +554,7 @@ MonoBehaviour:
     rhythmid: R014
     checkpointid: None
     zombieid: Z014
-    zombieinterval: 0.69
+    zombieinterval: 0.89
   - sid: S055
     index: 54
     themeindex: 5
@@ -564,7 +564,7 @@ MonoBehaviour:
     rhythmid: R014
     checkpointid: None
     zombieid: Z014
-    zombieinterval: 0.68
+    zombieinterval: 0.88
   - sid: S056
     index: 55
     themeindex: 5
@@ -574,7 +574,7 @@ MonoBehaviour:
     rhythmid: R014
     checkpointid: None
     zombieid: Z014
-    zombieinterval: 0.68
+    zombieinterval: 0.88
   - sid: S057
     index: 56
     themeindex: 5
@@ -584,7 +584,7 @@ MonoBehaviour:
     rhythmid: R015
     checkpointid: None
     zombieid: Z015
-    zombieinterval: 0.68
+    zombieinterval: 0.87
   - sid: S058
     index: 57
     themeindex: 5
@@ -594,7 +594,7 @@ MonoBehaviour:
     rhythmid: R015
     checkpointid: None
     zombieid: Z015
-    zombieinterval: 0.67
+    zombieinterval: 0.87
   - sid: S059
     index: 58
     themeindex: 5
@@ -604,7 +604,7 @@ MonoBehaviour:
     rhythmid: R015
     checkpointid: None
     zombieid: Z015
-    zombieinterval: 0.67
+    zombieinterval: 0.87
   - sid: S060
     index: 59
     themeindex: 5
@@ -614,7 +614,7 @@ MonoBehaviour:
     rhythmid: R015
     checkpointid: CP006
     zombieid: Z015
-    zombieinterval: 0.66
+    zombieinterval: 0.86
   - sid: S061
     index: 60
     themeindex: 6
@@ -624,7 +624,7 @@ MonoBehaviour:
     rhythmid: R016
     checkpointid: None
     zombieid: Z016
-    zombieinterval: 0.66
+    zombieinterval: 0.86
   - sid: S062
     index: 61
     themeindex: 6
@@ -634,7 +634,7 @@ MonoBehaviour:
     rhythmid: R016
     checkpointid: None
     zombieid: Z016
-    zombieinterval: 0.65
+    zombieinterval: 0.85
   - sid: S063
     index: 62
     themeindex: 6
@@ -644,7 +644,7 @@ MonoBehaviour:
     rhythmid: R016
     checkpointid: None
     zombieid: Z016
-    zombieinterval: 0.65
+    zombieinterval: 0.85
   - sid: S064
     index: 63
     themeindex: 6
@@ -654,7 +654,7 @@ MonoBehaviour:
     rhythmid: R016
     checkpointid: None
     zombieid: Z016
-    zombieinterval: 0.64
+    zombieinterval: 0.84
   - sid: S065
     index: 64
     themeindex: 6
@@ -664,7 +664,7 @@ MonoBehaviour:
     rhythmid: R017
     checkpointid: None
     zombieid: Z017
-    zombieinterval: 0.64
+    zombieinterval: 0.84
   - sid: S066
     index: 65
     themeindex: 6
@@ -674,7 +674,7 @@ MonoBehaviour:
     rhythmid: R017
     checkpointid: None
     zombieid: Z017
-    zombieinterval: 0.63
+    zombieinterval: 0.83
   - sid: S067
     index: 66
     themeindex: 6
@@ -684,7 +684,7 @@ MonoBehaviour:
     rhythmid: R017
     checkpointid: None
     zombieid: Z017
-    zombieinterval: 0.63
+    zombieinterval: 0.83
   - sid: S068
     index: 67
     themeindex: 6
@@ -694,7 +694,7 @@ MonoBehaviour:
     rhythmid: R017
     checkpointid: None
     zombieid: Z017
-    zombieinterval: 0.62
+    zombieinterval: 0.82
   - sid: S069
     index: 68
     themeindex: 6
@@ -704,7 +704,7 @@ MonoBehaviour:
     rhythmid: R018
     checkpointid: None
     zombieid: Z018
-    zombieinterval: 0.62
+    zombieinterval: 0.82
   - sid: S070
     index: 69
     themeindex: 6
@@ -714,7 +714,7 @@ MonoBehaviour:
     rhythmid: R018
     checkpointid: CP007
     zombieid: Z018
-    zombieinterval: 0.61
+    zombieinterval: 0.81
   - sid: S071
     index: 70
     themeindex: 7
@@ -724,7 +724,7 @@ MonoBehaviour:
     rhythmid: R018
     checkpointid: None
     zombieid: Z018
-    zombieinterval: 0.6
+    zombieinterval: 0.8
   - sid: S072
     index: 71
     themeindex: 7
@@ -734,7 +734,7 @@ MonoBehaviour:
     rhythmid: R018
     checkpointid: None
     zombieid: Z018
-    zombieinterval: 0.6
+    zombieinterval: 0.8
   - sid: S073
     index: 72
     themeindex: 7
@@ -744,7 +744,7 @@ MonoBehaviour:
     rhythmid: R019
     checkpointid: None
     zombieid: Z019
-    zombieinterval: 0.59
+    zombieinterval: 0.79
   - sid: S074
     index: 73
     themeindex: 7
@@ -754,7 +754,7 @@ MonoBehaviour:
     rhythmid: R019
     checkpointid: None
     zombieid: Z019
-    zombieinterval: 0.59
+    zombieinterval: 0.79
   - sid: S075
     index: 74
     themeindex: 7
@@ -764,7 +764,7 @@ MonoBehaviour:
     rhythmid: R019
     checkpointid: None
     zombieid: Z019
-    zombieinterval: 0.58
+    zombieinterval: 0.78
   - sid: S076
     index: 75
     themeindex: 7
@@ -774,7 +774,7 @@ MonoBehaviour:
     rhythmid: R019
     checkpointid: None
     zombieid: Z019
-    zombieinterval: 0.58
+    zombieinterval: 0.78
   - sid: S077
     index: 76
     themeindex: 7
@@ -784,7 +784,7 @@ MonoBehaviour:
     rhythmid: R020
     checkpointid: None
     zombieid: Z020
-    zombieinterval: 0.57
+    zombieinterval: 0.77
   - sid: S078
     index: 77
     themeindex: 7
@@ -794,7 +794,7 @@ MonoBehaviour:
     rhythmid: R020
     checkpointid: None
     zombieid: Z020
-    zombieinterval: 0.56
+    zombieinterval: 0.76
   - sid: S079
     index: 78
     themeindex: 7
@@ -804,7 +804,7 @@ MonoBehaviour:
     rhythmid: R020
     checkpointid: None
     zombieid: Z020
-    zombieinterval: 0.56
+    zombieinterval: 0.76
   - sid: S080
     index: 79
     themeindex: 7
@@ -814,7 +814,7 @@ MonoBehaviour:
     rhythmid: R020
     checkpointid: CP008
     zombieid: Z020
-    zombieinterval: 0.55
+    zombieinterval: 0.75
   - sid: S081
     index: 80
     themeindex: 8
@@ -824,7 +824,7 @@ MonoBehaviour:
     rhythmid: R021
     checkpointid: None
     zombieid: Z021
-    zombieinterval: 0.54
+    zombieinterval: 0.74
   - sid: S082
     index: 81
     themeindex: 8
@@ -834,7 +834,7 @@ MonoBehaviour:
     rhythmid: R021
     checkpointid: None
     zombieid: Z021
-    zombieinterval: 0.54
+    zombieinterval: 0.74
   - sid: S083
     index: 82
     themeindex: 8
@@ -844,7 +844,7 @@ MonoBehaviour:
     rhythmid: R021
     checkpointid: None
     zombieid: Z021
-    zombieinterval: 0.53
+    zombieinterval: 0.73
   - sid: S084
     index: 83
     themeindex: 8
@@ -854,7 +854,7 @@ MonoBehaviour:
     rhythmid: R021
     checkpointid: None
     zombieid: Z021
-    zombieinterval: 0.52
+    zombieinterval: 0.72
   - sid: S085
     index: 84
     themeindex: 8
@@ -864,7 +864,7 @@ MonoBehaviour:
     rhythmid: R022
     checkpointid: None
     zombieid: Z022
-    zombieinterval: 0.52
+    zombieinterval: 0.72
   - sid: S086
     index: 85
     themeindex: 8
@@ -874,7 +874,7 @@ MonoBehaviour:
     rhythmid: R022
     checkpointid: None
     zombieid: Z022
-    zombieinterval: 0.51
+    zombieinterval: 0.71
   - sid: S087
     index: 86
     themeindex: 8
@@ -884,7 +884,7 @@ MonoBehaviour:
     rhythmid: R022
     checkpointid: None
     zombieid: Z022
-    zombieinterval: 0.5
+    zombieinterval: 0.7
   - sid: S088
     index: 87
     themeindex: 8
@@ -894,7 +894,7 @@ MonoBehaviour:
     rhythmid: R022
     checkpointid: None
     zombieid: Z022
-    zombieinterval: 0.5
+    zombieinterval: 0.7
   - sid: S089
     index: 88
     themeindex: 8
@@ -904,7 +904,7 @@ MonoBehaviour:
     rhythmid: R023
     checkpointid: None
     zombieid: Z023
-    zombieinterval: 0.49
+    zombieinterval: 0.69
   - sid: S090
     index: 89
     themeindex: 8
@@ -914,7 +914,7 @@ MonoBehaviour:
     rhythmid: R023
     checkpointid: CP009
     zombieid: Z023
-    zombieinterval: 0.48
+    zombieinterval: 0.68
   - sid: S091
     index: 90
     themeindex: 9
@@ -924,7 +924,7 @@ MonoBehaviour:
     rhythmid: R023
     checkpointid: None
     zombieid: Z023
-    zombieinterval: 0.48
+    zombieinterval: 0.68
   - sid: S092
     index: 91
     themeindex: 9
@@ -934,7 +934,7 @@ MonoBehaviour:
     rhythmid: R023
     checkpointid: None
     zombieid: Z023
-    zombieinterval: 0.47
+    zombieinterval: 0.67
   - sid: S093
     index: 92
     themeindex: 9
@@ -944,7 +944,7 @@ MonoBehaviour:
     rhythmid: R024
     checkpointid: None
     zombieid: Z024
-    zombieinterval: 0.46
+    zombieinterval: 0.66
   - sid: S094
     index: 93
     themeindex: 9
@@ -954,7 +954,7 @@ MonoBehaviour:
     rhythmid: R024
     checkpointid: None
     zombieid: Z024
-    zombieinterval: 0.45
+    zombieinterval: 0.65
   - sid: S095
     index: 94
     themeindex: 9
@@ -964,7 +964,7 @@ MonoBehaviour:
     rhythmid: R024
     checkpointid: None
     zombieid: Z024
-    zombieinterval: 0.45
+    zombieinterval: 0.65
   - sid: S096
     index: 95
     themeindex: 9
@@ -974,7 +974,7 @@ MonoBehaviour:
     rhythmid: R024
     checkpointid: None
     zombieid: Z024
-    zombieinterval: 0.44
+    zombieinterval: 0.64
   - sid: S097
     index: 96
     themeindex: 9
@@ -984,7 +984,7 @@ MonoBehaviour:
     rhythmid: R025
     checkpointid: None
     zombieid: Z025
-    zombieinterval: 0.43
+    zombieinterval: 0.63
   - sid: S098
     index: 97
     themeindex: 9
@@ -994,7 +994,7 @@ MonoBehaviour:
     rhythmid: R025
     checkpointid: None
     zombieid: Z025
-    zombieinterval: 0.42
+    zombieinterval: 0.62
   - sid: S099
     index: 98
     themeindex: 9
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     rhythmid: R025
     checkpointid: None
     zombieid: Z025
-    zombieinterval: 0.42
+    zombieinterval: 0.62
   - sid: S100
     index: 99
     themeindex: 9
@@ -1014,4 +1014,4 @@ MonoBehaviour:
     rhythmid: R025
     checkpointid: CP010
     zombieid: Z025
-    zombieinterval: 0.41
+    zombieinterval: 0.61

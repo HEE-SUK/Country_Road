@@ -14,4 +14,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SheetName: CountryRoad
   WorksheetName: LocalizeTable
-  dataArray: []
+  dataArray:
+  - id: L000
+    en: Contry Road
+    ko: "\uCEE8\uD2B8\uB9AC\uB85C\uB4DC"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L001
+    en: TOUCH TO START
+    ko: "\uD130\uCE58\uD574\uC8FC\uC138\uC694!"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L002
+    en: Garage
+    ko: "\uCC28\uACE0"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L003
+    en: Option
+    ko: "\uC124\uC815"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L004
+    en: Confirm
+    ko: "\uD655\uC778"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L005
+    en: Exit
+    ko: "\uCDE8\uC18C"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L006
+    en: Back
+    ko: "\uB4A4\uB85C"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L007
+    en: Defence
+    ko: "\uBC29\uC5B4\uB825"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L008
+    en: Speed
+    ko: "\uC18D\uB3C4"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L009
+    en: Rhythm
+    ko: "\uB9AC\uB4EC"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
+  - id: L010
+    en: Attack
+    ko: "\uACF5\uACA9\uB825"
+    zhtw: 
+    zh: 
+    ja: 
+    es: 
