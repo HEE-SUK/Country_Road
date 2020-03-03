@@ -43,6 +43,7 @@ public class EnemyController : MonoBehaviour
         if (hp <= 0)
         {
             isDie = true;
+            hitParticle.gameObject.SetActive(false);
             hitParticle.gameObject.SetActive(true);
             enemyDieCallBack(this);
             anim.SetBool("Die", true);
