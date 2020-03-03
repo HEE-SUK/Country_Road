@@ -55,7 +55,7 @@ public class EnemySpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(sectionInfo.zombieInterval);
             SpawnEnemy(zombieInfo, carInfo);
-            Debug.Log(zombieInfo.id);
+            // Debug.Log(zombieInfo.id);
         }
     }
 }

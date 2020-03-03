@@ -88,8 +88,9 @@ public class AutoAttack : MonoBehaviour
                 }
                 activeCallBack(targetTrans == null ? false : true);
                 muzzleParticle.SetActive(targetTrans == null ? false : true);
-                yield return new WaitForSeconds(delayTime);
                 Fire();
+                yield return new WaitForSeconds(delayTime);
+                muzzleParticle.SetActive(false);
             }
             yield return null;
         }
@@ -97,7 +98,6 @@ public class AutoAttack : MonoBehaviour
     private void Fire()
     {
         curBulletNum = curBulletNum > 0 ? curBulletNum - 1 : 0;
-        muzzleParticle.SetActive(false);
         if(targetEnemy == null || targetEnemy.IsDie){
             return;
         }
