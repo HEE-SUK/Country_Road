@@ -8,12 +8,12 @@ using UnityQuickSheet;
 /// 
 public partial class GoogleDataAssetUtility
 {
-    [MenuItem("Assets/Create/Google/RhythmTable")]
-    public static void CreateRhythmTableAssetFile()
+    [MenuItem("Assets/Create/Google/BoosterTable")]
+    public static void CreateBoosterTableAssetFile()
     {
-        RhythmTable asset = CustomAssetUtility.CreateAsset<RhythmTable>();
+        BoosterTable asset = CustomAssetUtility.CreateAsset<BoosterTable>();
         asset.SheetName = "CountryRoad";
-        asset.WorksheetName = "RhythmTable";
+        asset.WorksheetName = "BoosterTable";
         EditorUtility.SetDirty(asset);        
     }
     

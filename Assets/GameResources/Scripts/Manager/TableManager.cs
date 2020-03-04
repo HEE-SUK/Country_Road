@@ -13,9 +13,9 @@ public class TableManager : Singleton<TableManager>
     {
         get { return Instance.wallInfoTable;}
     }
-    public static RhythmInfoTable RhythmInfoTable 
+    public static BoosterInfoTable BoosterInfoTable 
     {
-        get { return Instance.rhythmInfoTable;}
+        get { return Instance.boosterInfoTable;}
     }
     public static CheckPointInfoTable CheckPointInfoTable 
     {
@@ -36,7 +36,7 @@ public class TableManager : Singleton<TableManager>
 
     private CarInfoTable carInfoTable = new CarInfoTable();
     private WallInfoTable wallInfoTable = new WallInfoTable();
-    private RhythmInfoTable rhythmInfoTable = new RhythmInfoTable();
+    private BoosterInfoTable boosterInfoTable = new BoosterInfoTable();
     private CheckPointInfoTable checkPointInfoTable = new CheckPointInfoTable();
     private ZombieInfoTable zombieInfoTable = new ZombieInfoTable();
     private SectionInfoTable sectionInfoTable = new SectionInfoTable();

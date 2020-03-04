@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1955c505ff4f84cb5854f812b4f13fc2, type: 3}
+  m_Name: BoosterTable
+  m_EditorClassIdentifier: 
+  SheetName: CountryRoad
+  WorksheetName: BoosterTable
+  dataArray:
+  - bid: B001
+    index: 0
+    barsize1: 0.4
+    barsize2: 0.1
+    barsize3: 1
+    spd1: 0.9
+    spd2: 1
+    spd3: 0.7
+  - bid: B002
+    index: 0
+    barsize1: 0
+    barsize2: 0
+    barsize3: 0
+    spd1: 0
+    spd2: 0
+    spd3: 0
+  - bid: B003
+    index: 0
+    barsize1: 0
+    barsize2: 0
+    barsize3: 0
+    spd1: 0
+    spd2: 0
+    spd3: 0
+  - bid: B004
+    index: 0
+    barsize1: 0
+    barsize2: 0
+    barsize3: 0
+    spd1: 0
+    spd2: 0
+    spd3: 0

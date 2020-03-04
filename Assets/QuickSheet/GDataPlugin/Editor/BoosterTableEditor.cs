@@ -12,26 +12,26 @@ using UnityQuickSheet;
 ///
 /// !!! Machine generated code !!!
 ///
-[CustomEditor(typeof(RhythmTable))]
-public class RhythmTableEditor : BaseGoogleEditor<RhythmTable>
+[CustomEditor(typeof(BoosterTable))]
+public class BoosterTableEditor : BaseGoogleEditor<BoosterTable>
 {	    
     public override bool Load()
     {        
-        RhythmTable targetData = target as RhythmTable;
+        BoosterTable targetData = target as BoosterTable;
         
         var client = new DatabaseClient("", "");
         string error = string.Empty;
         var db = client.GetDatabase(targetData.SheetName, ref error);	
-        var table = db.GetTable<RhythmTableData>(targetData.WorksheetName) ?? db.CreateTable<RhythmTableData>(targetData.WorksheetName);
+        var table = db.GetTable<BoosterTableData>(targetData.WorksheetName) ?? db.CreateTable<BoosterTableData>(targetData.WorksheetName);
         
-        List<RhythmTableData> myDataList = new List<RhythmTableData>();
+        List<BoosterTableData> myDataList = new List<BoosterTableData>();
         
         var all = table.FindAll();
         foreach(var elem in all)
         {
-            RhythmTableData data = new RhythmTableData();
+            BoosterTableData data = new BoosterTableData();
             
-            data = Cloner.DeepCopy<RhythmTableData>(elem.Element);
+            data = Cloner.DeepCopy<BoosterTableData>(elem.Element);
             myDataList.Add(data);
         }
                 
