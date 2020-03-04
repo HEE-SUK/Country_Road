@@ -16,34 +16,30 @@ MonoBehaviour:
   scriptFilePath: QuickSheet/Runtime
   editorScriptFilePath: QuickSheet/GDataPlugin/Editor
   sheetName: CountryRoad
-  workSheetName: LocalizeTable
+  workSheetName: UpgradeTable
   columnHeaderList:
   - type: 1
     name: ID
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: en
+  - type: 3
+    name: Index
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: ko
+  - type: 5
+    name: Bumper
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: zhTW
+  - type: 5
+    name: Booster
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: zh
+  - type: 5
+    name: Tire
     isEnable: 0
     isArray: 0
-  - type: 1
-    name: ja
-    isEnable: 0
-    isArray: 0
-  - type: 1
-    name: es
+  - type: 5
+    name: PriceFactor
     isEnable: 0
     isArray: 0
   AccessCode: 

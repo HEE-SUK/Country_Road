@@ -1,4 +1,4 @@
-﻿public class RhythmInfo
+﻿public class BoosterInfo
 {
     public string id {get;}
     public int index {get;}
@@ -10,9 +10,9 @@
     public float spd2 {get;}
     public float spd3 {get;}
     
-    public RhythmInfo(RhythmTableData _data)
+    public BoosterInfo(BoosterTableData _data)
     {
-        this.id = _data.RID;
+        this.id = _data.BID;
         this.index = _data.Index;
 
         this.barSize1 = _data.Barsize1;

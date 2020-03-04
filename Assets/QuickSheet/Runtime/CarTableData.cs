@@ -41,16 +41,16 @@ public class CarTableData
   public string VFX { get {return vfx; } set { this.vfx = value;} }
   
   [SerializeField]
-  int def;
-  public int Def { get {return def; } set { this.def = value;} }
+  int bumper;
+  public int Bumper { get {return bumper; } set { this.bumper = value;} }
   
   [SerializeField]
-  int mspd;
-  public int Mspd { get {return mspd; } set { this.mspd = value;} }
+  int booster;
+  public int Booster { get {return booster; } set { this.booster = value;} }
   
   [SerializeField]
-  float rhm;
-  public float Rhm { get {return rhm; } set { this.rhm = value;} }
+  int tire;
+  public int Tire { get {return tire; } set { this.tire = value;} }
   
   [SerializeField]
   int atk;

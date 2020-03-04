@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adde64be3223546f59ea8246bb58951b, type: 3}
+  m_Name: UpgradeTable
+  m_EditorClassIdentifier: 
+  SheetName: CountryRoad
+  WorksheetName: UpgradeTable
+  dataArray:
+  - id: U001
+    index: 0
+    bumper: 1.5
+    booster: 1.05
+    tire: 0.11
+    pricefactor: 0.2
+  - id: U002
+    index: 1
+    bumper: 2
+    booster: 1.1
+    tire: 0.22
+    pricefactor: 0.5
+  - id: U003
+    index: 2
+    bumper: 2.5
+    booster: 1.15
+    tire: 0.33
+    pricefactor: 0.8
+  - id: U004
+    index: 3
+    bumper: 3
+    booster: 1.2
+    tire: 0.44
+    pricefactor: 1.1
+  - id: U005
+    index: 4
+    bumper: 3.5
+    booster: 1.25
+    tire: 0.55
+    pricefactor: 1.4
+  - id: U006
+    index: 5
+    bumper: 4
+    booster: 1.3
+    tire: 0.66
+    pricefactor: 1.7
+  - id: U007
+    index: 6
+    bumper: 4.5
+    booster: 1.35
+    tire: 0.77
+    pricefactor: 2
+  - id: U008
+    index: 7
+    bumper: 5
+    booster: 1.4
+    tire: 0.88
+    pricefactor: 2.3
+  - id: U009
+    index: 8
+    bumper: 5.5
+    booster: 1.45
+    tire: 0.99
+    pricefactor: 2.6

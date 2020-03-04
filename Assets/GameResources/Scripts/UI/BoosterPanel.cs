@@ -10,7 +10,7 @@ public class BoosterPanel : MonoBehaviour
     [SerializeField]
     private BoosterGauge boosterGauge = null;
 
-    private RhythmInfo rhythmInfo = null;
+    private BoosterInfo boosterInfo = null;
 
     void Awake()
     {
@@ -20,9 +20,9 @@ public class BoosterPanel : MonoBehaviour
     {
         
         // for DEBUG 좀더 뚜렷한 로직 필요
-        this.rhythmInfo = TableManager.RhythmInfoTable.GetInfo("R002");
+        this.boosterInfo = TableManager.BoosterInfoTable.GetInfo("B001");
         this.gameObject.SetActive(true);
-        this.boosterGauge.Init(this.rhythmInfo.barSize1, this.rhythmInfo.barSize2);
+        this.boosterGauge.Init(this.boosterInfo.barSize1, this.boosterInfo.barSize2);
 
         this.touchPanel.Init(this.StartTouch, this.EndTouch);
     }
@@ -37,13 +37,13 @@ public class BoosterPanel : MonoBehaviour
         switch (this.boosterGauge.Stop())
         {
             case BOOSTERTYPE.GOOD:
-                extraSpeed = this.rhythmInfo.spd1;
+                extraSpeed = this.boosterInfo.spd1;
                 break;
             case BOOSTERTYPE.GREAT:
-                extraSpeed = this.rhythmInfo.spd2;
+                extraSpeed = this.boosterInfo.spd2;
                 break;
             default:
-                extraSpeed = this.rhythmInfo.spd3;
+                extraSpeed = this.boosterInfo.spd3;
                 break;
         }
         EventManager.emit(EVENT_TYPE.TOUCH_BOOSTER, this, extraSpeed);

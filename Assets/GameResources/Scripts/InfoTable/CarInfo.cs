@@ -11,9 +11,9 @@
     public string color {get;}
     public string vfx {get;}
 
-    public int def {get;}
-    public int mSpd {get;}
-    public float rhm {get;}
+    public int bumper {get;}
+    public int booster {get;}
+    public float tire {get;}
     public int atk {get;}
     public float atkSpd {get;}
     public int bullet {get;}
@@ -37,9 +37,9 @@
         this.color = _data.Color;
         this.vfx = _data.VFX;
 
-        this.def = _data.Def;
-        this.mSpd = _data.Mspd;
-        this.rhm = _data.Rhm;
+        this.bumper = _data.Bumper;
+        this.booster = _data.Booster;
+        this.tire = _data.Tire;
         this.atk = _data.Atk;
         this.atkSpd = _data.Atkspd;
         this.bullet = _data.Bullet;

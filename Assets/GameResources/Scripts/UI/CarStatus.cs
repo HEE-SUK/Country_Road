@@ -17,9 +17,9 @@ public class CarStatus : MonoBehaviour
     {
         CarInfo info = _item.GetInfo();
         // status 초기화
-        this.defence.Init(CARSTATUSTYPE.DEF, info.def, info.price);
-        this.maxSpeed.Init(CARSTATUSTYPE.MSPD, info.mSpd, info.price);
-        this.rhythm.Init(CARSTATUSTYPE.RHM, info.rhm, info.price);
+        this.defence.Init(CARSTATUSTYPE.DEF, info.bumper, info.price);
+        this.maxSpeed.Init(CARSTATUSTYPE.MSPD, info.booster, info.price);
+        this.rhythm.Init(CARSTATUSTYPE.RHM, info.tire, info.price);
         this.attack.Init(CARSTATUSTYPE.ATK, info.atk, info.price);
     }
 

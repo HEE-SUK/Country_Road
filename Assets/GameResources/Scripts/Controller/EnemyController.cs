@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
         this.carInfo = carInfo;
         this.enemyAttackCallBack = enemyAttackCallBack;
         this.enemyDieCallBack = enemyDieCallBack;
-        enemyMov.Init(stopPos, zombieInfo.spd, carInfo.mSpd, TryAttack);
+        enemyMov.Init(stopPos, zombieInfo.spd, carInfo.booster, TryAttack);
         hitParticle.gameObject.SetActive(false);
     }
 
